@@ -10,9 +10,9 @@ datasets = {}
 
 datasets['aida-A'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv' -- Validation set
 datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
-datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
-datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
-datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
+--datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
+--datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
+--datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
 
 ------- Uncomment the following lines if you want to test on more datasets during training (will be slower).
 --datasets['train-aida'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
@@ -58,6 +58,8 @@ local function get_dataset_num_non_empty_candidates(dataset_lines)
 end
 
 local function test_one(banner, f1_scores, epoch)
+  local file = io.open("./result.txt", "a")
+
   collectgarbage(); collectgarbage();
   -- Load dataset lines
   local dataset_lines = get_dataset_lines(banner)
@@ -173,6 +175,10 @@ local function test_one(banner, f1_scores, epoch)
           print('\n====> ' .. red('INCORRECT ANNOTATION') .. 
             ' : mention = ' .. skyblue(mentions[k]) ..
             ' ==> ENTITIES (OURS/GOLD): ' .. red(ent_win_name) .. ' <---> ' .. green(ent_grd_name))
+
+          file:write('INCORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t' 
+          .. ent_win_name .. '\t' .. ent_grd_name .. '\n')
+
         else
           assert(ent_win == ent_grd)
           local mention_str = 'mention = ' .. mentions[k]
@@ -182,6 +188,9 @@ local function test_one(banner, f1_scores, epoch)
           print('\n====> ' .. green('CORRECT ANNOTATION') .. 
             ' : ' .. mention_str ..
             ' ==> ENTITY: ' .. green(ent_grd_name))
+
+          file:write('CORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t'
+          .. ent_grd_name .. '\n')
         end
 
         print(
@@ -189,9 +198,17 @@ local function test_one(banner, f1_scores, epoch)
           '; local(<e,ctxt>)= ' .. nice_print_red_green(ent_win_local, ent_grd_local) ..
           '; log p(e|m)= ' .. nice_print_red_green(ent_win_log_p_e_m, ent_grd_log_p_e_m)
         )
+
+        file:write(
+                   'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[grd_idx]) .. '\n' .. 
+                   'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_grd_local) .. '\n' .. 
+                   'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_grd_log_p_e_m) .. '\n'
+                  )
+
           
         -- Print top attended ctxt words and their attention weights:
         local str_words = '\nTop context words (sorted by attention weight, only non-zero weights - top R words): \n'
+        local record_words = ''
         local ctxt_word_ids = get_ctxt_word_ids(inputs) -- num_mentions x opt.ctxt_window
         local best_scores, best_word_idxs = topk(debug_softmax_word_weights[k], opt.ctxt_window)
         local seen_unk_w_id = false
@@ -209,10 +226,12 @@ local function test_one(banner, f1_scores, epoch)
               
             if score > 0.001 then 
               str_words = str_words .. w .. '[' .. string.format("%.3f", score) .. ']; '
+              record_words = record_words .. w .. '[' .. string.format("%.3f", score) .. ']; '
             end
           end
         end
-        print(str_words)            
+        print(str_words)    
+        file:write(record_words .. '\n\n')        
       end ----------------- Done printing scores and weights
 
       
@@ -338,6 +357,8 @@ local function test_one(banner, f1_scores, epoch)
     ' only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' ..
     ' only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..
     ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%')
+
+  io.close(file)
 end
 
 
