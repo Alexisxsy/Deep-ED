@@ -18,14 +18,14 @@ e2vutils.lookup = nn.Normalize(2):forward(e2vutils.lookup) -- Needs to be normal
 
 assert(e2vutils.lookup:size(1) == get_total_num_ents() and
   e2vutils.lookup:size(2) == ent_vecs_size, e2vutils.lookup:size(1) .. ' ' .. get_total_num_ents())
-assert(e2vutils.lookup[unk_ent_thid]:norm() == 0, e2vutils.lookup[unk_ent_thid]:norm())
+-- assert(e2vutils.lookup[unk_ent_thid]:norm() == 0, e2vutils.lookup[unk_ent_thid]:norm())
 
 -- ent wikiid -> vec
 e2vutils.entwikiid2vec = function(self, ent_wikiid)
   local thid = get_thid(ent_wikiid)
   return self.lookup[thid]:float()
 end
-assert(torch.norm(e2vutils:entwikiid2vec(unk_ent_wikiid)) == 0)
+--assert(torch.norm(e2vutils:entwikiid2vec(unk_ent_wikiid)) == 0)
 
 
 e2vutils.entname2vec = function (self,ent_name)
