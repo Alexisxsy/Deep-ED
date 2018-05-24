@@ -82,7 +82,7 @@ cmd:option('-keep_e_ctxt', 3, '')
 abbv['-keep_e_ctxt'] = 'keepEC'
 
 ----------------- coreference:
-cmd:option('-coref', true, 'Coreference heuristic to match persons names.')
+cmd:option('-coref', false, 'Coreference heuristic to match persons names.')
 abbv['-coref'] = 'coref'
 
 ------------------ test one model with saved pretrained parameters

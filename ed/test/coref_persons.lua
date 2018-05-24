@@ -42,17 +42,15 @@ local function mention_refers_to_person(m, mention_ent_cand)
 end
 
 
-function build_coreference_dataset(dataset_lines, banner)
+function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
   if (not opt.coref) then
-    return dataset_lines
+    return dataset_lines, dataset_type_lines
   else
   
     -- Create new entity candidates
     local coref_dataset_lines = tds.Hash()
     for doc_id, lines_map in pairs(dataset_lines) do 
-      
       coref_dataset_lines[doc_id] = tds.Hash()
-      
       -- Collect entity candidates for each mention.
       local mention_ent_cand = {}
       for _,sample_line in pairs(lines_map)  do
@@ -182,6 +180,7 @@ function build_coreference_dataset(dataset_lines, banner)
       assert(table_len(dataset_lines[doc_id]) == table_len(coref_dataset_lines[doc_id]))
     end
     
-    return coref_dataset_lines
+    assert(coref_dataset_lines and coref_dataset_type_lines)
+    return coref_dataset_lines, coref_dataset_type_lines
   end
 end

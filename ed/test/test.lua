@@ -10,7 +10,9 @@ datasets = {}
 
 --datasets['aida-train'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 datasets['aida-A'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv' -- Validation set
+datasets['aida-A-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA_type.csv' -- Validation set
 --datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
+-- datasets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
 --datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
 --datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
 --datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
@@ -30,19 +32,27 @@ end
 --------------------------- Functions ------------------------------------------
 local function get_dataset_lines(banner)
   it, _ = io.open(datasets[banner])
+  it_type, _ =io.open(datasets[banner ..'-type'])
   local all_doc_lines = tds.Hash()
+  local all_doc_type_lines = tds.Hash()
   local line = it:read()
+  local type_line = it_type:read()
   while line do
     local parts = split(line, '\t')
+    local type_parts = split(type_line, '\t')
     local doc_name = parts[1]
+    assert(type_parts[1] == doc_name)
     if not all_doc_lines[doc_name] then
       all_doc_lines[doc_name] = tds.Hash()
+      all_doc_type_lines[doc_name] = tds.Hash()
     end
     all_doc_lines[doc_name][1 + #all_doc_lines[doc_name]] = line
+    all_doc_type_lines[doc_name][1 + #all_doc_type_lines[doc_name]] = type_line
     line = it:read()
+    type_line = it:read()
   end
   -- Gather coreferent mentions to increase accuracy.
-  return build_coreference_dataset(all_doc_lines, banner)
+  return build_coreference_dataset(all_doc_lines, all_doc_type_lines, banner)
 end
 
 
@@ -66,12 +76,16 @@ local function test_one(banner, f1_scores, epoch)
 
   collectgarbage(); collectgarbage();
   -- Load dataset lines
-  local dataset_lines = get_dataset_lines(banner)
+  local dataset_lines, dataset_type_lines = get_dataset_lines(banner)
   
   local dataset_num_mentions = 0
   for doc_id, lines_map in pairs(dataset_lines) do 
     dataset_num_mentions = dataset_num_mentions + #lines_map
   end  
+  for doc_id, lines_map in pairs(dataset_type_lines) do 
+    dataset_num_mentions_cp = dataset_num_mentions_cp + #lines_map
+  end  
+  assert(dataset_num_mentions_cp == dataset_num_mentions)
   print('\n===> ' .. banner .. '; num mentions = ' .. dataset_num_mentions)
 
   local time = sys.clock()
@@ -97,17 +111,22 @@ local function test_one(banner, f1_scores, epoch)
   local processed_mentions = 0
   
   for doc_id, doc_lines in pairs(dataset_lines) do
+    doc_type_lines = dataset_type_lines[doc_id]
     processed_docs = processed_docs + 1
     local num_mentions = #doc_lines
+    assert(num_mentions == #doc_type_lines)
     processed_mentions = processed_mentions  + num_mentions
     local inputs = empty_minibatch_with_ids(num_mentions)
     local targets = torch.zeros(num_mentions)
     local mentions = {}
     for k = 1, num_mentions do
       local sample_line = doc_lines[k]
+      local sample_type_line = doc_type_lines[k]
       local parts = split(sample_line, '\t')
+      local type_parts = split(sample_type_line, '\t')
       mentions[k] = parts[3]
-      local target = process_one_line(sample_line, inputs, k, false)
+      assert(mentions[k] == type_parts[2])
+      local target = process_one_line(sample_line, sample_type_line, inputs, k, false)
       targets[k] = target      
     end
     inputs, targets = minibatch_to_correct_type(inputs, targets, false)

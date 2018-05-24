@@ -86,7 +86,7 @@ else
       id2doc[cur_docid] = doc_name
       doc2id[doc_name] = cur_docid
       all_doc_lines[cur_docid] = tds.Hash()
-      all_doc_type_lines = tds.Hash()
+      all_doc_type_lines[cur_docid] = tds.Hash()
     end
     all_doc_lines[doc2id[doc_name]][1 + #all_doc_lines[doc2id[doc_name]]] = line
     all_doc_type_lines[doc2id[doc_name]][1 + #all_doc_type_lines[doc2id[doc_name]]] = type_line

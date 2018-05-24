@@ -37,7 +37,7 @@ else
   end
 end
 
-assert(word_vecs_size == 300 and ent_vecs_size == 300 and type_vec_size == 114)
+assert(word_vecs_size == 300 and ent_vecs_size == 300)
 
 
 ----------------- Define the model
