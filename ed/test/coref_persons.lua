@@ -182,5 +182,6 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
     
     assert(coref_dataset_lines and coref_dataset_type_lines)
     return coref_dataset_lines, coref_dataset_type_lines
+    -- return coref_dataset_lines, dataset_type_lines
   end
 end

@@ -25,8 +25,9 @@ function empty_minibatch_with_ids(num_mentions)
 
   -- cand_type
   inputs[5] = {}
-  inputs[5][1] = torch.zeros(num_mentions, opt.num_cand_before_rerank) --idx
- -- TO BE FILLED : inputs[5][2] = TYPE VECTORS: num_mentions * opt.num_cand_before_rerank * opt.num_type
+  -- inputs[5][1] = torch.zeros(num_mentions, opt.num_cand_before_rerank) --idx
+  inputs[5][1] = {}
+ -- TO BE *REPLACED* : inputs[5][2] = TYPE VECTORS: num_mentions * opt.num_cand_before_rerank * opt.num_type
   
   return inputs
 end
@@ -82,6 +83,14 @@ local function parse_num_cand_and_grd_trth(parts)
   end
 end
 
+local function parse_num_cand_in_type_parts(type_parts)
+  if type_parts[3] == 'EMPTYCAND' then
+    return 0
+  else
+    return #type_parts - 5
+  end
+end
+
 --- Collect the grd truth label:
 -- @return grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob
 local function get_grd_trth(parts, type_parts, num_cand, for_training)
@@ -102,7 +111,7 @@ local function get_grd_trth(parts, type_parts, num_cand, for_training)
     assert(grd_trth_idx >= 1 and grd_trth_idx <= num_cand)
     assert(grd_trth_str == grd_trth_idx .. ',' .. parts[6 + grd_trth_idx])
     assert(grd_trth_type_str == grd_trth_type_idx .. ',' .. type_parts[2 + grd_trth_type_idx], 
-    grd_trth_type_str .. '\t' ..  grd_trth_type_idx .. ',' .. type_parts[2 + grd_trth_type_idx]) -- ent wikiid are the same
+    '\n' .. "[ERROR]" .. '\t' .. grd_trth_type_str .. '\t' ..  grd_trth_type_idx .. ',' .. type_parts[2 + grd_trth_type_idx]) -- ent wikiid are the same
   else
     assert(not for_training)
   end  
@@ -129,7 +138,7 @@ end
 function parse_candidate_entities(parts, type_parts, for_training, orig_max_num_cand)
   -- Num of entity candidates
   local num_cand = parse_num_cand_and_grd_trth(parts)
-  assert(num_cand == #type_parts - 5)
+  assert(parse_num_cand_in_type_parts(type_parts) == num_cand)
   
   -- Ground truth index in the set of entity candidates, wikiid, p(e|m)
   local grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob, grd_trth_type = get_grd_trth(parts, type_parts, num_cand, for_training)
@@ -168,18 +177,27 @@ function parse_candidate_entities(parts, type_parts, for_training, orig_max_num_
   ctx_type_vec = torch.Tensor(ctx_type_vec)
 
   -- entity type id vec
-  local ent_type_id = torch.zeros(orig_max_num_cand)
+  -- local ent_type_id = torch.zeros(orig_max_num_cand)
+  local ent_type_id = {}
   for cand_index = 1, math.min(num_cand, orig_max_num_cand) do 
     local cand_type_parts = split(type_parts[2 + cand_index], ',')
     local cand_parts = split(parts[6 + cand_index], ',')
     assert(cand_type_parts[1] == cand_parts[1], cand_type_parts[1] .. '\t' .. cand_parts[1]) -- gurantee that they are the same entity!
     
     local cand_ent_wikiid = tonumber(cand_type_parts[1])
-    local cand_type_id = tonumber(cand_type_parts[2])
+    -- local cand_type_id = tonumber(cand_type_parts[2])
+    local cand_type_id = cand_type_parts[2]
     ent_type_id[cand_index] = cand_type_id
 
     assert(for_training or get_thid(cand_ent_wikiid) ~= unk_ent_thid)
   end
+  -- add none type to padding
+  if #ent_type_id < orig_max_num_cand then
+    for pad_index = #ent_type_id + 1, orig_max_num_cand do
+      ent_type_id[pad_index] = "999999999999999999999999"
+    end
+  end
+  assert(#ent_type_id == orig_max_num_cand)
 
     -- Reinsert grd truth for training only. == -1 means that grd not in candidate list
     -- but actually this will not happen!
@@ -256,6 +274,7 @@ local function rerank(minibatch_tensor, targets, for_training)
   local new_log_p_e_m = correct_type(torch.ones(num_mentions, max_num_cand):mul(-1e8))
   local new_ent_cand_wikiids = torch.ones(num_mentions, max_num_cand):int():mul(unk_ent_wikiid)  
   local new_ent_cand_vecs = correct_type(torch.zeros(num_mentions, max_num_cand, ent_vecs_size))
+  local new_ent_cand_type_vecs = correct_type(torch.zeros(num_mentions, max_num_cand, opt.num_type))
   
   for k = 1,num_mentions do
     local ent_vecs = minibatch_tensor[2][2][k]
@@ -278,6 +297,7 @@ local function rerank(minibatch_tensor, targets, for_training)
     for idx,_ in pairs(added_indices) do
       new_ent_cand_wikiids[k][i] = minibatch_tensor[2][1][k][idx]
       new_ent_cand_vecs[k][i] = minibatch_tensor[2][2][k][idx]
+      new_ent_cand_type_vecs[k][i] = minibatch_tensor[5][1][k][idx]
       new_log_p_e_m[k][i] = minibatch_tensor[3][k][idx]
       
       if idx == targets[k] then
@@ -296,6 +316,7 @@ local function rerank(minibatch_tensor, targets, for_training)
       if for_training then -- Reinsert the grd truth entity for training only
         new_ent_cand_wikiids[k][1] = minibatch_tensor[2][1][k][targets[k]]
         new_ent_cand_vecs[k][1] = minibatch_tensor[2][2][k][targets[k]]
+        new_ent_cand_type_vecs[k][1] = minibatch_tensor[5][1][k][targets[k]]
         new_log_p_e_m[k][1] = minibatch_tensor[3][k][targets[k]]
         new_grd_trth_idx = 1
       end
@@ -307,6 +328,7 @@ local function rerank(minibatch_tensor, targets, for_training)
   minibatch_tensor[2][1] = new_ent_cand_wikiids
   minibatch_tensor[2][2] = new_ent_cand_vecs
   minibatch_tensor[3] = new_log_p_e_m
+  minibatch_tensor[5][1] = new_ent_cand_type_vecs
   
   return minibatch_tensor, new_targets
 end
@@ -316,17 +338,19 @@ end
 function get_ent_type_vec(minibatch_type_id)
   -- print(minibatch_type_id)
   -- print(minibatch_type_id:size())
-  local ent_type_vec = torch.zeros(minibatch_type_id:size(1), minibatch_type_id:size(2), opt.num_type)
-  for i = 1, minibatch_type_id:size(1) do
-    for j = 1, minibatch_type_id:size(2) do
-      assert(#tostring(minibatch_type_id[i][j]) == 8 * 3, #tostring(minibatch_type_id[i][j]) .. '\t' .. minibatch_type_id[i][j]) -- an entity at most has 8 types, one type, three digit(0~113)
+  -- print(minibatch_type_id)
+  local r, c = #minibatch_type_id, opt.num_cand_before_rerank
+  local ent_type_vec = torch.zeros(r, c, opt.num_type)
+  for i = 1, r do
+    for j = 1, c do
+      assert(#minibatch_type_id[i][j] == 8 * 3, minibatch_type_id[i][j]) -- an entity at most has 8 types, one type, three digit(0~113)
       local type_code = tostring(minibatch_type_id[i][j])
       for w = 1, 8 do
         tc = tonumber(string.sub(type_code, w*3-2, w*3))
         if tc == 999 then
           break
         end
-        ent_type_vec[i][j][tc] = 1
+        ent_type_vec[i][j][tc + 1] = 1
       end
     end
   end
@@ -351,8 +375,9 @@ function minibatch_to_correct_type(minibatch_tensor, targets, for_training)
 
   -- entity_type_vec : num_mentions * max_num_cand * num_type
   -- minibatch_tensor[5][2] = type_lookup_table:forward(minibatch_tensor[5][1])
-  minibatch_tensor[5][2] = get_ent_type_vec(minibatch_tensor[5][1])
-  minibatch_tensor[5][2] = correct_type(minibatch_tensor[5][2])
+  -- as [5][1] is a table, not a tensor, just replace it with [5][2]
+  minibatch_tensor[5][1] = get_ent_type_vec(minibatch_tensor[5][1])
+  minibatch_tensor[5][1] = correct_type(minibatch_tensor[5][1])
   
   return rerank(minibatch_tensor, targets, for_training)
 end

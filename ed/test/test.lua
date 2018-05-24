@@ -7,12 +7,12 @@ testAccLogger = Logger(opt.root_data_dir .. 'generated/ed_models/training_plots/
 ---------------------------- Define all datasets -----------------------------
 
 datasets = {}
-
+typesets = {}
 --datasets['aida-train'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 datasets['aida-A'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv' -- Validation set
-datasets['aida-A-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA_type.csv' -- Validation set
+typesets['aida-A-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA_type.csv' -- Validation set
 --datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
--- datasets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
+-- typesets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
 --datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
 --datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
 --datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
@@ -32,7 +32,7 @@ end
 --------------------------- Functions ------------------------------------------
 local function get_dataset_lines(banner)
   it, _ = io.open(datasets[banner])
-  it_type, _ =io.open(datasets[banner ..'-type'])
+  it_type, _ =io.open(typesets[banner ..'-type'])
   local all_doc_lines = tds.Hash()
   local all_doc_type_lines = tds.Hash()
   local line = it:read()
