@@ -86,12 +86,12 @@ end
 -- @return grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob
 local function get_grd_trth(parts, type_parts, num_cand, for_training)
   assert(parts[7 + math.max(1, num_cand)] == 'GT:')
-  assert(type_parts[1 + math.max(1, num_cand)] == 'GT:')
+  assert(type_parts[2 + math.max(1, num_cand)] == 'GT:')
   local grd_trth_str = parts[8 + math.max(1, num_cand)]
   local grd_trth_parts = split(grd_trth_str, ',')
   local grd_trth_idx = tonumber(grd_trth_parts[1])
 
-  local grd_trth_type_str = type_parts[2 + math.max(1, num_cand)]
+  local grd_trth_type_str = type_parts[3 + math.max(1, num_cand)]
   local grd_trth_type_parts = split(grd_trth_type_str, ',')
   local grd_trth_type_idx = tonumber(grd_trth_type_parts[1])
   assert(grd_trth_idx == grd_trth_type_idx)
@@ -100,7 +100,8 @@ local function get_grd_trth(parts, type_parts, num_cand, for_training)
   if grd_trth_idx ~= -1 then
     assert(grd_trth_idx >= 1 and grd_trth_idx <= num_cand)
     assert(grd_trth_str == grd_trth_idx .. ',' .. parts[6 + grd_trth_idx])
-    assert(grd_trth_type_str == grd_trth_type_idx .. ',' .. parts[1 + grd_trth_type_idx]) -- ent wikiid are the same
+    assert(grd_trth_type_str == grd_trth_type_idx .. ',' .. parts[2 + grd_trth_type_idx], 
+    grd_trth_type_str .. '\t' ..  grd_trth_type_idx .. ',' .. parts[2 + grd_trth_type_idx]) -- ent wikiid are the same
   else
     assert(not for_training)
   end  
@@ -127,7 +128,7 @@ end
 function parse_candidate_entities(parts, type_parts, for_training, orig_max_num_cand)
   -- Num of entity candidates
   local num_cand = parse_num_cand_and_grd_trth(parts)
-  assert(num_cand == #type_parts - 2)
+  assert(num_cand == #type_parts - 5)
   
   -- Ground truth index in the set of entity candidates, wikiid, p(e|m)
   local grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob, grd_trth_type = get_grd_trth(parts, type_parts, num_cand, for_training)
@@ -167,9 +168,9 @@ function parse_candidate_entities(parts, type_parts, for_training, orig_max_num_
   -- entity type id vec
   local ent_type_id = np.zeros(orig_max_num_cand)
   for cand_index = 1, math.min(num_cand, orig_max_num_cand) do 
-    local cand_type_parts = split(type_parts[1+cand_index], ',')
+    local cand_type_parts = split(type_parts[2 + cand_index], ',')
     local cand_parts = split(parts[6 + cand_index], ',')
-    assert(cand_type_parts[1] == cand_parts[1]) -- gurantee that they are the same entity!
+    assert(cand_type_parts[1] == cand_parts[1], cand_type_parts[1] .. '\t' .. cand_parts[1]) -- gurantee that they are the same entity!
     
     local cand_ent_wikiid = tonumber(cand_type_parts[1])
     local cand_type_id = tonumber(cand_type_parts[2])
