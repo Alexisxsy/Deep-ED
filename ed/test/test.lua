@@ -41,7 +41,7 @@ local function get_dataset_lines(banner)
     local parts = split(line, '\t')
     local type_parts = split(type_line, '\t')
     local doc_name = parts[1]
-    assert(type_parts[1] == doc_name)
+    assert(type_parts[1] == doc_name, type_parts[1] .. '\t' .. doc_name)
     if not all_doc_lines[doc_name] then
       all_doc_lines[doc_name] = tds.Hash()
       all_doc_type_lines[doc_name] = tds.Hash()
@@ -49,7 +49,7 @@ local function get_dataset_lines(banner)
     all_doc_lines[doc_name][1 + #all_doc_lines[doc_name]] = line
     all_doc_type_lines[doc_name][1 + #all_doc_type_lines[doc_name]] = type_line
     line = it:read()
-    type_line = it:read()
+    type_line = it_type:read()
   end
   -- Gather coreferent mentions to increase accuracy.
   return build_coreference_dataset(all_doc_lines, all_doc_type_lines, banner)
@@ -82,6 +82,7 @@ local function test_one(banner, f1_scores, epoch)
   for doc_id, lines_map in pairs(dataset_lines) do 
     dataset_num_mentions = dataset_num_mentions + #lines_map
   end  
+  dataset_num_mentions_cp = 0
   for doc_id, lines_map in pairs(dataset_type_lines) do 
     dataset_num_mentions_cp = dataset_num_mentions_cp + #lines_map
   end  
@@ -125,7 +126,7 @@ local function test_one(banner, f1_scores, epoch)
       local parts = split(sample_line, '\t')
       local type_parts = split(sample_type_line, '\t')
       mentions[k] = parts[3]
-      assert(mentions[k] == type_parts[2])
+      assert(mentions[k] == type_parts[2], mentions[k] .. '\t' .. type_parts[2] .. '\t' .. doc_id .. '\t' .. tostring(k))
       local target = process_one_line(sample_line, sample_type_line, inputs, k, false)
       targets[k] = target      
     end
