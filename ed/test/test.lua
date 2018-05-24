@@ -8,11 +8,13 @@ testAccLogger = Logger(opt.root_data_dir .. 'generated/ed_models/training_plots/
 
 datasets = {}
 
+--datasets['aida-train'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 datasets['aida-A'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv' -- Validation set
-datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
+--datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
 --datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
 --datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
 --datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
+subfix = "aida-a"
 
 ------- Uncomment the following lines if you want to test on more datasets during training (will be slower).
 --datasets['train-aida'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
@@ -58,7 +60,9 @@ local function get_dataset_num_non_empty_candidates(dataset_lines)
 end
 
 local function test_one(banner, f1_scores, epoch)
-  local file = io.open("./result.txt", "a")
+  local file_correct = io.open("./result/result_right_" .. subfix .. '.tsv', "w+")
+  local file_wrong = io.open("./result/result_wrong_" .. subfix .. '.tsv',  "w+")
+  local candid = io.open("./result/candid_list_" .. subfix .. '.tsv' , "w+")
 
   collectgarbage(); collectgarbage();
   -- Load dataset lines
@@ -146,6 +150,21 @@ local function test_one(banner, f1_scores, epoch)
           print(blue('============================================'))
         end
 
+        candid_list = {}
+        for c = 1, pred:size()[1] do
+          local ent = ent_wikiids[c]
+          local ent_name = get_ent_name_from_wikiid(ent)
+          candid_list[c] = ent_name
+          -- print(ent_name)
+        end
+        
+        candid:write(doc_id .. '\n')
+        for c = 1, #candid_list do
+          candid:write(candid_list[c] .. '\t')
+        end
+        candid:write('\n')
+
+
         -- Winning entity
         local _, argmax_idx = torch.max(pred, 1)
         local win_idx = argmax_idx[1] -- the actual number
@@ -153,7 +172,23 @@ local function test_one(banner, f1_scores, epoch)
         local ent_win_name = get_ent_name_from_wikiid(ent_win)
         local ent_win_log_p_e_m = log_p_e_m[k][win_idx]
         local ent_win_local = final_local_scores[k][win_idx]
-               
+
+        -- Second best entity
+        local _, topk_idx = pred:topk(2, true)
+        local scd_idx = topk_idx[2]
+        if (scd_idx == win_idx) then
+          scd_idx =  topk_idx[1]
+        end
+        local ent_scd = ent_wikiids[scd_idx]
+        local ent_scd_name = get_ent_name_from_wikiid(ent_scd)
+        local ent_scd_log_p_e_m = log_p_e_m[k][scd_idx]
+        local ent_scd_local = final_local_scores[k][scd_idx]
+        local candid_num = pred:size()[1]
+
+        -- file:write(win_idx .. '\t' .. scd_idx .. '\n')
+        -- file:write(ent_win .. '\t' .. ent_scd .. '\n')
+        -- file:write(ent_win_name .. '\t' .. ent_scd_name .. '\n')
+                
         -- Just some sanity check
         local best_pred, best_pred_idxs = topk(pred, 1)
         if (pred[best_pred_idxs[1]] ~= best_pred[1]) then
@@ -169,15 +204,34 @@ local function test_one(banner, f1_scores, epoch)
         local ent_grd_name = get_ent_name_from_wikiid(ent_grd)
         local ent_grd_log_p_e_m = log_p_e_m[k][grd_idx]
         local ent_grd_local = final_local_scores[k][grd_idx]
-                
+        
+        local correct_flag = false
+
         if win_idx ~= grd_idx then
           assert(ent_win ~= ent_grd)
-          print('\n====> ' .. red('INCORRECT ANNOTATION') .. 
+          print('\n====> ' .. red('INCORRECT ANNOTATION') ..
             ' : mention = ' .. skyblue(mentions[k]) ..
             ' ==> ENTITIES (OURS/GOLD): ' .. red(ent_win_name) .. ' <---> ' .. green(ent_grd_name))
 
-          file:write('INCORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t' 
-          .. ent_win_name .. '\t' .. ent_grd_name .. '\n')
+          -- file_wrong:write('INCORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t' 
+          -- .. ent_win_name .. '\t' .. ent_grd_name .. '\n')
+
+          file_wrong:write('INCORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t' 
+          .. ent_win_name .. '\t' .. ent_scd_name .. '\n')
+
+          -- file_wrong:write(
+          --   'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[grd_idx]) .. '\n' .. 
+          --   'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_grd_local) .. '\n' .. 
+          --   'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_grd_log_p_e_m) .. '\n'
+          --  )
+
+          file_wrong:write(
+            -- tostring(candid_num) .. '\n' ..
+            'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[scd_idx]) .. '\n' .. 
+            'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_scd_local) .. '\n' .. 
+            'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_scd_log_p_e_m) .. '\n'
+           )
+
 
         else
           assert(ent_win == ent_grd)
@@ -189,8 +243,16 @@ local function test_one(banner, f1_scores, epoch)
             ' : ' .. mention_str ..
             ' ==> ENTITY: ' .. green(ent_grd_name))
 
-          file:write('CORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t'
-          .. ent_grd_name .. '\n')
+          file_correct:write('CORRECT ANNOTATION\t' .. doc_id .. '\t' .. mentions[k] .. '\t'
+          .. ent_grd_name .. '\t' .. ent_scd_name .. '\n')
+
+          file_correct:write(
+            -- tostring(candid_num) .. '\n' ..
+            'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[scd_idx]) .. '\n' .. 
+            'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_scd_local) .. '\n' .. 
+            'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_scd_log_p_e_m) .. '\n'
+           )
+           correct_flag = true
         end
 
         print(
@@ -199,11 +261,11 @@ local function test_one(banner, f1_scores, epoch)
           '; log p(e|m)= ' .. nice_print_red_green(ent_win_log_p_e_m, ent_grd_log_p_e_m)
         )
 
-        file:write(
-                   'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[grd_idx]) .. '\n' .. 
-                   'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_grd_local) .. '\n' .. 
-                   'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_grd_log_p_e_m) .. '\n'
-                  )
+        -- file:write(
+        --            'global=' .. string.format("%.3f", pred[win_idx]) .. '\t' .. string.format("%.3f", pred[grd_idx]) .. '\n' .. 
+        --            'local(<e, ctx>)=' .. string.format("%.3f", ent_win_local) .. '\t' .. string.format("%.3f", ent_grd_local) .. '\n' .. 
+        --            'log p(e|m)=' .. string.format("%.3f", ent_win_log_p_e_m) .. '\t' .. string.format("%.3f", ent_grd_log_p_e_m) .. '\n'
+        --           )
 
           
         -- Print top attended ctxt words and their attention weights:
@@ -231,7 +293,12 @@ local function test_one(banner, f1_scores, epoch)
           end
         end
         print(str_words)    
-        file:write(record_words .. '\n\n')        
+
+        if correct_flag then
+          file_correct:write(record_words .. '\n\n')
+        else
+          file_wrong:write(record_words .. '\n\n')
+        end     
       end ----------------- Done printing scores and weights
 
       
@@ -327,7 +394,8 @@ local function test_one(banner, f1_scores, epoch)
   print('==> '.. red(banner) .. ' ' .. banner .. ' ; EPOCH = ' .. epoch ..  
     ': Micro recall = ' .. string.format("%.2f", confusion.totalValid * 100.0) .. '%' .. 
     ' ; Micro F1 = ' .. f1_str)
-  
+  file_correct:write('EPOCH:' .. epoch .. 'Micro recall = ' .. string.format("%.2f", confusion.totalValid * 100.0) .. '%' ..
+  " ; Micro F1 = " .. string.format("%.2f", f1) .. '\n')
   -- Lower learning rate if we got close to minimum
   if banner == 'aida-A' and f1 >= 90 then
     opt.lr = 1e-5
@@ -348,29 +416,31 @@ local function test_one(banner, f1_scores, epoch)
   
   print(' num_mentions_w/o_gold_ent_in_candidates = ' ..
     num_mentions_without_gold_ent_in_candidates .. 
-    ' total num mentions in dataset = ' .. dataset_num_mentions)
+    ', total num mentions in dataset = ' .. dataset_num_mentions)
 
-  file:write(' num_mentions_w/o_gold_ent_in_candidates = ' ..
+  file_correct:write(' num_mentions_w/o_gold_ent_in_candidates = ' ..
   num_mentions_without_gold_ent_in_candidates .. 
-  ' total num mentions in dataset = ' .. dataset_num_mentions)
+  ', total num mentions in dataset = ' .. dataset_num_mentions .. '\n')
   
   print(' percentage_mentions_w/o_gold_ent_in_candidates = ' ..
     string.format("%.2f", 100.0 * num_mentions_without_gold_ent_in_candidates / dataset_num_mentions) .. '%; ' ..
     ' percentage_mentions_solved : ' ..
-    'both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' ..
+    ' both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' ..
     ' only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' ..
     ' only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..
     ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%' .. '\n')
 
-  file:write(' percentage_mentions_w/o_gold_ent_in_candidates = ' ..
-  string.format("%.2f", 100.0 * num_mentions_without_gold_ent_in_candidates / dataset_num_mentions) .. '%; ' ..
-  ' percentage_mentions_solved : ' ..
-  'both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' ..
-  ' only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' ..
-  ' only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..
-  ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%' .. '\n')
+  file_correct:write('percentage_mentions_w/o_gold_ent_in_candidates = ' ..
+  string.format("%.2f", 100.0 * num_mentions_without_gold_ent_in_candidates / dataset_num_mentions) .. '%; ' .. '\n' ..
+  'percentage_mentions_solved : ' .. '\n' ..
+  'both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' .. '\n' ..
+  'only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' .. '\n' .. 
+  'only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..  '\n' ..
+  'not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%' .. '\n')
 
-  file:close()
+  file_correct:close()
+  file_wrong:close()
+  -- candid:close()
 end
 
 
