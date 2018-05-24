@@ -48,6 +48,12 @@ abbv['-ctxt_window'] = 'ctxtW'
 cmd:option('-R', 25, 'Hard attention threshold: top R context words are kept, the rest are discarded.')
 abbv['-R'] = 'R'
 
+---------------- type
+cmd:option('-num_type', 114, 'Number of figer types')
+abbv['-num_type'] = 'ntype'
+
+cmd:option('-type_vec_filename', 'type_vec.t7', 'File name containing type vectors by predefined')
+
 ---------------- model
 cmd:option('-model', 'global', 'ED model: local | global')
 

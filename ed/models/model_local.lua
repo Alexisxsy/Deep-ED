@@ -11,6 +11,7 @@ if not opt then -- unit tests
   
   word_vecs_size = 300
   ent_vecs_size = 300
+  type_vec_size = 114
   max_num_cand = 6
   unk_ent_wikiid = 1
   unk_ent_thid = 1
@@ -18,6 +19,7 @@ if not opt then -- unit tests
   dofile 'ed/models/linear_layers.lua'  
   word_lookup_table = nn.LookupTable(5, ent_vecs_size)
   ent_lookup_table = nn.LookupTable(5, ent_vecs_size)
+  type_lookup_table = nn.LookupTable(5, type_vec_size)
 else
   word_lookup_table = nn.LookupTable(w2vutils.M:size(1), ent_vecs_size)
   word_lookup_table.weight = w2vutils.M
@@ -25,13 +27,17 @@ else
   ent_lookup_table = nn.LookupTable(e2vutils.lookup:size(1), ent_vecs_size)
   ent_lookup_table.weight = e2vutils.lookup
 
+  -- type_lookup_table = nn.LookupTable(t2vutils.lookup:size(1), type_vec_size)
+  -- type_lookup_table.weight = t2vutils.lookup
+
   if string.find(opt.type, 'cuda') then
     word_lookup_table = word_lookup_table:cuda()
     ent_lookup_table = ent_lookup_table:cuda()
+    -- type_lookup_table = type_lookup_table:cuda()
   end
 end
 
-assert(word_vecs_size == 300 and ent_vecs_size == 300)
+assert(word_vecs_size == 300 and ent_vecs_size == 300 and type_vec_size == 114)
 
 
 ----------------- Define the model

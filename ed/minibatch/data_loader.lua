@@ -2,11 +2,14 @@
 
 train_file = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 it_train, _ = io.open(train_file)
+type_file = opt.root_data_dir .. 'generated/test_train_data/aida_train_type.csv'
+it_type, _ = io.open(type_file)
 
 print('==> Loading training data with option ' .. opt.store_train_data)
 --one doc, one minibatch
-local function one_doc_to_minibatch(doc_lines)
+local function one_doc_to_minibatch(doc_lines, doc_type_lines)
   -- Create empty mini batch:
+  assert(#doc_lines == #doc_type_lines)
   local num_mentions = #doc_lines
   assert(num_mentions > 0)
 
@@ -15,7 +18,7 @@ local function one_doc_to_minibatch(doc_lines)
 
   -- Fill in each example:
   for i = 1, num_mentions do
-    local target = process_one_line(doc_lines[i], inputs, i, true)
+    local target = process_one_line(doc_lines[i], doc_type_lines[i], inputs, i, true)
     targets[i] = target
     assert(target >= 1 and target == targets[i])
   end
@@ -30,15 +33,19 @@ if opt.store_train_data == 'RAM' then
   id2doc = tds.Hash()
 
   local cur_doc_lines = tds.Hash()
+  local cur_doc_type_lines = tds.Hash()
   local prev_doc_id = nil
 
   local line = it_train:read()
+  local type_line = it_type:read()
   while line do
     local parts = split(line, '\t')
+    local type_parts = split(type_line, '\t')
+    assert(parts[1] == type_parts[1], parts[1] .. '\t' .. type_parts[1])
     local doc_name = parts[1]
     if not doc2id[doc_name] then --all previous doc information has been loaded
       if prev_doc_id then
-        local inputs, targets = one_doc_to_minibatch(cur_doc_lines)
+        local inputs, targets = one_doc_to_minibatch(cur_doc_lines, cur_doc_type_lines)
         all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
         all_docs_targets[prev_doc_id] = targets
       end
@@ -46,13 +53,16 @@ if opt.store_train_data == 'RAM' then
       id2doc[cur_docid] = doc_name
       doc2id[doc_name] = cur_docid
       cur_doc_lines = tds.Hash()
+      cur_doc_type_lines = tds.Hash()
       prev_doc_id = cur_docid
     end
     cur_doc_lines[1 + #cur_doc_lines] = line
+    cur_doc_type_lines[1 + #cur_doc_type_lines] = type_line
     line = it_train:read()
+    type_line = it_type:read()
   end
   if prev_doc_id then
-    local inputs, targets = one_doc_to_minibatch(cur_doc_lines)
+    local inputs, targets = one_doc_to_minibatch(cur_doc_lines, cur_doc_type_lines)
     all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
     all_docs_targets[prev_doc_id] = targets
   end  
@@ -60,23 +70,31 @@ if opt.store_train_data == 'RAM' then
 
 else
   all_doc_lines = tds.Hash()
+  all_doc_type_lines = tds.Hash()
   doc2id = tds.Hash()
   id2doc = tds.Hash()
 
   local line = it_train:read()
+  local type_line = it_type:read()
   while line do
     local parts = split(line, '\t')
+    local type_parts = split(type_line, '\t')
     local doc_name = parts[1]
+    assert(doc_name == type_parts[1])
     if not doc2id[doc_name] then
       local cur_docid = 1 + #doc2id
       id2doc[cur_docid] = doc_name
       doc2id[doc_name] = cur_docid
       all_doc_lines[cur_docid] = tds.Hash()
+      all_doc_type_lines = tds.Hash()
     end
     all_doc_lines[doc2id[doc_name]][1 + #all_doc_lines[doc2id[doc_name]]] = line
+    all_doc_type_lines[doc2id[doc_name]][1 + #all_doc_type_lines[doc2id[doc_name]]] = type_line
     line = it_train:read()
+    type_line = it_type:read()
   end
   assert(#doc2id == #all_doc_lines)
+  assert(#doc2id == #all_doc_type_lines)
 end
 
 
@@ -90,8 +108,10 @@ get_minibatch = function()
     inputs = minibatch_tds2table(all_docs_inputs[random_docid])
     targets = all_docs_targets[random_docid]
   else
-    local doc_lines = all_doc_lines[math.random(#id2doc)]
-    inputs, targets = one_doc_to_minibatch(doc_lines)
+    local random_docid = math.random(#id2doc)
+    local doc_lines = all_doc_lines[random_docid]
+    local doc_type_lines = all_doc_type_lines[random_docid]
+    inputs, targets = one_doc_to_minibatch(doc_lines, doc_type_lines)
   end
 
   -- Move data to GPU:

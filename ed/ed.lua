@@ -32,6 +32,7 @@ dofile 'entities/ent_name2id_freq/e_freq_index.lua'
 dofile 'words/load_w_freq_and_vecs.lua' -- w ids
 dofile 'words/w2v/w2v.lua'
 dofile 'entities/pretrained_e2v/e2v.lua'
+-- dofile 'types/t2v.lua'
 dofile 'ed/minibatch/build_minibatch.lua'
 dofile 'ed/minibatch/data_loader.lua'
 dofile 'ed/models/model.lua'
