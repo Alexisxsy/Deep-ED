@@ -349,6 +349,10 @@ local function test_one(banner, f1_scores, epoch)
   print(' num_mentions_w/o_gold_ent_in_candidates = ' ..
     num_mentions_without_gold_ent_in_candidates .. 
     ' total num mentions in dataset = ' .. dataset_num_mentions)
+
+  file:write(' num_mentions_w/o_gold_ent_in_candidates = ' ..
+  num_mentions_without_gold_ent_in_candidates .. 
+  ' total num mentions in dataset = ' .. dataset_num_mentions)
   
   print(' percentage_mentions_w/o_gold_ent_in_candidates = ' ..
     string.format("%.2f", 100.0 * num_mentions_without_gold_ent_in_candidates / dataset_num_mentions) .. '%; ' ..
@@ -356,9 +360,17 @@ local function test_one(banner, f1_scores, epoch)
     'both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' ..
     ' only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' ..
     ' only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..
-    ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%')
+    ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%' .. '\n')
 
-  io.close(file)
+  file:write(' percentage_mentions_w/o_gold_ent_in_candidates = ' ..
+  string.format("%.2f", 100.0 * num_mentions_without_gold_ent_in_candidates / dataset_num_mentions) .. '%; ' ..
+  ' percentage_mentions_solved : ' ..
+  'both_pem_ours = ' .. string.format("%.2f", 100.0 * both_pem_ours / dataset_num_mentions) .. '%; ' ..
+  ' only_pem_not_ours = ' .. string.format("%.2f", 100.0 * only_pem_not_ours / dataset_num_mentions) .. '%; ' ..
+  ' only_ours_not_pem = ' .. string.format("%.2f", 100.0 * only_ours_not_pem / dataset_num_mentions) .. '%; ' ..
+  ' not_ours_not_pem = ' .. string.format("%.2f", 100.0 * not_ours_not_pem / dataset_num_mentions) .. '%' .. '\n')
+
+  file:close()
 end
 
 

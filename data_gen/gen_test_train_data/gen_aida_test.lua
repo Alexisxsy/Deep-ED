@@ -54,6 +54,7 @@ local cur_mentions_num = 0
 
 local cur_doc_name = ''
 
+--just because we should use all test data. However, when training, we just use those with labels
 local function write_results()
   -- Write results:
   if cur_doc_name ~= '' then

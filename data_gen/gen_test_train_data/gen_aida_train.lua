@@ -35,6 +35,8 @@ local cur_doc_name = ''
 
 local function write_results()
   -- Write results:
+  -- result line: doc id \t doc id \t mention \t left context \t right context \t 
+  -- CANDIDATE \t wikiid, prior, name \t GT: pos, wikiid, prior, name
   if cur_doc_name ~= '' then
     local header = cur_doc_name .. '\t' .. cur_doc_name .. '\t'
     for _, hyp in pairs(cur_mentions) do

@@ -4,12 +4,13 @@ train_file = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 it_train, _ = io.open(train_file)
 
 print('==> Loading training data with option ' .. opt.store_train_data)
+--one doc, one minibatch
 local function one_doc_to_minibatch(doc_lines)
   -- Create empty mini batch:
   local num_mentions = #doc_lines
   assert(num_mentions > 0)
 
-  local inputs = empty_minibatch_with_ids(num_mentions)
+  local inputs = empty_minibatch_with_ids(num_mentions) -- initialize
   local targets = torch.zeros(num_mentions)
 
   -- Fill in each example:
@@ -35,7 +36,7 @@ if opt.store_train_data == 'RAM' then
   while line do
     local parts = split(line, '\t')
     local doc_name = parts[1]
-    if not doc2id[doc_name] then
+    if not doc2id[doc_name] then --all previous doc information has been loaded
       if prev_doc_id then
         local inputs, targets = one_doc_to_minibatch(cur_doc_lines)
         all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)

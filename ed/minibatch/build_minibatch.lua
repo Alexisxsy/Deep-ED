@@ -33,7 +33,7 @@ local function parse_context(parts)
   local j = opt.ctxt_window / 2
   local i = lc_words_size
   while (j >= 1 and i >= 1) do
-    while (i >= 2 and get_id_from_word(lc_words[i]) == unk_w_id) do
+    while (i >= 2 and get_id_from_word(lc_words[i]) == unk_w_id) do --gurantee all words are valid, have their own embedding
       i = i - 1
     end
     ctxt_word_ids[j] = get_id_from_word(lc_words[i])
@@ -161,6 +161,7 @@ end
 
 
 -- Fills in the minibatch and returns the idx of the grd truth entity:
+-- minibatch_tensor are just initialzed empty tensors
 function process_one_line(line, minibatch_tensor, mb_index, for_training)
   local parts = split(line, '\t')  
   

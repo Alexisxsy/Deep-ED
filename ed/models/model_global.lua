@@ -51,6 +51,7 @@ function global_model(num_mentions, model_ctxt, param_C_linear, param_f_network)
           :add(nn.Exp())
           :add(nn.MulConstant(1.0 - opt.lbp_damp, false))
         )
+        -- from j to i
         :add(nn.Sequential()
           :add(nn.ParallelTable()
             :add(nn.Identity())  -- unary plus pairwise
