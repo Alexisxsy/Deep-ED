@@ -20,7 +20,7 @@ function empty_minibatch_with_ids(num_mentions)
   inputs[3] = torch.zeros(num_mentions, opt.num_cand_before_rerank) 
 
   -- ctx_type
-  inputs[4] = torch.zeros(num_mentions, opt.num_type)
+  inputs[4] = {}
   inputs[4][1] =  torch.zeros(num_mentions, opt.num_type)
 
   -- cand_type
@@ -86,22 +86,23 @@ end
 -- @return grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob
 local function get_grd_trth(parts, type_parts, num_cand, for_training)
   assert(parts[7 + math.max(1, num_cand)] == 'GT:')
-  assert(type_parts[2 + math.max(1, num_cand)] == 'GT:')
+  assert(type_parts[3 + math.max(1, num_cand)] == 'GT:', 
+                    tostring(type_parts[3 + math.max(1, num_cand)]) .. '\t' .. type_parts[#type_parts - 2] .. '\t' .. tostring(num_cand))
   local grd_trth_str = parts[8 + math.max(1, num_cand)]
   local grd_trth_parts = split(grd_trth_str, ',')
   local grd_trth_idx = tonumber(grd_trth_parts[1])
 
-  local grd_trth_type_str = type_parts[3 + math.max(1, num_cand)]
+  local grd_trth_type_str = type_parts[4 + math.max(1, num_cand)]
   local grd_trth_type_parts = split(grd_trth_type_str, ',')
   local grd_trth_type_idx = tonumber(grd_trth_type_parts[1])
   assert(grd_trth_idx == grd_trth_type_idx)
-  assert(grd_trth_parths[2] == grd_trth_type_idx[2])
+  assert(grd_trth_parts[2] == grd_trth_type_parts[2])
 
   if grd_trth_idx ~= -1 then
     assert(grd_trth_idx >= 1 and grd_trth_idx <= num_cand)
     assert(grd_trth_str == grd_trth_idx .. ',' .. parts[6 + grd_trth_idx])
-    assert(grd_trth_type_str == grd_trth_type_idx .. ',' .. parts[2 + grd_trth_type_idx], 
-    grd_trth_type_str .. '\t' ..  grd_trth_type_idx .. ',' .. parts[2 + grd_trth_type_idx]) -- ent wikiid are the same
+    assert(grd_trth_type_str == grd_trth_type_idx .. ',' .. type_parts[2 + grd_trth_type_idx], 
+    grd_trth_type_str .. '\t' ..  grd_trth_type_idx .. ',' .. type_parts[2 + grd_trth_type_idx]) -- ent wikiid are the same
   else
     assert(not for_training)
   end  
@@ -159,14 +160,15 @@ function parse_candidate_entities(parts, type_parts, for_training, orig_max_num_
   end
 
   -- ctx type vec
-  local ctx_type_vec = split(type_parts[#type_parts], ',')
+  local ctx_type_vec = split(type_parts[#type_parts], ' ')
   assert(#ctx_type_vec == opt.num_type)
   for i = 1, #ctx_type_vec do
     ctx_type_vec[i] = tonumber(ctx_type_vec[i])
   end
+  ctx_type_vec = torch.Tensor(ctx_type_vec)
 
   -- entity type id vec
-  local ent_type_id = np.zeros(orig_max_num_cand)
+  local ent_type_id = torch.zeros(orig_max_num_cand)
   for cand_index = 1, math.min(num_cand, orig_max_num_cand) do 
     local cand_type_parts = split(type_parts[2 + cand_index], ',')
     local cand_parts = split(parts[6 + cand_index], ',')
@@ -219,7 +221,7 @@ function process_one_line(line, type_line, minibatch_tensor, mb_index, for_train
   
   -- Entity candidates:
   local grd_trth_idx, grd_trth_ent_wikiid, grd_trth_type, ent_cand_wikiids, log_p_e_m, ctx_type_vec, ent_type_id= 
-        parse_candidate_entities(parts, for_training, opt.num_cand_before_rerank)
+        parse_candidate_entities(parts, type_parts, for_training, opt.num_cand_before_rerank)
   minibatch_tensor[2][1][mb_index] = get_ent_thids(ent_cand_wikiids)
   assert(grd_trth_idx == -1 or (get_wikiid_from_thid(minibatch_tensor[2][1][mb_index][grd_trth_idx]) == grd_trth_ent_wikiid))
   
@@ -312,21 +314,23 @@ end
 -- input : num_mention * max_num_cand
 -- return : num_mention * max_num_cand * num_type
 function get_ent_type_vec(minibatch_type_id)
-  local ent_type_vec = torch.zeros(#minibatch_type_id, #minibatch_type_id[1], opt.num_type)
-  for i = 1, #minibatch_type_id do
-    for j = 1, #minibatch_type_id[i] do
-      assert(tostring(#minibatch_type_id[i][j]) == 8 * 3) -- an entity at most has 8 types, one type, three digit(0~113)
+  -- print(minibatch_type_id)
+  -- print(minibatch_type_id:size())
+  local ent_type_vec = torch.zeros(minibatch_type_id:size(1), minibatch_type_id:size(2), opt.num_type)
+  for i = 1, minibatch_type_id:size(1) do
+    for j = 1, minibatch_type_id:size(2) do
+      assert(#tostring(minibatch_type_id[i][j]) == 8 * 3, #tostring(minibatch_type_id[i][j]) .. '\t' .. minibatch_type_id[i][j]) -- an entity at most has 8 types, one type, three digit(0~113)
       local type_code = tostring(minibatch_type_id[i][j])
       for w = 1, 8 do
         tc = tonumber(string.sub(type_code, w*3-2, w*3))
         if tc == 999 then
           break
         end
-        minibatch_type_id[i][j][tc] = 1
+        ent_type_vec[i][j][tc] = 1
       end
     end
   end
-  return minibatch_type_id
+  return ent_type_vec
 end
 
 -- Convert mini batch to correct type (e.g. move data to GPU):
