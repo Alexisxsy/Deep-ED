@@ -27,7 +27,8 @@ local function one_doc_to_minibatch(doc_lines, doc_type_lines)
 end
 
 if opt.store_train_data == 'RAM' then
-  all_docs_inputs = tds.Hash()
+  -- all_docs_inputs = tds.Hash()
+  all_docs_inputs = {}
   all_docs_targets = tds.Hash()
   doc2id = tds.Hash()
   id2doc = tds.Hash()
@@ -46,7 +47,9 @@ if opt.store_train_data == 'RAM' then
     if not doc2id[doc_name] then --all previous doc information has been loaded
       if prev_doc_id then
         local inputs, targets = one_doc_to_minibatch(cur_doc_lines, cur_doc_type_lines)
-        all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
+        -- print(inputs)
+        -- all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
+        all_docs_inputs[prev_doc_id] = inputs
         all_docs_targets[prev_doc_id] = targets
       end
       local cur_docid = 1 + #doc2id
@@ -63,7 +66,8 @@ if opt.store_train_data == 'RAM' then
   end
   if prev_doc_id then
     local inputs, targets = one_doc_to_minibatch(cur_doc_lines, cur_doc_type_lines)
-    all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
+    -- all_docs_inputs[prev_doc_id] = minibatch_table2tds(inputs)
+    all_docs_inputs[prev_doc_id] = inputs
     all_docs_targets[prev_doc_id] = targets
   end  
   assert(#doc2id == #all_docs_inputs, #doc2id .. ' ' .. #all_docs_inputs)
@@ -105,8 +109,10 @@ get_minibatch = function()
 
   if opt.store_train_data == 'RAM' then
     local random_docid = math.random(#id2doc)
-    inputs = minibatch_tds2table(all_docs_inputs[random_docid])
+    -- inputs = minibatch_tds2table(all_docs_inputs[random_docid])
+    inputs = deep_copy(all_docs_inputs[random_docid])
     targets = all_docs_targets[random_docid]
+    -- print("doc id" .. '\t' ..  random_docid)
   else
     local random_docid = math.random(#id2doc)
     local doc_lines = all_doc_lines[random_docid]
@@ -115,6 +121,9 @@ get_minibatch = function()
   end
 
   -- Move data to GPU:
+  -- print("BEFORE" .. '\n')
+  -- print(inputs)
+  -- print(inputs[5][1])
   inputs, targets = minibatch_to_correct_type(inputs, targets, true)
   targets = correct_type(targets)
 

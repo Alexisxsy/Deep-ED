@@ -32,7 +32,7 @@ def get_type_vec(type_list):
 	if type_list[0] != "NoneType":
 		for typ in type_list:
 			vec[type_id_map[typ]] = '1'
-	return ",".join(vec)
+	return " ".join(vec)
 
 def get_type_code(type_list):
 	type_code = ["999" for i in range(8)]
@@ -45,20 +45,26 @@ def get_type_code(type_list):
 	assert(len("".join(type_code)) == 24)
 	return "".join(type_code)
 
-def add_type_train(fname, fsave):
+def add_type_train(fname, fsave, vec_type = "gold", ftype_vec = None):
+	if vec_type == "predict":
+		type_vec = get_all_type_vec(ftype_vec)
 	fin = open(fname, "r")
 	fout = open(fsave, "w+")
 	tot_ent = set()
 	trigger_ent = set()
+	line_num = 0
 	for line in fin:
 		tokens = line.strip().split("\t")
 		assert tokens[5] == "CANDIDATES"
 		assert tokens[-2] == "GT:"
 		gold_info = tokens[-1].split(",")
-		gold_type = name_type_map.get(gold_info[-1], ["NoneType"])
-		gold_vec = get_type_vec(gold_type)
+		gold_type = name_type_map.get(",".join(gold_info[3:]), ["NoneType"])
 		gold_type_code = get_type_code(gold_type)
-		gold_str = ",".join([gold_info[0], gold_info[1], gold_type_code, gold_info[-1]])
+		gold_str = ",".join([gold_info[0], gold_info[1], gold_type_code, ",".join(gold_info[3:])])
+		if vec_type == "gold":
+			gold_vec = get_type_vec(gold_type)
+		else:
+			gold_vec = type_vec[line_num]
 		all_type = []
 		for candid_info in tokens[6:-2]:
 			# print(candid_info)
@@ -73,8 +79,10 @@ def add_type_train(fname, fsave):
 				trigger_ent.add(name)
 			# print([name] + cur_type)
 			all_type.append(",".join([wikiid, type_code, name]))
-		rs = [tokens[0]] + all_type + ["GT:", gold_str, gold_vec]
+		rs = [tokens[0], tokens[2]] + all_type + ["GT:", gold_str, gold_vec]
 		fout.write("\t".join(rs) + "\n")
+
+		line_num += 1
 
 	fin.close()
 	fout.close()
@@ -96,16 +104,16 @@ def add_type_test(fname, fsave, ftype_vec):#ctx_vec contains all context vector,
 		if len(gold_info) == 1:
 			gold_str = "-1"
 		else:
-			gold_type = name_type_map.get(gold_info[-1], ["NoneType"])
+			gold_type = name_type_map.get(",".join(gold_info[3:]), ["NoneType"])
 			gold_type_code = get_type_code(gold_type)
-			gold_str = ",".join([gold_info[0], gold_info[1], gold_type_code, gold_info[-1]])
+			gold_str = ",".join([gold_info[0], gold_info[1], gold_type_code, ",".join(gold_info[3:])])
 		#gold vec comes from prediction confident scores
 		gold_vec = type_vec[line_num]
 		all_type = []
 		for candid_info in tokens[6:-2]:
 			candid_info = candid_info.split(",")
 			if candid_info[0] == "EMPTYCAND":
-				rs = [tokens[0]] + ["EMPTYCAND"] + [gold_vec]
+				all_type = ["EMPTYCAND"]
 				break
 			else: 
 				wikiid = candid_info[0]
@@ -117,7 +125,7 @@ def add_type_test(fname, fsave, ftype_vec):#ctx_vec contains all context vector,
 				if cur_type != ["NoneType"]: 
 					trigger_ent.add(name)
 				all_type.append(",".join([wikiid, type_code, name]))
-		rs = [tokens[0]] + all_type + ["GT:", gold_str, gold_vec]
+		rs = [tokens[0], tokens[2]] + all_type + ["GT:", gold_str, gold_vec]
 		fout.write("\t".join(rs) + "\n")
 
 		line_num += 1
@@ -129,12 +137,13 @@ def add_type_test(fname, fsave, ftype_vec):#ctx_vec contains all context vector,
 if __name__ == "__main__":
 	type_id_map, type_num = get_type2id("../../../NFGEC/resource/conll/label2id_conll.txt")
 	name_type_map =  get_razor("../../../NFGEC/data/type/razor_figer.tsv")
-	add_type_train("../../data_path/generated/test_train_data/aida_train.csv", "../../data_path/generated/test_train_data/aida_train_type.csv")
+	# add_type_train("../../data_path/generated/test_train_data/aida_train.csv", "../../data_path/generated/test_train_data/aida_train_type_pre.csv", 
+	# 	"predict", "../../../NFGEC/result/conll_lstm_False_False_score_train.tsv")
 	
-	add_type_test("../../data_path/generated/test_train_data/aida_testA.csv", 
-		"../../data_path/generated/test_train_data/aida_testA_type.csv",
-		"../../../NFGEC/result/conll_lstm_False_False_score_ta.tsv")
+	# add_type_test("../../data_path/generated/test_train_data/aida_testA.csv", 
+	# 	"../../data_path/generated/test_train_data/aida_testA_type.csv",
+	# 	"../../../NFGEC/result/conll_lstm_False_False_score_ta.tsv")
 	
-	add_type_test("../../data_path/generated/test_train_data/aida_testB.csv", 
-		"../../data_path/generated/test_train_data/aida_testB_type.csv",
-		"../../../NFGEC/result/conll_lstm_False_False_score_tb.tsv")
+	# add_type_test("../../data_path/generated/test_train_data/aida_testB.csv", 
+	# 	"../../data_path/generated/test_train_data/aida_testB_type.csv",
+	# 	"../../../NFGEC/result/conll_lstm_False_False_score_tb.tsv")
