@@ -41,7 +41,8 @@ assert(word_vecs_size == 300 and ent_vecs_size == 300)
 
 
 ----------------- Define the model
-function local_model(num_mentions, param_A_linear, param_B_linear)
+-- type score:num_mentions * max_num_cand
+function local_model(num_mentions, param_A_linear, param_B_linear, model_type, param_ft_network)
   
   assert(num_mentions)
   assert(param_A_linear)
@@ -59,12 +60,20 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
       :add(nn.SelectTable(2))     -- 2 : Candidate entity vectors E : num_mentions x max_num_cand x ent_vecs_size
     )
     :add(nn.SelectTable(3))     -- 3 : log p(e|m) : num_mentions x max_num_cand
+    :add(nn.Sequential()
+        :add(nn.SelectTable(4))
+        :add(nn.SelectTable(1))
+    )
+    :add(nn.Sequential()
+        :add(nn.SelectTable(5))
+        :add(nn.SelectTable(1))
+    )
   
   model:add(ctxt_embed_and_ent_lookup)
 
   
   local mem_weights_p_2 = nn.ConcatTable()
-    :add(nn.Identity()) -- 1 : {W, E, logp(e|m)}
+    :add(nn.Identity()) -- 1 : {W, E, logp(e|m), Ctype, Etype}
     :add(nn.Sequential()
       :add(nn.ConcatTable()
         :add(nn.Sequential()
@@ -81,7 +90,7 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
 
 
   local mem_weights_p_3 = nn.ConcatTable()
-    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m)}
+    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m), Ctype, Etype}
     :add(nn.Sequential()
       :add(nn.SelectTable(2))
       :add(nn.Max(2)) --- 2 : max(word-entity scores) : num_mentions x opt.ctxt_window
@@ -91,7 +100,7 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
 
 
   local mem_weights_p_4 = nn.ConcatTable()
-    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m)}
+    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m), Ctype, Etype}
     :add(nn.Sequential()
       :add(nn.SelectTable(2))
       -- keep only top K scored words
@@ -121,7 +130,7 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
 
 
   local ctxt_full_embeddings = nn.ConcatTable()
-    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m)}
+    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m), Ctype, Etype}
     :add(nn.Sequential()
       :add(nn.ConcatTable()
         :add(nn.Sequential()
@@ -138,7 +147,7 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
 
 
   local entity_context_sim_scores = nn.ConcatTable()
-    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m)}
+    :add(nn.SelectTable(1)) -- 1 : {W, E, logp(e|m), Ctype, Etype}
     :add(nn.Sequential()
       :add(nn.ConcatTable()
         :add(nn.Sequential()
@@ -156,6 +165,27 @@ function local_model(num_mentions, param_A_linear, param_B_linear)
     )
   
   model:add(entity_context_sim_scores)
+
+  local ctxt_score_type_score_combine = nn.ConcatTable()
+    :add(nn.SelectTable(1))  -- 1 : {W, E, logp(e|m), Ctype, Etype}
+    :add(nn.Sequential()
+        :add(nn.ConcatTable()
+            :add(nn.Sequential()
+                :add(nn.SelectTable(1))  -- 1 : {W, E, logp(e|m), Ctype, Etype}
+                :add(model_type)
+                :add(nn.View(num_mentions * max_num_cand, 1))
+            )
+            :add(nn.Sequential()
+                :add(nn.SelectTable(2)) -- 2 : ctxt similarity matrix: num_mentions * max_num_cand
+                :add(nn.View(num_mentions * max_num_cand, 1)) -- flatten
+            )
+            :add(nn.JoinTable(2))
+            :add(param_ft_network)
+            :add(nn.View(num_mentions, max_num_cand))
+        )
+    )
+
+  model:add(ctxt_score_type_score_combine)
 
   if opt.model == 'local' then
     model = nn.Sequential()

@@ -13,13 +13,24 @@ A_linear = new_linear_layer(ent_vecs_size)
 -- Local ctxt bilinear weights
 B_linear = new_linear_layer(ent_vecs_size)
 
+-- Local type bilinear weights
+T_linear = new_linear_layer(opt.num_type)
+assert(opt.num_type == 114)
+
 -- Used only in the global model
 C_linear = new_linear_layer(ent_vecs_size)
+
 
 f_network = nn.Sequential()
   :add(nn.Linear(2,opt.nn_pem_interm_size))
   :add(nn.ReLU())
   :add(nn.Linear(opt.nn_pem_interm_size,1))
+
+--for type, ctxt combination
+ft_network = nn.Sequential()
+    :add(nn.Linear(2,opt.nn_pem_interm_size))
+    :add(nn.ReLU())
+    :add(nn.Linear(opt.nn_pem_interm_size,1))
 
 
 function regularize_f_network()
