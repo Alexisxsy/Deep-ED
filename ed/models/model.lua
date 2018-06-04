@@ -6,7 +6,7 @@ dofile 'ed/models/model_global.lua'
 
 function get_model(num_mentions)
   local model_type = local_type_model(num_mentions, T_linear)
-  local model_ctxt, additional_local_submodels =  local_model(num_mentions, A_linear, B_linear, model_type, ft_network)
+  local model_ctxt, additional_local_submodels =  local_model(num_mentions, A_linear, B_linear, model_type)
   local model = model_ctxt
   
   if opt.model == 'global' then

@@ -7,17 +7,17 @@ function local_type_model(num_mentions, param_T_linear)
     
     local ctxt_type_vec_and_ent_lookup = nn.ConcatTable()
         :add(nn.Sequential()
-            :add(nn.SelectTable(4))    -- 4: mention type, num_mention * type_num
-            :add(nn.SelectTable(1))  
+            :add(nn.SelectTable(4))    -- 4: mention type, num_mention * type_num 
+            :add(nn.View(num_mentions, opt.num_type))
         )
         :add(nn.Sequential()
-            :add(nn.SelectTable(5))      
-            :add(nn.SelectTable(2))    -- 5: entity type, num_mention * max_num_cand * type_num
+            :add(nn.SelectTable(5))    -- 5: entity type, num_mention * max_num_cand * type_num   
+            :add(nn.View(num_mentions, max_num_cand, opt.num_type))
         )
     
     model:add(ctxt_type_vec_and_ent_lookup)
 
-    local entity_ctx_type_sim_scores = nn.Sequencial()
+    local entity_ctx_type_sim_scores = nn.Sequential()
         :add(nn.ConcatTable()
             :add(nn.SelectTable(2))
             :add(nn.Sequential()

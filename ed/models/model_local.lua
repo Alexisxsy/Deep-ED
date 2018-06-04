@@ -7,7 +7,7 @@ if not opt then -- unit tests
   unit_tests_now = true
   dofile 'utils/utils.lua'
   require 'nn'
-  opt = {type = 'double', ctxt_window = 100, R = 25, model = 'local', nn_pem_interm_size = 100}
+  opt = {type = 'double', ctxt_window = 100, R = 25, model = 'local', nn_pem_interm_size = 100, num_type = 114}
   
   word_vecs_size = 300
   ent_vecs_size = 300
@@ -20,6 +20,7 @@ if not opt then -- unit tests
   word_lookup_table = nn.LookupTable(5, ent_vecs_size)
   ent_lookup_table = nn.LookupTable(5, ent_vecs_size)
   type_lookup_table = nn.LookupTable(5, type_vec_size)
+  
 else
   word_lookup_table = nn.LookupTable(w2vutils.M:size(1), ent_vecs_size)
   word_lookup_table.weight = w2vutils.M
@@ -42,7 +43,7 @@ assert(word_vecs_size == 300 and ent_vecs_size == 300)
 
 ----------------- Define the model
 -- type score:num_mentions * max_num_cand
-function local_model(num_mentions, param_A_linear, param_B_linear, model_type, param_ft_network)
+function local_model(num_mentions, param_A_linear, param_B_linear, model_type)
   
   assert(num_mentions)
   assert(param_A_linear)
@@ -61,12 +62,14 @@ function local_model(num_mentions, param_A_linear, param_B_linear, model_type, p
     )
     :add(nn.SelectTable(3))     -- 3 : log p(e|m) : num_mentions x max_num_cand
     :add(nn.Sequential()
-        :add(nn.SelectTable(4))
-        :add(nn.SelectTable(1))
+        :add(nn.SelectTable(4))   
+        :add(nn.SelectTable(1))   -- 4 : ctxt type vector: num_mentions * num_type
+        :add(nn.View(num_mentions, opt.num_type))
     )
     :add(nn.Sequential()
         :add(nn.SelectTable(5))
-        :add(nn.SelectTable(1))
+        :add(nn.SelectTable(2))   -- 5 : entity type vetor: num_mentions * max_num_cand * num_type
+        :add(nn.View(num_mentions, max_num_cand, opt.num_type))
     )
   
   model:add(ctxt_embed_and_ent_lookup)
@@ -179,10 +182,10 @@ function local_model(num_mentions, param_A_linear, param_B_linear, model_type, p
                 :add(nn.SelectTable(2)) -- 2 : ctxt similarity matrix: num_mentions * max_num_cand
                 :add(nn.View(num_mentions * max_num_cand, 1)) -- flatten
             )
-            :add(nn.JoinTable(2))
-            :add(param_ft_network)
-            :add(nn.View(num_mentions, max_num_cand))
         )
+        :add(nn.JoinTable(2))
+        :add(ft_network)
+        :add(nn.View(num_mentions, max_num_cand))
     )
 
   model:add(ctxt_score_type_score_combine)
@@ -237,7 +240,7 @@ end
 --- Unit tests
 if unit_tests_now then
   print('Network model unit tests:')
-  local num_mentions = 13
+  local num_mentions = 5
   
   local inputs = {}
   
@@ -251,8 +254,23 @@ if unit_tests_now then
   inputs[2][2] = torch.randn(num_mentions, max_num_cand, ent_vecs_size)
   -- p(e|m)
   inputs[3] = torch.zeros(num_mentions, max_num_cand) 
-  
-  local model, additional_local_submodels = local_model(num_mentions, A_linear, B_linear, opt)
+  -- ctxt_type_vecs
+  inputs[4] = {}
+  inputs[4][1] = torch.randn(num_mentions, opt.num_type)
+
+  -- entity_type_vecs
+  inputs[5] = {}
+  inputs[5][1] = {{"000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999"},
+  {"000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999"},
+  {"000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999"},
+  {"000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999"},
+  {"000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999", "000001002003999999999999"}}
+  inputs[5][2] = torch.randn(num_mentions, max_num_cand, opt.num_type)
+
+  dofile 'ed/models/model_local_type.lua'
+  model_type = local_type_model(num_mentions, T_linear)
+
+  local model, additional_local_submodels = local_model(num_mentions, A_linear, B_linear, model_type, opt)
   
   print(additional_local_submodels.model_debug_softmax_word_weights:forward(inputs):size())
   

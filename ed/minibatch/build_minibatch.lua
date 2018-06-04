@@ -25,7 +25,7 @@ function empty_minibatch_with_ids(num_mentions)
 
   -- cand_type
   inputs[5] = {}
-  inputs[5][1] = {} 
+  inputs[5][1] = {} -- num_mentions * opt.num_cand_before_rerank
  -- TO BE FILLED : inputs[5][2] = TYPE VECTORS: num_mentions * opt.num_cand_before_rerank * opt.num_type
   
   return inputs

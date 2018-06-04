@@ -47,7 +47,7 @@ function regularize_f_network()
 end
 
 function pack_saveable_weights()
-  local linears = nn.Sequential():add(A_linear):add(B_linear):add(C_linear):add(f_network)
+  local linears = nn.Sequential():add(A_linear):add(B_linear):add(C_linear):add(T_linear):add(f_network)
   return linears:float()
 end
 
