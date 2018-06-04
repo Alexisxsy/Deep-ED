@@ -61,6 +61,7 @@ function train_and_test()
       -- Read one mini-batch from one data_thread:
       local inputs, targets = get_minibatch()
       
+      return 
       local num_mentions = targets:size(1)
       processed_mentions = processed_mentions + num_mentions
       
