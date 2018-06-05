@@ -112,7 +112,8 @@ get_minibatch = function()
     -- inputs = minibatch_tds2table(all_docs_inputs[random_docid])
     inputs = deep_copy(all_docs_inputs[random_docid])
     targets = all_docs_targets[random_docid]
-    print("doc id" .. '\t' ..  random_docid)
+    -- print("DOCID\t" ..  random_docid)
+    -- print("\nDOCNAME" .. '\t' ..  id2doc[random_docid])
   else
     local random_docid = math.random(#id2doc)
     local doc_lines = all_doc_lines[random_docid]
@@ -126,10 +127,23 @@ get_minibatch = function()
   -- print(inputs[5][1])
   inputs, targets = minibatch_to_correct_type(inputs, targets, true)
   targets = correct_type(targets)
-  print("\nINPUTS\n")
-  print(inputs)
-  print("\nTARGETS\n")
-  print(targets)
+--   print("\nINPUTS 1 1 SIZE " .. inputs[1][1]:size(1) .. ' ' .. inputs[1][1]:size(2))
+--   print("\nINPUTS 1 2 SIZE " .. inputs[1][2]:size(1) .. ' ' .. inputs[1][2]:size(2))
+--   print("\nINPUTS 2 1 SIZE " .. inputs[2][1]:size(1) .. ' ' .. inputs[2][1]:size(2))
+--   print("\nINPUTS 2 2 SIZE " .. inputs[2][2]:size(1) .. ' ' .. inputs[2][2]:size(2))
+--   print("\nINPUTS 4 1\n")
+--   debug1 = {}
+--   debug1 = inputs[4][1]
+--   print(debug1)
+--   print("\nINPUTS 5 1\n")
+--   debug2 = {}
+--   debug2 = inputs[5][1]
+--   print(debug2)
+--   print("\nINPUTS 5 2\n")
+--   debug3 = {}
+--   debug3 = inputs[5][2]
+--   print(debug3)
+  
 
   return inputs, targets
 end

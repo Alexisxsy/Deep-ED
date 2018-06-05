@@ -276,8 +276,10 @@ local function rerank(minibatch_tensor, targets, for_training)
   local new_ent_cand_wikiids = torch.ones(num_mentions, max_num_cand):int():mul(unk_ent_wikiid)  
   local new_ent_cand_vecs = correct_type(torch.zeros(num_mentions, max_num_cand, ent_vecs_size))
   local new_ent_cand_type_vecs = correct_type(torch.zeros(num_mentions, max_num_cand, opt.num_type))
+  local new_ent_cand_type_code = {}
   
-  for k = 1,num_mentions do
+  for k = 1,num_mentions do -- k for mention
+    new_ent_cand_type_code[k] = {}
     local ent_vecs = minibatch_tensor[2][2][k]
     local scores = ent_vecs * ctxt_vecs[k]
     assert(scores:size(1) == opt.num_cand_before_rerank, scores:size(1) .. '\t' .. opt.num_cand_before_rerank .. ent_vecs:size(1) .. '\t' .. ent_vecs:size(2))
@@ -298,6 +300,7 @@ local function rerank(minibatch_tensor, targets, for_training)
     for idx,_ in pairs(added_indices) do
       new_ent_cand_wikiids[k][i] = minibatch_tensor[2][1][k][idx]
       new_ent_cand_vecs[k][i] = minibatch_tensor[2][2][k][idx]
+      new_ent_cand_type_code[k][i] = minibatch_tensor[5][1][k][idx]
       new_ent_cand_type_vecs[k][i] = minibatch_tensor[5][2][k][idx]
       new_log_p_e_m[k][i] = minibatch_tensor[3][k][idx]
       
@@ -317,6 +320,7 @@ local function rerank(minibatch_tensor, targets, for_training)
       if for_training then -- Reinsert the grd truth entity for training only
         new_ent_cand_wikiids[k][1] = minibatch_tensor[2][1][k][targets[k]]
         new_ent_cand_vecs[k][1] = minibatch_tensor[2][2][k][targets[k]]
+        new_ent_cand_type_code[k][1] = minibatch_tensor[5][1][k][targets[k]]
         new_ent_cand_type_vecs[k][1] = minibatch_tensor[5][2][k][targets[k]]
         new_log_p_e_m[k][1] = minibatch_tensor[3][k][targets[k]]
         new_grd_trth_idx = 1
@@ -329,6 +333,7 @@ local function rerank(minibatch_tensor, targets, for_training)
   minibatch_tensor[2][1] = new_ent_cand_wikiids
   minibatch_tensor[2][2] = new_ent_cand_vecs
   minibatch_tensor[3] = new_log_p_e_m
+  minibatch_tensor[5][1] = new_ent_cand_type_code
   minibatch_tensor[5][2] = new_ent_cand_type_vecs
   
   return minibatch_tensor, new_targets
