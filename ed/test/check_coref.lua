@@ -19,21 +19,31 @@ dofile 'entities/ent_name2id_freq/ent_name_id.lua'
 dofile 'ed/test/coref.lua'
 
 file = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
+file_type = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
 
 opt = {}
 opt.coref = true
 
   it, _ = io.open(file)
+  it_type, _ = io.open(file_type)
   local all_doc_lines = tds.Hash()
+  local all_doc_type_lines = tds.Hash()
   local line = it:read()
+  local type_line = it_type:read()
   while line do
     local parts = split(line, '\t')
+    local type_parts = split(type_line, '\t')
     local doc_name = parts[1]
+    assert(type_parts[1] == parts[1])
     if not all_doc_lines[doc_name] then
+      assert(not all_doc_type_lines[doc_name])
       all_doc_lines[doc_name] = tds.Hash()
+      all_doc_type_lines[doc_name] = tds.Hash()
     end
     all_doc_lines[doc_name][1 + #all_doc_lines[doc_name]] = line
+    all_doc_type_lines[doc_name][1 + #all_doc_type_lines[doc_name]] = type_line
     line = it:read()
+    type_line = it_type:read()
   end
   -- Gather coreferent mentions to increase accuracy.
-  build_coreference_dataset(all_doc_lines, 'aida-B')
+  build_coreference_dataset(all_doc_lines, all_doc_type_lines, 'aida-B')
