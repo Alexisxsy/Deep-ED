@@ -16,7 +16,7 @@ dofile 'utils/utils.lua'
 tds = tds or require 'tds'
 
 dofile 'entities/ent_name2id_freq/ent_name_id.lua'
-dofile 'ed/test/coref.lua'
+dofile 'ed/test/coref_persons.lua'
 
 file = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
 file_type = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'

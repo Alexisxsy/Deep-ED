@@ -68,7 +68,7 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
         assert(doc_id == parts[1])
         assert(doc_id == type_parts[1])
         local mention = parts[3]:lower()
-        assert(type_parts[2] == mention)
+        assert(type_parts[2]:lower() == mention)
         if not mention_ent_cand[mention] then
           assert(not mention_ent_type_cand[mention])
           mention_ent_cand[mention] = {}
@@ -105,7 +105,7 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
         assert(doc_id == parts[1])
         assert(doc_id == type_parts[1])
         local mention = parts[3]:lower()
-        assert(type_parts[2] == mention)
+        assert(type_parts[2]:lower() == mention)
         
         assert(mention_ent_cand[mention])
         assert(mention_ent_type_cand[mention])
@@ -142,15 +142,15 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
             
             num_added_mentions = num_added_mentions + 1
             for e_wikiid, p_e_m in pairs(mention_ent_cand[m]) do
-              type_e_wikiid, type_code = mention_ent_type_cand[m]
-              assert(e_wikiid == type_e_wikiid)
+              type_code = mention_ent_type_cand[m][e_wikiid]
+              -- assert(e_wikiid == type_e_wikiid, e_wikiid .. '\t' .. type_e_wikiid .. '\t' .. m .. '\t' .. doc_id)
               if not added_list[e_wikiid] then
                 added_list[e_wikiid] = 0.0
-                assert(not added_type_list[type_e_wikiid])
+                assert(not added_type_list[e_wikiid])
                 -- added_type_list[type_e_wikiid] = "999999999999999999999999"
               end
               added_list[e_wikiid] = added_list[e_wikiid] + p_e_m
-              added_type_list[type_e_wikiid] = type_code
+              added_type_list[e_wikiid] = type_code
             end
           end
         end
@@ -235,20 +235,22 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
         end
         
         coref_dataset_lines[doc_id][1 + #coref_dataset_lines[doc_id]] = str
-        coref_dataset_type_lines[doc_id][1 + #coref_dataset_type_lines[doc_id]] = type_str
+        coref_type_lines[doc_id][1 + #coref_type_lines[doc_id]] = type_str
+        -- print(str .. '\n')
+        -- print(type_str .. '\n\n')
       end  
     end
     
     assert(#dataset_lines == #coref_dataset_lines)
-    assert(#dataset_type_lines == #coref_dataset_type_lines)
+    assert(#dataset_type_lines == #coref_type_lines)
     for doc_id, lines_map in pairs(dataset_lines) do
       assert(table_len(dataset_lines[doc_id]) == table_len(coref_dataset_lines[doc_id]))
     end
     for doc_id, lines_map  in pairs(dataset_type_lines) do
-      assert(table_len(dataset_type_lines[doc_id]) == table_len(coref_dataset_type_lines[doc_id]))
+      assert(table_len(dataset_type_lines[doc_id]) == table_len(coref_type_lines[doc_id]))
     end
 
-    assert(coref_dataset_lines and coref_dataset_type_lines)
-    return coref_dataset_lines, coref_dataset_type_lines
+    assert(coref_dataset_lines and coref_type_lines)
+    return coref_dataset_lines, coref_type_lines
   end
 end
