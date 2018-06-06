@@ -18,8 +18,8 @@ tds = tds or require 'tds'
 dofile 'entities/ent_name2id_freq/ent_name_id.lua'
 dofile 'ed/test/coref_persons.lua'
 
-file = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
-file_type = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
+file = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv'
+file_type = opt.root_data_dir .. 'generated/test_train_data/aida_testA_type.csv'
 
 opt = {}
 opt.coref = true
@@ -46,4 +46,4 @@ opt.coref = true
     type_line = it_type:read()
   end
   -- Gather coreferent mentions to increase accuracy.
-  build_coreference_dataset(all_doc_lines, all_doc_type_lines, 'aida-B')
+  build_coreference_dataset(all_doc_lines, all_doc_type_lines, 'aida-A')

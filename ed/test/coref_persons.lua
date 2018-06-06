@@ -42,6 +42,27 @@ local function mention_refers_to_person(m, mention_ent_cand)
   return is_person(top_ent)
 end
 
+local function parse_num_cand_and_grd_trth(parts)
+    assert(parts[6] == 'CANDIDATES')  
+    if parts[7] == 'EMPTYCAND' then
+      return 0
+    else
+      local num_cand = 1
+      while parts[7 + num_cand] ~= 'GT:' do
+        num_cand = num_cand + 1
+      end
+      return num_cand
+    end
+  end
+  
+  local function parse_num_cand_in_type_parts(type_parts)
+    if type_parts[3] == 'EMPTYCAND' then
+      return 0
+    else
+      return #type_parts - 5
+    end
+  end
+
 -- input is the raw text file
 -- {doc id:{idx of mention : line}}
 -- in this function, for each doc, we first gather all mention candidate map, then we use string heuristic function to replace
@@ -109,6 +130,7 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
         
         assert(mention_ent_cand[mention])
         assert(mention_ent_type_cand[mention])
+        assert(#mention_ent_cand[mention] == #mention_ent_type_cand[mention] )
         assert(parts[table_len(parts) - 1] == 'GT:')
         assert(type_parts[table_len(type_parts) - 2] == 'GT:')
       
@@ -150,6 +172,7 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
                 -- added_type_list[type_e_wikiid] = "999999999999999999999999"
               end
               added_list[e_wikiid] = added_list[e_wikiid] + p_e_m
+              assert(#type_code == 8 * 3)
               added_type_list[e_wikiid] = type_code
             end
           end
@@ -166,8 +189,8 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
         if num_added_mentions > 0 then
           merged_list = added_list
           merged_type_list = added_type_list
-          assert(#merged_list == #merged_type_list)
-        end        
+        end     
+        assert(#merged_list == #merged_type_list)
         
         local sorted_list = {}
         local sorted_type_list = {}
@@ -193,7 +216,7 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
             str = str .. ',' .. grd_trth_entwikiid .. ',' ..
             get_ent_name_from_wikiid(grd_trth_entwikiid)
 
-            type_str = type_str .. ',' .. grd_trth_entwikiid .. ',' .. 
+            type_str = type_str .. ',' .. grd_trth_entwikiid .. ',' .. "999999999999999999999999" .. "," .. 
             get_ent_name_from_wikiid(grd_trth_entwikiid)
           end
         else
@@ -211,13 +234,13 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
               if e.ent_wikiid == grd_trth_entwikiid then
                 gt_pos = pos
               end
+
             else
               break
             end
           end
           str = str .. table.concat(candidates, '\t') .. '\tGT:\t'
           type_str = type_str .. table.concat(type_candidates, '\t') .. '\tGT:\t'
-
           if gt_pos > 0 then
             str = str .. gt_pos .. ',' .. candidates[gt_pos]
             type_str = type_str .. gt_pos .. ',' .. type_candidates[gt_pos]
@@ -228,14 +251,19 @@ function build_coreference_dataset(dataset_lines, dataset_type_lines, banner)
             if grd_trth_entwikiid ~= unk_ent_wikiid then
               str = str .. ',' .. grd_trth_entwikiid .. ',' ..
                 get_ent_name_from_wikiid(grd_trth_entwikiid)
-              type_str = type_str .. ',' .. grd_trth_entwikiid .. ',' ..
+              type_str = type_str .. ',' .. grd_trth_entwikiid .. ',' .. "999999999999999999999999" .. "," .. 
                 get_ent_name_from_wikiid(grd_trth_entwikiid)
             end
           end
         end
         
+        type_str = type_str .. '\t' .. type_parts[#type_parts]
         coref_dataset_lines[doc_id][1 + #coref_dataset_lines[doc_id]] = str
         coref_type_lines[doc_id][1 + #coref_type_lines[doc_id]] = type_str
+        local num_cand = parse_num_cand_and_grd_trth(split(str, "\t"))
+        local num_cand_type = parse_num_cand_in_type_parts(split(type_str, "\t"))
+        -- print(str .. '\n' .. type_str .. '\n' .. num_cand .. '\t' .. num_cand_type .. '\n')
+        assert(num_cand_type == num_cand)
         -- print(str .. '\n')
         -- print(type_str .. '\n\n')
       end  

@@ -124,10 +124,10 @@ local function get_grd_trth(parts, type_parts, num_cand, for_training)
   end
 
   local grd_trth_type = "999999999999999999999999"
-  if table_len(grd_trth_type_parts) >=2 then
+  if table_len(grd_trth_type_parts) >=3 then
     grd_trth_type = grd_trth_type_parts[3]
   end
-  assert(#grd_trth_type == 8 * 3)
+  assert(#grd_trth_type == 8 * 3, type_parts)
 
   assert(grd_trth_ent_wikiid and grd_trth_prob and grd_trth_type)
   return grd_trth_idx, grd_trth_ent_wikiid, grd_trth_prob, grd_trth_type
@@ -233,6 +233,9 @@ end
 function process_one_line(line, type_line, minibatch_tensor, mb_index, for_training)
   local parts = split(line, '\t')  
   local type_parts = split(type_line, '\t')
+--   if not for_training then 
+--     print(type_line)
+--   end 
   
   -- Ctxt word ids:
   local ctxt_word_ids = parse_context(parts)

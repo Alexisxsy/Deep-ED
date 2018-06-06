@@ -11,11 +11,11 @@ typesets = {}
 --datasets['aida-train'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
 datasets['aida-A'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA.csv' -- Validation set
 typesets['aida-A-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testA_type.csv' -- Validation set
---datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
--- typesets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
---datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
---datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
---datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
+datasets['aida-B'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB.csv'
+typesets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_testB_type.csv'
+-- datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
+-- datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
+-- datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
 subfix = "aida-a"
 
 ------- Uncomment the following lines if you want to test on more datasets during training (will be slower).
@@ -77,6 +77,7 @@ local function test_one(banner, f1_scores, epoch)
   collectgarbage(); collectgarbage();
   -- Load dataset lines
   local dataset_lines, dataset_type_lines = get_dataset_lines(banner)
+--   print(dataset_type_lines)
   
   local dataset_num_mentions = 0
   for doc_id, lines_map in pairs(dataset_lines) do 

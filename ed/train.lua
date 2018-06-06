@@ -58,6 +58,7 @@ function train_and_test()
     
     local processed_mentions = 0
     for batch_index = 1,num_batches_per_epoch  do
+    -- for batch_index = 1,10  do        
       -- Read one mini-batch from one data_thread:
       local inputs, targets = get_minibatch()
       local num_mentions = targets:size(1)
