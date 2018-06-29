@@ -16,7 +16,7 @@ typesets['aida-B-type'] = opt.root_data_dir .. 'generated/test_train_data/aida_t
 -- datasets['MSNBC'] = opt.root_data_dir .. 'generated/test_train_data/wned-msnbc.csv'
 -- datasets['AQUAINT'] = opt.root_data_dir .. 'generated/test_train_data/wned-aquaint.csv'
 -- datasets['ACE04'] = opt.root_data_dir .. 'generated/test_train_data/wned-ace2004.csv'
-subfix = "aida-a"
+-- subfix = "aida-a"
 
 ------- Uncomment the following lines if you want to test on more datasets during training (will be slower).
 --datasets['train-aida'] = opt.root_data_dir .. 'generated/test_train_data/aida_train.csv'
@@ -70,9 +70,9 @@ local function get_dataset_num_non_empty_candidates(dataset_lines)
 end
 
 local function test_one(banner, f1_scores, epoch)
-  local file_correct = io.open("./result/result_right_" .. subfix .. '.tsv', "w+")
-  local file_wrong = io.open("./result/result_wrong_" .. subfix .. '.tsv',  "w+")
-  local candid = io.open("./result/candid_list_" .. subfix .. '.tsv' , "w+")
+  local file_correct = io.open("./result/result_right_" .. banner .. '.tsv', "w+")
+  local file_wrong = io.open("./result/result_wrong_" .. banner .. '.tsv',  "w+")
+  local candid = io.open("./result/candid_list_" .. banner .. '.tsv' , "w+")
 
   collectgarbage(); collectgarbage();
   -- Load dataset lines

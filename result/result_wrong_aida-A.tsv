@@ -1,0 +1,1512 @@
+INCORRECT ANNOTATION	1085testa	Latvia	Latvia	Latvia national football team
+global=0.355	0.322
+local(<e, ctx>)=0.107	-0.063
+log p(e|m)=-0.351	-2.577
+Latvia[0.053]; European[0.051]; European[0.051]; soccer[0.050]; qualifier[0.050]; Sweden[0.049]; Sweden[0.049]; championship[0.047]; Soccer[0.047]; Riga[0.046]; beat[0.046]; Saturday[0.045]; Qualifier[0.045]; minute[0.044]; Persson[0.043]; Andersson[0.043]; Beat[0.042]; halftime[0.041]; Attendance[0.041]; Daniel[0.040]; Scorers[0.039]; Joakim[0.039]; 
+
+INCORRECT ANNOTATION	1085testa	Latvia	Latvia	Latvia national football team
+global=0.344	0.330
+local(<e, ctx>)=0.008	0.163
+log p(e|m)=-0.351	-2.577
+Latvia[0.053]; European[0.051]; European[0.051]; soccer[0.050]; qualifier[0.050]; Sweden[0.049]; Sweden[0.049]; championship[0.047]; Soccer[0.047]; Riga[0.046]; beat[0.046]; Saturday[0.045]; Qualifier[0.045]; minute[0.044]; Persson[0.043]; Andersson[0.043]; Beat[0.042]; halftime[0.041]; Attendance[0.041]; Daniel[0.040]; Scorers[0.039]; Joakim[0.039]; 
+
+INCORRECT ANNOTATION	1085testa	Sweden	Sweden	Sweden national football team
+global=0.340	0.313
+local(<e, ctx>)=0.088	0.129
+log p(e|m)=-0.213	-2.957
+Sweden[0.054]; qualifier[0.051]; soccer[0.051]; European[0.048]; European[0.048]; Latvia[0.047]; Latvia[0.047]; beat[0.047]; championship[0.047]; minute[0.046]; Soccer[0.046]; Andersson[0.046]; Saturday[0.045]; Qualifier[0.044]; Persson[0.044]; Riga[0.043]; halftime[0.042]; Beat[0.042]; Joakim[0.041]; Daniel[0.041]; Scorers[0.040]; Attendance[0.039]; 
+
+INCORRECT ANNOTATION	1085testa	Sweden	Sweden	Sweden national football team
+global=0.348	0.307
+local(<e, ctx>)=0.249	0.001
+log p(e|m)=-0.213	-2.957
+Sweden[0.054]; qualifier[0.051]; soccer[0.051]; European[0.048]; European[0.048]; Latvia[0.047]; Latvia[0.047]; beat[0.047]; championship[0.047]; minute[0.046]; Soccer[0.046]; Andersson[0.046]; Saturday[0.045]; Qualifier[0.044]; Persson[0.044]; Riga[0.043]; halftime[0.042]; Beat[0.042]; Joakim[0.041]; Daniel[0.041]; Scorers[0.040]; Attendance[0.039]; 
+
+INCORRECT ANNOTATION	1138testa	Korean	South Korea	Korea
+global=0.350	0.339
+local(<e, ctx>)=0.629	0.415
+log p(e|m)=-2.703	-1.754
+Korea[0.047]; Korea[0.047]; Korean[0.045]; Korean[0.045]; Korean[0.045]; Korean[0.045]; Seoul[0.043]; Seoul[0.043]; southern[0.041]; southern[0.041]; northern[0.040]; northern[0.040]; North[0.040]; North[0.040]; North[0.040]; Kim[0.040]; Kim[0.040]; Kim[0.040]; war[0.039]; war[0.039]; war[0.039]; War[0.039]; War[0.039]; Kang[0.039]; 
+
+INCORRECT ANNOTATION	1138testa	Korean	South Korea	Korea
+global=0.349	0.338
+local(<e, ctx>)=0.584	0.357
+log p(e|m)=-2.703	-1.754
+Korea[0.049]; Korean[0.047]; Korean[0.047]; Korean[0.047]; Seoul[0.045]; southern[0.043]; northern[0.042]; North[0.042]; Kim[0.041]; Kim[0.041]; repatriated[0.041]; domestic[0.040]; communist[0.040]; Yonhap[0.040]; families[0.040]; repatriation[0.040]; South[0.040]; South[0.040]; South[0.040]; South[0.040]; officials[0.039]; unification[0.039]; demand[0.039]; reunions[0.039]; 
+
+INCORRECT ANNOTATION	1017testa	Israelis	Israel	Israelis
+global=0.349	0.336
+local(<e, ctx>)=0.329	0.011
+log p(e|m)=-0.546	-0.009
+Israel[0.049]; Jewish[0.047]; Israeli[0.047]; Arab[0.044]; Jerusalem[0.044]; Jerusalem[0.044]; Palestinian[0.044]; Netanyahu[0.043]; policy[0.042]; said[0.041]; said[0.041]; West[0.041]; Palestinians[0.041]; settlements[0.041]; President[0.040]; government[0.040]; government[0.040]; region[0.040]; officials[0.039]; Bank[0.039]; war[0.039]; settlement[0.038]; community[0.038]; occupied[0.038]; 
+
+INCORRECT ANNOTATION	961testa	India	India national football team	India national cricket team
+global=0.317	0.316
+local(<e, ctx>)=0.184	0.092
+log p(e|m)=-4.269	-3.507
+match[0.044]; ranked[0.043]; came[0.043]; win[0.043]; semifinals[0.043]; day[0.043]; champion[0.043]; lost[0.042]; lost[0.042]; went[0.042]; Paes[0.042]; player[0.042]; seeded[0.042]; winning[0.042]; games[0.041]; Agassi[0.041]; winner[0.041]; defeated[0.040]; sixth[0.040]; comeback[0.040]; comeback[0.040]; Stadium[0.040]; left[0.040]; title[0.040]; 
+
+INCORRECT ANNOTATION	1053testa	Faroe Islands	Faroe Islands national football team	Faroe Islands
+global=0.339	0.338
+local(<e, ctx>)=-0.041	0.183
+log p(e|m)=-0.872	-0.596
+Slovakia[0.044]; Slovakia[0.044]; Slovakia[0.044]; match[0.044]; European[0.043]; Faroes[0.043]; Toftir[0.042]; soccer[0.042]; Faroe[0.042]; Faroe[0.042]; qualifying[0.042]; Cup[0.042]; Cup[0.042]; beat[0.042]; Saturday[0.041]; Islands[0.041]; Islands[0.041]; group[0.041]; minute[0.041]; Scorers[0.040]; Soccer[0.039]; Qualifier[0.039]; World[0.038]; World[0.038]; 
+
+INCORRECT ANNOTATION	967testa	Eric Thomas	Eric Thomas (American football)	Eric Thomas (gynaecologist)
+global=0.336	0.334
+local(<e, ctx>)=-0.296	-0.389
+log p(e|m)=-0.526	-0.232
+Derrick[0.047]; Michael[0.045]; Anja[0.043]; Britain[0.043]; Jon[0.043]; Jearl[0.042]; Smith[0.042]; Nylander[0.042]; Gunhild[0.041]; Sweden[0.041]; Donovan[0.041]; hurdles[0.041]; Miles[0.041]; Norway[0.041]; Women[0.041]; Samuel[0.041]; Karin[0.041]; Matete[0.041]; Sven[0.041]; Phylis[0.041]; Dusan[0.041]; Barsosio[0.041]; Dennis[0.041]; Halle[0.040]; 
+
+INCORRECT ANNOTATION	966testa	Olympics	Olympic Games	1976 Summer Olympics
+global=0.317	0.317
+local(<e, ctx>)=0.016	0.294
+log p(e|m)=-0.821	-4.269
+Olympic[0.048]; Olympic[0.048]; Olympic[0.048]; sport[0.044]; Games[0.044]; American[0.042]; medals[0.042]; champions[0.041]; champions[0.041]; win[0.041]; world[0.041]; champion[0.041]; champion[0.041]; relay[0.041]; Jamaican[0.041]; Berlin[0.040]; Berlin[0.040]; fourth[0.040]; women[0.040]; second[0.039]; Devers[0.039]; finished[0.039]; finishing[0.039]; Ottey[0.038]; 
+
+INCORRECT ANNOTATION	949testa	Scotland	Scotland national cricket team	Scotland
+global=0.338	0.318
+local(<e, ctx>)=0.268	-0.278
+log p(e|m)=-3.689	-0.229
+British[0.044]; international[0.044]; match[0.044]; Hampshire[0.044]; day[0.043]; Middlesex[0.043]; Sussex[0.043]; Nottingham[0.042]; Gloucestershire[0.042]; Manchester[0.042]; Headingley[0.042]; Surrey[0.042]; Leicestershire[0.042]; Glamorgan[0.042]; Oval[0.041]; Kent[0.041]; Edgbaston[0.041]; Derbyshire[0.040]; Somerset[0.040]; London[0.040]; London[0.040]; Lord[0.040]; Lord[0.040]; county[0.039]; 
+
+INCORRECT ANNOTATION	949testa	Scotland	Scotland national cricket team	Scotland
+global=0.332	0.319
+local(<e, ctx>)=0.177	-0.197
+log p(e|m)=-3.689	-0.229
+England[0.047]; matches[0.043]; matches[0.043]; matches[0.043]; British[0.042]; international[0.042]; international[0.042]; international[0.042]; internationals[0.042]; match[0.042]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; play[0.041]; play[0.041]; Australia[0.041]; Australia[0.041]; Sussex[0.041]; Cricket[0.040]; Cricket[0.040]; Gloucestershire[0.040]; 
+
+INCORRECT ANNOTATION	949testa	Headingley	Headingley Stadium	Headingley
+global=0.354	0.335
+local(<e, ctx>)=0.345	0.113
+log p(e|m)=-0.302	-0.571
+match[0.046]; Hampshire[0.045]; Middlesex[0.045]; Glamorgan[0.044]; Oval[0.044]; Edgbaston[0.043]; Leicestershire[0.043]; Somerset[0.043]; Derbyshire[0.043]; Kent[0.043]; Nottingham[0.043]; Lord[0.042]; Oxford[0.040]; Trent[0.040]; test[0.040]; test[0.040]; test[0.040]; test[0.040]; test[0.040]; test[0.040]; Scotland[0.040]; Trafford[0.039]; Bridge[0.039]; Manchester[0.039]; 
+
+INCORRECT ANNOTATION	949testa	Edgbaston	Edgbaston Cricket Ground	Edgbaston
+global=0.361	0.331
+local(<e, ctx>)=0.424	0.039
+log p(e|m)=-0.451	-0.309
+match[0.048]; Hampshire[0.048]; matches[0.048]; day[0.047]; day[0.047]; day[0.047]; day[0.047]; Leicestershire[0.046]; Glamorgan[0.046]; Oxford[0.045]; Headingley[0.045]; Headingley[0.045]; Surrey[0.045]; Gloucestershire[0.045]; Worcestershire[0.044]; Somerset[0.044]; Derbyshire[0.044]; Oval[0.044]; Durham[0.044]; Birmingham[0.044]; Middlesex[0.044]; Sussex[0.044]; 
+
+INCORRECT ANNOTATION	949testa	Headingley	Headingley Stadium	Headingley
+global=0.356	0.333
+local(<e, ctx>)=0.432	0.117
+log p(e|m)=-0.302	-0.571
+match[0.044]; Hampshire[0.043]; internationals[0.043]; Oval[0.042]; matches[0.042]; matches[0.042]; matches[0.042]; Edgbaston[0.042]; Leicestershire[0.042]; international[0.042]; international[0.042]; international[0.042]; Gloucestershire[0.042]; Derbyshire[0.041]; Cricket[0.041]; Northampton[0.041]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; day[0.041]; Sussex[0.041]; Worcestershire[0.041]; 
+
+INCORRECT ANNOTATION	949testa	Oxford	University of Oxford	Oxford
+global=0.341	0.341
+local(<e, ctx>)=0.255	0.168
+log p(e|m)=-1.478	-0.681
+Birmingham[0.043]; Manchester[0.043]; Universities[0.043]; Durham[0.043]; London[0.043]; London[0.043]; London[0.043]; Bridge[0.042]; Hampshire[0.042]; match[0.042]; Leeds[0.042]; Scotland[0.042]; Nottingham[0.042]; Surrey[0.041]; British[0.041]; Northampton[0.041]; Lord[0.041]; Lord[0.041]; Somerset[0.041]; Kent[0.041]; Sussex[0.040]; Middlesex[0.040]; Gloucestershire[0.040]; Trent[0.040]; 
+
+INCORRECT ANNOTATION	1095testa	Toronto	Toronto Blue Jays	Toronto
+global=0.330	0.321
+local(<e, ctx>)=0.206	0.009
+log p(e|m)=-4.423	-0.123
+Toronto[0.048]; Montreal[0.046]; Philadelphia[0.042]; Boston[0.042]; Boston[0.042]; Houston[0.042]; Oakland[0.042]; Oakland[0.042]; Cincinnati[0.042]; City[0.042]; City[0.042]; Baltimore[0.041]; Baltimore[0.041]; Cleveland[0.041]; Cleveland[0.041]; Chicago[0.041]; Chicago[0.041]; Chicago[0.041]; Milwaukee[0.041]; Milwaukee[0.041]; League[0.040]; Texas[0.040]; Texas[0.040]; Atlanta[0.040]; 
+
+INCORRECT ANNOTATION	1095testa	New York	New York City	New York Yankees
+global=0.326	0.322
+local(<e, ctx>)=0.062	0.070
+log p(e|m)=-1.790	-5.116
+City[0.044]; City[0.044]; Boston[0.043]; games[0.043]; games[0.043]; Cleveland[0.042]; Baltimore[0.042]; Baltimore[0.042]; Baseball[0.042]; Baseball[0.042]; Oakland[0.042]; played[0.041]; Toronto[0.041]; Toronto[0.041]; Central[0.041]; League[0.041]; League[0.041]; League[0.041]; American[0.041]; won[0.041]; Chicago[0.041]; Chicago[0.041]; Friday[0.040]; Friday[0.040]; 
+
+INCORRECT ANNOTATION	1095testa	Western Division	American League West	National League West
+global=0.335	0.335
+local(<e, ctx>)=0.116	0.053
+log p(e|m)=-0.860	-1.295
+games[0.043]; games[0.043]; League[0.043]; League[0.043]; League[0.043]; League[0.043]; won[0.043]; Division[0.042]; Division[0.042]; Division[0.042]; Division[0.042]; Boston[0.042]; Boston[0.042]; Texas[0.041]; Texas[0.041]; winning[0.041]; Oakland[0.041]; Oakland[0.041]; standings[0.041]; Toronto[0.041]; Toronto[0.041]; Baltimore[0.040]; Baltimore[0.040]; Houston[0.040]; 
+
+INCORRECT ANNOTATION	1095testa	New York	New York Mets	New York Yankees
+global=0.324	0.323
+local(<e, ctx>)=0.077	0.057
+log p(e|m)=-5.116	-5.116
+Philadelphia[0.047]; Philadelphia[0.047]; Houston[0.046]; Houston[0.046]; Central[0.045]; Pittsburgh[0.044]; Pittsburgh[0.044]; Chicago[0.044]; Chicago[0.044]; Cincinnati[0.044]; Cincinnati[0.044]; Saturday[0.043]; Montreal[0.043]; Montreal[0.043]; Atlanta[0.043]; Florida[0.042]; Florida[0.042]; York[0.042]; Colorado[0.042]; Colorado[0.042]; Francisco[0.041]; Francisco[0.041]; Western[0.041]; 
+
+INCORRECT ANNOTATION	1095testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.328	0.324
+local(<e, ctx>)=0.354	0.266
+log p(e|m)=-4.075	-3.863
+Seattle[0.050]; Houston[0.045]; Oakland[0.045]; Oakland[0.045]; Baltimore[0.044]; Baltimore[0.044]; Boston[0.043]; Boston[0.043]; Cleveland[0.043]; Cleveland[0.043]; Milwaukee[0.043]; Milwaukee[0.043]; Philadelphia[0.043]; Cincinnati[0.043]; City[0.043]; City[0.043]; California[0.043]; California[0.043]; League[0.043]; Pittsburgh[0.042]; Chicago[0.042]; Chicago[0.042]; Chicago[0.042]; 
+
+INCORRECT ANNOTATION	1095testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.327	0.325
+local(<e, ctx>)=0.344	0.277
+log p(e|m)=-4.075	-3.863
+Seattle[0.047]; games[0.043]; games[0.043]; Houston[0.043]; Oakland[0.042]; Oakland[0.042]; Baltimore[0.042]; Baltimore[0.042]; Baseball[0.041]; Boston[0.041]; Boston[0.041]; Cleveland[0.041]; Cleveland[0.041]; Milwaukee[0.041]; Milwaukee[0.041]; Philadelphia[0.041]; City[0.041]; City[0.041]; California[0.041]; California[0.041]; League[0.041]; League[0.041]; League[0.041]; played[0.040]; 
+
+INCORRECT ANNOTATION	1012testa	Kansas City	Kansas City metropolitan area	Kansas City, Missouri
+global=0.334	0.332
+local(<e, ctx>)=-0.052	-0.163
+log p(e|m)=-1.448	-0.805
+Missouri[0.045]; Missouri[0.045]; Midwest[0.042]; Midwest[0.042]; Midwest[0.042]; bank[0.042]; bank[0.042]; bank[0.042]; franchise[0.042]; state[0.041]; Commerce[0.041]; Commerce[0.041]; Commerce[0.041]; Commerce[0.041]; outside[0.041]; regional[0.041]; Mercantile[0.041]; Mercantile[0.041]; Mercantile[0.041]; Mercantile[0.041]; Mercantile[0.041]; Financial[0.040]; Jones[0.040]; seeking[0.040]; 
+
+INCORRECT ANNOTATION	1058testa	Edgbaston	Edgbaston Cricket Ground	Edgbaston
+global=0.363	0.322
+local(<e, ctx>)=0.419	-0.078
+log p(e|m)=-0.451	-0.309
+England[0.045]; England[0.045]; England[0.045]; England[0.045]; England[0.045]; England[0.045]; cricket[0.043]; matches[0.042]; toss[0.042]; second[0.042]; batsman[0.041]; Gough[0.041]; day[0.041]; Hollioake[0.041]; Hollioake[0.041]; Lancashire[0.040]; Cricket[0.040]; Surrey[0.039]; bat[0.039]; Atherton[0.039]; Birmingham[0.039]; won[0.039]; overs[0.039]; lost[0.039]; 
+
+INCORRECT ANNOTATION	1058testa	Birmingham	Edgbaston Cricket Ground	Birmingham
+global=0.333	0.332
+local(<e, ctx>)=0.302	0.231
+log p(e|m)=-4.510	-0.402
+England[0.046]; England[0.046]; England[0.046]; England[0.046]; England[0.046]; England[0.046]; cricket[0.044]; second[0.042]; matches[0.042]; batsman[0.042]; Hollioake[0.041]; Edgbaston[0.041]; Lancashire[0.041]; day[0.040]; Cricket[0.040]; debut[0.040]; Surrey[0.040]; Atherton[0.040]; overs[0.039]; lost[0.039]; bat[0.039]; rounder[0.039]; toss[0.039]; international[0.039]; 
+
+INCORRECT ANNOTATION	1071testa	Al Unser	Al Unser	Al Unser, Jr.
+global=0.368	0.361
+local(<e, ctx>)=0.109	0.106
+log p(e|m)=0.000	-1.100
+race[0.048]; driver[0.045]; qualifying[0.045]; drivers[0.045]; lap[0.044]; Vasser[0.044]; Andretti[0.042]; Penske[0.042]; Penske[0.042]; IndyCar[0.041]; Rahal[0.041]; Bobby[0.041]; Honda[0.041]; Honda[0.041]; Honda[0.041]; Honda[0.041]; seconds[0.040]; Herta[0.040]; Gil[0.040]; final[0.040]; Jimmy[0.040]; Ford[0.040]; Ford[0.040]; Sunday[0.039]; 
+
+INCORRECT ANNOTATION	1028testa	Palestinian	Palestinian territories	State of Palestine
+global=0.327	0.327
+local(<e, ctx>)=0.516	0.525
+log p(e|m)=-2.146	-2.847
+Israel[0.046]; Israel[0.046]; Arabs[0.044]; Israeli[0.044]; Israeli[0.044]; Arab[0.044]; Palestinians[0.042]; Palestinians[0.042]; West[0.042]; West[0.042]; Gaza[0.042]; Jerusalem[0.041]; Jerusalem[0.041]; Jerusalem[0.041]; Jerusalem[0.041]; Jerusalem[0.041]; Jordan[0.041]; Jordan[0.041]; Jewish[0.041]; Bank[0.039]; Bank[0.039]; Abu[0.038]; Arafat[0.038]; peace[0.038]; 
+
+INCORRECT ANNOTATION	1056testa	Birmingham	Edgbaston Cricket Ground	Birmingham
+global=0.334	0.333
+local(<e, ctx>)=0.305	0.215
+log p(e|m)=-4.510	-0.402
+England[0.047]; England[0.047]; England[0.047]; England[0.047]; cricket[0.045]; match[0.044]; second[0.043]; Gough[0.043]; Hollioake[0.043]; day[0.041]; Cricket[0.041]; Atherton[0.041]; run[0.040]; run[0.040]; run[0.040]; Saturday[0.040]; innings[0.039]; Croft[0.039]; wickets[0.039]; closed[0.039]; Mushtaq[0.039]; Mushtaq[0.039]; Mushtaq[0.039]; Waqar[0.038]; 
+
+INCORRECT ANNOTATION	1061testa	Trinidad	Trinidad and Tobago	Trinidad
+global=0.337	0.333
+local(<e, ctx>)=0.234	0.072
+log p(e|m)=-2.996	-0.341
+Miguel[0.046]; Miguel[0.046]; South[0.045]; Spain[0.044]; Spain[0.044]; Australia[0.043]; Australia[0.043]; Robert[0.043]; Robert[0.043]; Martin[0.041]; won[0.041]; Africa[0.041]; Saturday[0.041]; Stephen[0.041]; British[0.041]; British[0.041]; Jimenez[0.040]; Ireland[0.040]; Ireland[0.040]; Winners[0.040]; Lee[0.039]; Andrew[0.039]; Rocca[0.039]; Mark[0.039]; 
+
+INCORRECT ANNOTATION	1061testa	Ireland	Ireland	Republic of Ireland
+global=0.335	0.335
+local(<e, ctx>)=0.156	0.253
+log p(e|m)=-0.566	-1.505
+Ireland[0.053]; Australia[0.045]; Australia[0.045]; British[0.044]; British[0.044]; Italy[0.043]; European[0.042]; won[0.042]; Colin[0.042]; Trinidad[0.041]; Padraig[0.041]; Saturday[0.041]; Ian[0.040]; Martin[0.040]; Lawrie[0.040]; Spain[0.040]; Spain[0.040]; winners[0.040]; Stephen[0.040]; Zimbabwe[0.040]; South[0.039]; Russell[0.039]; London[0.039]; McGinley[0.039]; 
+
+INCORRECT ANNOTATION	991testa	Moscow	Moscow	Russia
+global=0.339	0.323
+local(<e, ctx>)=0.180	0.139
+log p(e|m)=-0.106	-4.269
+Russia[0.047]; Russian[0.045]; military[0.045]; war[0.044]; territorial[0.043]; region[0.043]; region[0.043]; fighting[0.043]; troops[0.042]; Federation[0.041]; Chechnya[0.041]; Chechnya[0.041]; Chechnya[0.041]; Chechnya[0.041]; worst[0.041]; ending[0.040]; Tass[0.040]; late[0.040]; office[0.040]; independence[0.040]; Thursday[0.040]; Thursday[0.040]; month[0.040]; December[0.040]; 
+
+INCORRECT ANNOTATION	1083testa	European	UEFA	UEFA Champions League
+global=0.328	0.321
+local(<e, ctx>)=-0.135	-0.137
+log p(e|m)=-3.576	-4.423
+soccer[0.053]; match[0.052]; qualifying[0.052]; Cup[0.051]; Cup[0.051]; Soccer[0.051]; group[0.050]; beat[0.049]; Switzerland[0.048]; Switzerland[0.048]; Qualifier[0.047]; World[0.047]; World[0.047]; Azerbaijan[0.047]; Azerbaijan[0.047]; Saturday[0.046]; Baku[0.044]; Scorer[0.043]; Attendance[0.043]; Beat[0.042]; halftime[0.041]; 
+
+INCORRECT ANNOTATION	1075testa	Mauritania	Mauritania	Mauritania national football team
+global=0.360	0.321
+local(<e, ctx>)=0.200	0.017
+log p(e|m)=-0.373	-2.146
+Mauritania[0.048]; Mauritania[0.048]; country[0.046]; national[0.045]; team[0.044]; Cup[0.043]; Cup[0.043]; Benin[0.042]; Nations[0.042]; qualifying[0.041]; Nouakchott[0.041]; African[0.041]; soccer[0.040]; qualify[0.040]; eliminated[0.040]; commitments[0.040]; federation[0.040]; federation[0.040]; Africans[0.040]; president[0.040]; championship[0.040]; leg[0.039]; Soccer[0.039]; losing[0.039]; 
+
+INCORRECT ANNOTATION	1075testa	Benin	Benin	Benin national football team
+global=0.338	0.324
+local(<e, ctx>)=-0.011	0.260
+log p(e|m)=-0.420	-2.163
+country[0.046]; federation[0.045]; federation[0.045]; national[0.044]; team[0.044]; soccer[0.044]; suspended[0.043]; African[0.042]; Cup[0.042]; Cup[0.042]; season[0.041]; held[0.041]; Soccer[0.041]; National[0.041]; Nations[0.041]; Mauritania[0.040]; Mauritania[0.040]; Mauritania[0.040]; dissolved[0.040]; wake[0.040]; president[0.040]; eliminated[0.039]; Team[0.039]; North[0.039]; 
+
+INCORRECT ANNOTATION	1075testa	Mauritania	Mauritania	Mauritania national football team
+global=0.360	0.332
+local(<e, ctx>)=0.204	0.178
+log p(e|m)=-0.373	-2.146
+Mauritania[0.048]; Mauritania[0.048]; country[0.046]; national[0.045]; team[0.044]; Cup[0.043]; Cup[0.043]; Benin[0.042]; Nations[0.042]; qualifying[0.041]; African[0.041]; soccer[0.041]; qualify[0.041]; eliminated[0.040]; Nouakchott[0.040]; federation[0.040]; federation[0.040]; Africans[0.040]; championship[0.040]; leg[0.039]; Soccer[0.039]; Team[0.039]; losing[0.039]; draw[0.039]; 
+
+INCORRECT ANNOTATION	1136testa	Insein	Insein Prison	Insein Township
+global=0.352	0.351
+local(<e, ctx>)=0.136	0.074
+log p(e|m)=-2.198	0.000
+Burma[0.054]; Burma[0.054]; Insein[0.052]; Kyi[0.043]; Kyi[0.043]; Kyi[0.043]; instances[0.042]; prisoners[0.041]; torture[0.040]; Suu[0.040]; Suu[0.040]; Suu[0.040]; prison[0.040]; prison[0.040]; Prison[0.040]; abuse[0.039]; Hla[0.039]; came[0.039]; August[0.039]; arrest[0.039]; repression[0.038]; food[0.038]; sleep[0.038]; arrests[0.038]; 
+
+INCORRECT ANNOTATION	1136testa	Insein	Insein Prison	Insein Township
+global=0.353	0.352
+local(<e, ctx>)=0.231	0.173
+log p(e|m)=-2.198	0.000
+Burma[0.052]; Burma[0.052]; Insein[0.050]; Insein[0.050]; Rangoon[0.046]; Kyi[0.042]; Kyi[0.042]; Kyi[0.042]; instances[0.041]; prisoners[0.040]; prisoners[0.040]; torture[0.039]; Suu[0.039]; Suu[0.039]; Suu[0.039]; jail[0.039]; prison[0.039]; prison[0.039]; prison[0.039]; Prison[0.039]; held[0.038]; abuse[0.038]; Hla[0.038]; came[0.038]; 
+
+INCORRECT ANNOTATION	1081testa	European	UEFA	UEFA Champions League
+global=0.327	0.323
+local(<e, ctx>)=-0.166	-0.140
+log p(e|m)=-3.576	-4.423
+soccer[0.047]; qualifier[0.045]; Cup[0.045]; Cup[0.045]; Soccer[0.045]; group[0.044]; beat[0.043]; Romania[0.042]; Romania[0.042]; Romania[0.042]; Lithuania[0.042]; Lithuania[0.042]; Petrescu[0.042]; Qualifier[0.042]; World[0.042]; World[0.042]; Saturday[0.041]; Bucharest[0.041]; minute[0.041]; Moldovan[0.039]; Viorel[0.037]; Beat[0.037]; Scorers[0.037]; halftime[0.036]; 
+
+INCORRECT ANNOTATION	985testa	European	Europe	European Union
+global=0.344	0.331
+local(<e, ctx>)=-0.010	0.128
+log p(e|m)=-0.256	-2.937
+trading[0.046]; trading[0.046]; stock[0.044]; price[0.044]; players[0.043]; September[0.043]; week[0.043]; week[0.043]; Airport[0.042]; ahead[0.041]; likely[0.041]; International[0.041]; placed[0.041]; day[0.041]; gains[0.041]; discount[0.040]; market[0.040]; Stock[0.040]; million[0.040]; million[0.040]; million[0.040]; issued[0.040]; launched[0.040]; pre[0.039]; 
+
+INCORRECT ANNOTATION	1105testa	Roberto Carlos	Roberto Carlos (footballer)	Roberto Abbondanzieri
+global=0.347	0.341
+local(<e, ctx>)=-0.105	-0.081
+log p(e|m)=-0.057	-1.609
+Madrid[0.061]; Madrid[0.061]; Soccer[0.060]; Spanish[0.059]; Spanish[0.059]; game[0.058]; Real[0.057]; played[0.057]; Deportivo[0.057]; Coruna[0.056]; Martins[0.055]; Halftime[0.055]; minute[0.055]; Saturday[0.052]; division[0.051]; Division[0.049]; Summary[0.049]; Summary[0.049]; 
+
+INCORRECT ANNOTATION	1050testa	Ireland	Republic of Ireland	Ireland
+global=0.337	0.326
+local(<e, ctx>)=0.239	0.095
+log p(e|m)=-1.505	-0.566
+Ireland[0.052]; Irish[0.047]; Irish[0.047]; Sunderland[0.042]; second[0.042]; qualifier[0.042]; Neill[0.041]; Charlton[0.041]; win[0.041]; European[0.041]; draw[0.041]; McCarthy[0.041]; captain[0.041]; Norwich[0.040]; fifth[0.040]; striker[0.040]; Cup[0.040]; Saturday[0.040]; finals[0.040]; Ian[0.040]; beating[0.040]; Niall[0.040]; added[0.039]; held[0.039]; 
+
+INCORRECT ANNOTATION	1050testa	Ireland	Republic of Ireland	Ireland
+global=0.337	0.325
+local(<e, ctx>)=0.260	0.098
+log p(e|m)=-1.505	-0.566
+Ireland[0.051]; Ireland[0.051]; Irish[0.046]; Irish[0.046]; Irish[0.046]; Sunderland[0.041]; second[0.041]; qualifier[0.041]; Republic[0.041]; Neill[0.041]; Charlton[0.040]; win[0.040]; European[0.040]; draw[0.040]; McCarthy[0.040]; captain[0.040]; Soccer[0.040]; Norwich[0.040]; fifth[0.040]; striker[0.039]; Cup[0.039]; Saturday[0.039]; finals[0.039]; Ian[0.039]; 
+
+INCORRECT ANNOTATION	1050testa	Irish	Republic of Ireland	Ireland
+global=0.333	0.325
+local(<e, ctx>)=0.247	0.078
+log p(e|m)=-2.254	-1.457
+Ireland[0.052]; Ireland[0.052]; Irish[0.049]; Niall[0.043]; Sunderland[0.042]; qualifier[0.042]; Republic[0.041]; Neill[0.041]; second[0.041]; captain[0.041]; Quinn[0.041]; Quinn[0.041]; Cup[0.041]; McCarthy[0.041]; Soccer[0.040]; striker[0.040]; Saturday[0.040]; added[0.039]; Norwich[0.039]; fifth[0.039]; Mick[0.038]; World[0.038]; manager[0.038]; teenager[0.038]; 
+
+INCORRECT ANNOTATION	1050testa	Irish	Republic of Ireland	Ireland
+global=0.332	0.318
+local(<e, ctx>)=0.247	0.006
+log p(e|m)=-2.254	-1.457
+Ireland[0.051]; Ireland[0.051]; Ireland[0.051]; Irish[0.048]; Niall[0.042]; Sunderland[0.041]; qualifier[0.041]; European[0.041]; Republic[0.040]; Neill[0.040]; second[0.040]; finals[0.040]; Charlton[0.040]; captain[0.040]; Quinn[0.040]; Quinn[0.040]; draw[0.040]; Cup[0.040]; McCarthy[0.040]; striker[0.039]; win[0.039]; Saturday[0.039]; Jack[0.038]; added[0.038]; 
+
+INCORRECT ANNOTATION	1050testa	Irish	Republic of Ireland	Ireland
+global=0.333	0.322
+local(<e, ctx>)=0.291	0.085
+log p(e|m)=-2.254	-1.457
+Ireland[0.050]; Ireland[0.050]; Ireland[0.050]; Irish[0.048]; Irish[0.048]; Niall[0.041]; Sunderland[0.041]; qualifier[0.041]; Republic[0.040]; Neill[0.040]; second[0.040]; Charlton[0.040]; captain[0.040]; Quinn[0.040]; Quinn[0.040]; draw[0.040]; Cup[0.040]; McCarthy[0.039]; Soccer[0.039]; striker[0.039]; win[0.039]; Saturday[0.039]; Jack[0.038]; added[0.038]; 
+
+INCORRECT ANNOTATION	1108testa	European	UEFA	Europe
+global=0.326	0.323
+local(<e, ctx>)=-0.114	-0.292
+log p(e|m)=-3.576	-0.256
+soccer[0.062]; qualifier[0.060]; Cup[0.060]; Cup[0.060]; Soccer[0.059]; group[0.058]; drew[0.056]; Qualifier[0.055]; World[0.055]; World[0.055]; Saturday[0.054]; Scotland[0.054]; Scotland[0.054]; Austria[0.054]; Austria[0.054]; Draw[0.052]; Attendance[0.050]; Vienna[0.049]; 
+
+INCORRECT ANNOTATION	1079testa	Red Star	Red Star Belgrade	KK Crvena zvezda
+global=0.342	0.330
+local(<e, ctx>)=-0.155	-0.124
+log p(e|m)=-1.036	-2.465
+Beograd[0.053]; Beograd[0.053]; Belgrade[0.052]; tournament[0.051]; Basketball[0.049]; basketball[0.049]; international[0.049]; Dinamo[0.049]; Tournament[0.046]; Saturday[0.045]; place[0.044]; place[0.044]; Italy[0.044]; Yugoslavia[0.044]; Russia[0.043]; Germany[0.043]; Benetton[0.042]; halftime[0.042]; Alba[0.040]; Fifth[0.039]; Results[0.039]; Results[0.039]; 
+
+INCORRECT ANNOTATION	1093testa	Belgium	Belgium	Belgium national football team
+global=0.340	0.314
+local(<e, ctx>)=0.266	-0.061
+log p(e|m)=-0.242	-2.882
+France[0.045]; Cup[0.044]; Cup[0.044]; Tennis[0.043]; Switzerland[0.043]; Netherlands[0.043]; tennis[0.043]; Spain[0.043]; championships[0.043]; Germany[0.042]; Korea[0.042]; Open[0.042]; team[0.042]; Japan[0.041]; round[0.041]; round[0.041]; finals[0.041]; Argentina[0.041]; semifinals[0.041]; Austria[0.040]; July[0.040]; States[0.040]; Croatia[0.040]; Czech[0.039]; 
+
+INCORRECT ANNOTATION	1093testa	United States	United States	United States national rugby union team
+global=0.318	0.314
+local(<e, ctx>)=-0.261	0.274
+log p(e|m)=-0.074	-5.116
+Argentina[0.046]; team[0.044]; championships[0.043]; Spain[0.043]; Switzerland[0.042]; World[0.042]; World[0.042]; finals[0.042]; Germany[0.042]; France[0.042]; Australia[0.042]; Cup[0.042]; Cup[0.042]; Japan[0.041]; Saturday[0.041]; round[0.041]; round[0.041]; Team[0.041]; women[0.040]; semifinals[0.040]; tennis[0.040]; South[0.040]; South[0.040]; Austria[0.039]; 
+
+INCORRECT ANNOTATION	1047testa	Brazil	Brazil	Brazil national football team
+global=0.339	0.325
+local(<e, ctx>)=0.130	0.052
+log p(e|m)=-0.213	-2.590
+Brazilian[0.047]; national[0.045]; match[0.044]; match[0.044]; players[0.044]; squad[0.043]; playing[0.043]; final[0.043]; Fifa[0.042]; coach[0.042]; Augusto[0.042]; lost[0.041]; Silva[0.041]; Silva[0.041]; event[0.041]; decided[0.041]; Real[0.041]; midfielder[0.041]; Europe[0.040]; Lendoiro[0.039]; kick[0.039]; chances[0.039]; claimed[0.039]; sent[0.038]; 
+
+INCORRECT ANNOTATION	951testa	Red Star	Red Star Belgrade	KK Crvena zvezda
+global=0.346	0.335
+local(<e, ctx>)=0.146	0.158
+log p(e|m)=-1.036	-2.465
+Belgrade[0.075]; tournament[0.074]; Basketball[0.071]; basketball[0.071]; international[0.071]; Dinamo[0.071]; Tournament[0.066]; beat[0.066]; International[0.066]; Friday[0.065]; Yugoslavia[0.063]; Russia[0.063]; halftime[0.061]; Result[0.058]; Result[0.058]; 
+
+INCORRECT ANNOTATION	1129testa	Hachette	Hachette (publisher)	Hachette Book Group USA
+global=0.329	0.325
+local(<e, ctx>)=-0.113	-0.132
+log p(e|m)=-0.294	-0.906
+publisher[0.054]; publishers[0.048]; French[0.047]; distribution[0.047]; million[0.046]; million[0.046]; Jacques[0.046]; chain[0.046]; firm[0.045]; division[0.045]; group[0.045]; group[0.045]; sales[0.045]; distributor[0.044]; distributor[0.044]; country[0.044]; offered[0.044]; listed[0.044]; September[0.044]; News[0.044]; exchange[0.044]; billion[0.044]; 
+
+INCORRECT ANNOTATION	1129testa	Hachette	Hachette (publisher)	Hachette Book Group USA
+global=0.330	0.325
+local(<e, ctx>)=-0.101	-0.135
+log p(e|m)=-0.294	-0.906
+publisher[0.051]; France[0.045]; distribution[0.044]; owned[0.043]; million[0.043]; chain[0.042]; chain[0.042]; firm[0.042]; division[0.042]; group[0.042]; group[0.042]; newsstand[0.042]; offered[0.041]; plans[0.041]; exchange[0.041]; consortium[0.040]; consortium[0.040]; consortium[0.040]; provided[0.040]; bid[0.040]; finance[0.039]; press[0.039]; offer[0.039]; shares[0.039]; 
+
+INCORRECT ANNOTATION	1045testa	Arabs	Palestinian territories	Arab world
+global=0.333	0.322
+local(<e, ctx>)=0.535	0.315
+log p(e|m)=-3.170	-3.170
+Arab[0.046]; Israel[0.045]; Israel[0.045]; Israel[0.045]; Palestinian[0.043]; Palestinian[0.043]; Israeli[0.043]; Israeli[0.043]; Palestinians[0.042]; Palestinians[0.042]; West[0.042]; West[0.042]; West[0.042]; Jerusalem[0.041]; Jerusalem[0.041]; Jerusalem[0.041]; Jerusalem[0.041]; Ramallah[0.039]; Bank[0.039]; Bank[0.039]; Bank[0.039]; enclave[0.039]; occupation[0.039]; state[0.039]; 
+
+INCORRECT ANNOTATION	1045testa	Jews	Israelis	Jews
+global=0.330	0.328
+local(<e, ctx>)=0.510	0.326
+log p(e|m)=-3.324	-0.126
+Arabs[0.047]; Israel[0.046]; Israel[0.046]; Israel[0.046]; Israeli[0.045]; Israeli[0.045]; Arab[0.044]; Jerusalem[0.042]; Jerusalem[0.042]; Jerusalem[0.042]; Jerusalem[0.042]; Palestinian[0.041]; Palestinian[0.041]; Palestinians[0.041]; Palestinians[0.041]; arrived[0.039]; visit[0.039]; West[0.039]; West[0.039]; West[0.039]; occupation[0.039]; enclave[0.038]; Moslems[0.038]; holy[0.038]; 
+
+INCORRECT ANNOTATION	1059testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.328	0.327
+local(<e, ctx>)=0.358	0.323
+log p(e|m)=-4.075	-3.863
+Seattle[0.047]; Seattle[0.047]; Incaviglia[0.045]; Incaviglia[0.045]; Tartabull[0.043]; season[0.042]; Baltimore[0.042]; Baltimore[0.042]; career[0.042]; career[0.042]; game[0.041]; Mariners[0.041]; Mariners[0.041]; League[0.040]; Orioles[0.040]; Orioles[0.040]; Yankees[0.040]; Chicago[0.040]; Chicago[0.040]; Toronto[0.040]; sixth[0.040]; sixth[0.040]; Jays[0.040]; Martinez[0.040]; 
+
+INCORRECT ANNOTATION	1059testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.324	0.323
+local(<e, ctx>)=0.312	0.270
+log p(e|m)=-4.075	-3.863
+league[0.043]; games[0.043]; games[0.043]; season[0.043]; season[0.043]; season[0.043]; season[0.043]; fourth[0.042]; Cleveland[0.042]; Cleveland[0.042]; Cleveland[0.042]; game[0.041]; game[0.041]; game[0.041]; League[0.041]; League[0.041]; California[0.041]; Yankees[0.041]; Yankees[0.041]; seven[0.040]; seven[0.040]; seven[0.040]; Texas[0.040]; regular[0.040]; 
+
+INCORRECT ANNOTATION	1059testa	Texas	Texas	Texas Rangers (baseball)
+global=0.330	0.323
+local(<e, ctx>)=0.182	0.050
+log p(e|m)=-0.161	-4.962
+Texas[0.045]; Texas[0.045]; Texas[0.045]; Texas[0.045]; game[0.042]; game[0.042]; game[0.042]; team[0.042]; team[0.042]; seven[0.041]; games[0.041]; games[0.041]; games[0.041]; matchup[0.041]; season[0.041]; season[0.041]; season[0.041]; season[0.041]; Gonzalez[0.040]; Gonzalez[0.040]; Gonzalez[0.040]; Gonzalez[0.040]; Gonzalez[0.040]; Gonzalez[0.040]; 
+
+INCORRECT ANNOTATION	1059testa	Oakland	Oakland Athletics	Oakland, California
+global=0.338	0.337
+local(<e, ctx>)=0.298	0.180
+log p(e|m)=-3.912	-0.499
+league[0.046]; Tartabull[0.046]; major[0.045]; Boston[0.045]; Boston[0.045]; game[0.044]; game[0.044]; games[0.044]; League[0.043]; American[0.043]; Toronto[0.043]; Jays[0.043]; seven[0.043]; Sox[0.043]; Sox[0.043]; Sox[0.043]; Detroit[0.043]; Chicago[0.043]; Chicago[0.043]; sixth[0.043]; Orioles[0.042]; Mariners[0.042]; Ventura[0.042]; 
+
+INCORRECT ANNOTATION	1097testa	Cincinnati	Cincinnati Reds	Cincinnati
+global=0.330	0.326
+local(<e, ctx>)=-0.061	-0.047
+log p(e|m)=-3.772	-0.460
+game[0.051]; league[0.051]; league[0.051]; Cincinnati[0.051]; won[0.049]; beat[0.048]; tie[0.047]; win[0.047]; major[0.047]; straight[0.047]; Baseball[0.047]; League[0.047]; earned[0.047]; Cardinals[0.047]; fifth[0.047]; fifth[0.047]; run[0.046]; tied[0.046]; Reds[0.046]; Reds[0.046]; seventh[0.046]; 
+
+INCORRECT ANNOTATION	1102testa	World Cup	2010 FIFA World Cup	1998 FIFA World Cup
+global=0.326	0.325
+local(<e, ctx>)=0.206	0.284
+log p(e|m)=-2.749	-4.200
+Karembeu[0.044]; team[0.044]; Lamouchi[0.044]; Thuram[0.043]; European[0.043]; Djorkaeff[0.042]; Djorkaeff[0.042]; Djorkaeff[0.042]; France[0.042]; France[0.042]; playing[0.042]; Desailly[0.041]; midfielder[0.041]; Bixente[0.041]; Zidane[0.041]; Zidane[0.041]; play[0.041]; Deschamps[0.041]; finals[0.041]; finals[0.041]; Mexico[0.040]; Milan[0.040]; Suarez[0.040]; Didier[0.040]; 
+
+INCORRECT ANNOTATION	1102testa	France	France	France national football team
+global=0.329	0.320
+local(<e, ctx>)=0.198	0.028
+log p(e|m)=-0.163	-3.381
+France[0.050]; France[0.050]; France[0.050]; Paris[0.046]; matches[0.045]; Cup[0.044]; Cup[0.044]; international[0.044]; second[0.044]; second[0.044]; Euro[0.043]; Euro[0.043]; Soccer[0.042]; Djorkaeff[0.042]; semifinal[0.042]; victory[0.042]; hosts[0.041]; goals[0.041]; goals[0.041]; substitutions[0.041]; Nicolas[0.041]; elimination[0.040]; early[0.040]; 
+
+INCORRECT ANNOTATION	1102testa	France	France	France national football team
+global=0.328	0.322
+local(<e, ctx>)=0.158	0.042
+log p(e|m)=-0.163	-3.381
+France[0.049]; France[0.049]; Paris[0.045]; matches[0.044]; Cup[0.043]; Cup[0.043]; international[0.043]; second[0.043]; Euro[0.042]; Euro[0.042]; Soccer[0.041]; Djorkaeff[0.041]; semifinal[0.041]; victory[0.041]; hosts[0.040]; goals[0.040]; Nicolas[0.040]; elimination[0.039]; Jacquet[0.039]; defender[0.039]; Mexico[0.039]; coach[0.039]; World[0.039]; World[0.039]; 
+
+INCORRECT ANNOTATION	1102testa	Ramon Ramirez	Ramón Ramírez (Dominican pitcher)	Ramón Ramírez (footballer)
+global=0.350	0.345
+local(<e, ctx>)=-0.065	0.070
+log p(e|m)=0.000	-4.510
+Mexico[0.046]; Osvaldo[0.044]; Ricardo[0.044]; Luis[0.043]; Francisco[0.043]; Suarez[0.043]; Enrique[0.043]; Raul[0.043]; Alberto[0.042]; Rodrigo[0.042]; Karembeu[0.041]; Bixente[0.041]; Rios[0.041]; Garcia[0.041]; Garcia[0.041]; Joaquin[0.041]; Blanco[0.041]; Djorkaeff[0.040]; Pavel[0.040]; Sanchez[0.040]; Claudio[0.040]; Cuauhtemoc[0.040]; Palencia[0.040]; Alfonso[0.040]; 
+
+INCORRECT ANNOTATION	1102testa	Barcelona	FC Barcelona	Barcelona
+global=0.336	0.334
+local(<e, ctx>)=-0.008	0.113
+log p(e|m)=-1.709	-0.371
+team[0.044]; Ricardo[0.044]; Osvaldo[0.044]; del[0.043]; Juventus[0.042]; Cup[0.042]; Joaquin[0.042]; playing[0.042]; second[0.042]; second[0.042]; Djorkaeff[0.042]; Djorkaeff[0.042]; championship[0.042]; Thuram[0.042]; Milan[0.042]; midfielder[0.041]; play[0.041]; Chelsea[0.041]; finals[0.040]; finals[0.040]; Internazionale[0.040]; Espanyol[0.040]; European[0.040]; Mexican[0.040]; 
+
+INCORRECT ANNOTATION	948testa	Chesterfield	Chesterfield F.C.	Chesterfield
+global=0.336	0.335
+local(<e, ctx>)=-0.132	-0.089
+log p(e|m)=-1.269	-0.939
+Portsmouth[0.046]; Bristol[0.045]; Middlesex[0.044]; Hampshire[0.044]; Derbyshire[0.043]; Sussex[0.043]; Oval[0.043]; Kent[0.043]; Lancashire[0.042]; Warwickshire[0.042]; Nottinghamshire[0.042]; Durham[0.042]; Surrey[0.042]; Glamorgan[0.042]; Gloucestershire[0.041]; London[0.041]; Worcestershire[0.040]; Tunbridge[0.040]; Northamptonshire[0.040]; Ramprakash[0.039]; Hove[0.039]; Russell[0.039]; Wells[0.039]; Adams[0.039]; 
+
+INCORRECT ANNOTATION	1036testa	Nagorno-Karabakh	Nagorno-Karabakh	Nagorno-Karabakh Republic
+global=0.346	0.343
+local(<e, ctx>)=0.293	0.283
+log p(e|m)=-0.167	-1.044
+Nagorno[0.046]; Nagorno[0.046]; Nagorno[0.046]; Armenian[0.043]; Armenian[0.043]; conflict[0.042]; Armenia[0.042]; Armenia[0.042]; region[0.042]; region[0.042]; territory[0.042]; Karabakh[0.041]; Karabakh[0.041]; Karabakh[0.041]; Karabakh[0.041]; Azerbaijan[0.041]; Azerbaijan[0.041]; Azerbaijani[0.041]; ethnic[0.040]; Azeris[0.040]; Azeris[0.040]; independence[0.039]; Armenians[0.039]; Armenians[0.039]; 
+
+INCORRECT ANNOTATION	1036testa	Nagorno-Karabakh	Nagorno-Karabakh	Nagorno-Karabakh Republic
+global=0.344	0.340
+local(<e, ctx>)=0.137	0.124
+log p(e|m)=-0.167	-1.044
+Nagorno[0.047]; Armenian[0.044]; conflict[0.044]; Armenia[0.044]; region[0.043]; region[0.043]; territory[0.043]; Karabakh[0.043]; Karabakh[0.043]; Azerbaijan[0.043]; Azerbaijani[0.042]; ethnic[0.041]; Azeris[0.041]; Azeris[0.041]; Armenians[0.040]; Armenians[0.040]; Azeri[0.040]; enclave[0.040]; disputed[0.040]; disputed[0.040]; held[0.039]; peace[0.039]; peace[0.039]; ceasefire[0.039]; 
+
+INCORRECT ANNOTATION	1036testa	Nagorno-Karabakh	Nagorno-Karabakh	Nagorno-Karabakh Republic
+global=0.343	0.339
+local(<e, ctx>)=0.122	0.113
+log p(e|m)=-0.167	-1.044
+Nagorno[0.047]; Nagorno[0.047]; Armenian[0.043]; Armenian[0.043]; conflict[0.043]; Armenia[0.043]; region[0.043]; region[0.043]; territory[0.042]; Karabakh[0.042]; Karabakh[0.042]; Karabakh[0.042]; Azerbaijan[0.042]; Azerbaijani[0.042]; ethnic[0.040]; Azeris[0.040]; Russia[0.040]; reported[0.040]; independence[0.040]; Armenians[0.040]; forces[0.039]; Azeri[0.039]; enclave[0.039]; enclave[0.039]; 
+
+INCORRECT ANNOTATION	1036testa	Nagorno-Karabakh	Nagorno-Karabakh	Nagorno-Karabakh Republic
+global=0.345	0.342
+local(<e, ctx>)=0.209	0.201
+log p(e|m)=-0.167	-1.044
+Nagorno[0.047]; Nagorno[0.047]; Armenian[0.044]; conflict[0.043]; Armenia[0.043]; region[0.043]; territory[0.043]; Karabakh[0.042]; Karabakh[0.042]; Karabakh[0.042]; Azerbaijan[0.042]; ethnic[0.041]; Azeris[0.041]; Russia[0.040]; Russia[0.040]; reported[0.040]; independence[0.040]; Armenians[0.040]; forces[0.040]; Azeri[0.040]; enclave[0.040]; enclave[0.040]; disputed[0.040]; officials[0.039]; 
+
+INCORRECT ANNOTATION	1064testa	European	UEFA	UEFA Champions League
+global=0.327	0.321
+local(<e, ctx>)=-0.163	-0.157
+log p(e|m)=-3.576	-4.423
+soccer[0.047]; qualifier[0.046]; Cup[0.045]; Cup[0.045]; Soccer[0.045]; group[0.044]; beat[0.043]; Ireland[0.043]; Ireland[0.043]; Qualifier[0.042]; World[0.042]; World[0.042]; Ukraine[0.041]; Ukraine[0.041]; Rebrov[0.041]; Saturday[0.041]; minute[0.041]; Northern[0.041]; Northern[0.041]; Scorer[0.038]; Attendance[0.038]; Belfast[0.037]; Beat[0.037]; halftime[0.036]; 
+
+INCORRECT ANNOTATION	1064testa	Ukraine	Ukraine	Ukraine national football team
+global=0.333	0.327
+local(<e, ctx>)=0.107	0.008
+log p(e|m)=-0.354	-3.101
+Ukraine[0.050]; soccer[0.048]; qualifier[0.046]; group[0.046]; European[0.044]; Soccer[0.043]; Cup[0.042]; Cup[0.042]; Qualifier[0.042]; Rebrov[0.042]; Sergei[0.042]; beat[0.041]; Ireland[0.041]; Ireland[0.041]; halftime[0.040]; World[0.040]; World[0.040]; minute[0.040]; Saturday[0.040]; Beat[0.039]; Scorer[0.039]; Attendance[0.037]; Northern[0.037]; Northern[0.037]; 
+
+INCORRECT ANNOTATION	1100testa	Scotland	Scotland national football team	Scotland national under-21 football team
+global=0.330	0.318
+local(<e, ctx>)=0.242	0.268
+log p(e|m)=-2.703	-4.510
+Scotland[0.050]; Scottish[0.046]; Scottish[0.046]; players[0.043]; players[0.043]; match[0.043]; Scots[0.043]; team[0.043]; play[0.042]; game[0.042]; Ferguson[0.041]; Ferguson[0.041]; captain[0.041]; draw[0.041]; McAllister[0.040]; coach[0.040]; Craig[0.040]; lost[0.040]; goalkeeper[0.039]; chance[0.039]; went[0.039]; went[0.039]; unable[0.039]; pitch[0.039]; 
+
+INCORRECT ANNOTATION	1100testa	Scottish	Scotland	Scotland national football team
+global=0.337	0.323
+local(<e, ctx>)=0.212	-0.020
+log p(e|m)=-0.480	-3.912
+Scotland[0.049]; Scotland[0.049]; Scotland[0.049]; Scotland[0.049]; Scotland[0.049]; players[0.043]; match[0.041]; Ferguson[0.041]; Ferguson[0.041]; Cup[0.041]; Cup[0.041]; draw[0.040]; McAllister[0.040]; qualifier[0.040]; Soccer[0.040]; dominated[0.039]; captain[0.039]; goalkeeper[0.039]; Duncan[0.039]; opening[0.038]; Austria[0.038]; Austria[0.038]; Austria[0.038]; post[0.038]; 
+
+INCORRECT ANNOTATION	1100testa	Austria	Austria	Austria national football team
+global=0.335	0.332
+local(<e, ctx>)=0.177	0.046
+log p(e|m)=-0.252	-2.937
+Austria[0.047]; Austria[0.047]; qualifier[0.044]; match[0.044]; players[0.044]; Stephan[0.042]; Belarus[0.042]; Markus[0.042]; draw[0.042]; Austrian[0.041]; Scotland[0.041]; Scotland[0.041]; Scotland[0.041]; Scotland[0.041]; Scotland[0.041]; Saturday[0.041]; Vienna[0.040]; went[0.040]; went[0.040]; dominated[0.040]; opening[0.040]; Cup[0.040]; Cup[0.040]; Soccer[0.040]; 
+
+INCORRECT ANNOTATION	1100testa	Austria	Austria	Austria national football team
+global=0.335	0.330
+local(<e, ctx>)=0.184	0.021
+log p(e|m)=-0.252	-2.937
+Austria[0.049]; Austria[0.049]; qualifier[0.047]; match[0.046]; Cup[0.045]; Cup[0.045]; draw[0.044]; Belarus[0.043]; World[0.043]; World[0.043]; Scotland[0.043]; Scotland[0.043]; Scotland[0.043]; Vienna[0.043]; Qualifier[0.042]; opening[0.042]; Soccer[0.042]; Saturday[0.042]; dominated[0.041]; came[0.041]; Stephan[0.041]; thrashed[0.041]; minute[0.041]; 
+
+INCORRECT ANNOTATION	1100testa	Scotland	Scotland	Scotland national football team
+global=0.334	0.324
+local(<e, ctx>)=0.166	-0.058
+log p(e|m)=-0.229	-2.703
+Burley[0.044]; players[0.044]; Scots[0.043]; team[0.043]; team[0.043]; team[0.043]; Goram[0.043]; game[0.043]; Duncan[0.043]; Craig[0.042]; Stuart[0.042]; Ferguson[0.042]; Colin[0.041]; Colin[0.041]; Calderwood[0.041]; won[0.041]; Andrew[0.041]; McAllister[0.041]; Gordon[0.040]; coach[0.040]; lost[0.040]; Alistair[0.040]; McCoist[0.039]; Boyd[0.039]; 
+
+INCORRECT ANNOTATION	1060testa	Australian	Australia national cricket team	Australia
+global=0.336	0.330
+local(<e, ctx>)=-0.052	-0.094
+log p(e|m)=-3.612	-0.491
+Australian[0.045]; match[0.044]; match[0.044]; day[0.044]; day[0.044]; final[0.042]; captain[0.042]; captain[0.042]; ahead[0.042]; Kent[0.041]; took[0.041]; wickets[0.041]; Surrey[0.041]; Surrey[0.041]; win[0.041]; Warwickshire[0.041]; Warwickshire[0.041]; season[0.041]; coach[0.041]; wicket[0.040]; beat[0.040]; conceding[0.040]; Leicestershire[0.040]; Somerset[0.040]; 
+
+INCORRECT ANNOTATION	1151testa	Rochester	Rochester, New York	Rochester, New Hampshire
+global=0.331	0.322
+local(<e, ctx>)=0.005	0.103
+log p(e|m)=-1.094	-2.865
+Rochester[0.053]; Rochester[0.053]; Friday[0.050]; Boston[0.048]; people[0.048]; people[0.048]; Hampshire[0.048]; Department[0.048]; truck[0.048]; television[0.047]; motel[0.047]; stations[0.047]; Falls[0.047]; Falls[0.047]; involved[0.046]; officials[0.046]; officials[0.046]; trucks[0.046]; department[0.046]; parked[0.045]; deaths[0.045]; 
+
+INCORRECT ANNOTATION	1151testa	Rochester	Rochester, New York	Rochester, New Hampshire
+global=0.335	0.326
+local(<e, ctx>)=0.113	0.207
+log p(e|m)=-1.094	-2.865
+Rochester[0.053]; Rochester[0.053]; Friday[0.050]; Boston[0.048]; people[0.048]; people[0.048]; Hampshire[0.048]; Department[0.048]; truck[0.048]; television[0.047]; motel[0.047]; stations[0.047]; Falls[0.047]; Falls[0.047]; involved[0.046]; officials[0.046]; officials[0.046]; trucks[0.046]; department[0.046]; parked[0.045]; deaths[0.045]; 
+
+INCORRECT ANNOTATION	984testa	Stansted	London Stansted Airport	Stansted Mountfitchet
+global=0.361	0.316
+local(<e, ctx>)=0.741	0.100
+log p(e|m)=-0.267	-1.546
+airport[0.047]; London[0.046]; London[0.046]; Britain[0.044]; fly[0.042]; Monday[0.042]; Tuesday[0.041]; seven[0.041]; seven[0.041]; seven[0.041]; people[0.041]; people[0.041]; ending[0.041]; Saturday[0.041]; sent[0.041]; Friday[0.041]; Iraq[0.041]; landed[0.041]; bound[0.041]; jet[0.040]; plane[0.040]; plane[0.040]; claimed[0.040]; forced[0.040]; 
+
+INCORRECT ANNOTATION	1153testa	Carl Vinson	Carl Vinson	USS Carl Vinson (CVN-70)
+global=0.364	0.360
+local(<e, ctx>)=-0.193	-0.117
+log p(e|m)=0.000	-0.286
+expeditionary[0.044]; Gulf[0.043]; Gulf[0.043]; Gulf[0.043]; ships[0.043]; ships[0.043]; Washington[0.042]; carrier[0.042]; carrier[0.042]; Bill[0.042]; military[0.042]; Pentagon[0.042]; President[0.042]; Department[0.042]; fly[0.042]; deploy[0.041]; aircraft[0.040]; aircraft[0.040]; ordered[0.040]; ordered[0.040]; ordered[0.040]; ordered[0.040]; president[0.040]; Iraq[0.040]; 
+
+INCORRECT ANNOTATION	1153testa	Carl Vinson	Carl Vinson	USS Carl Vinson (CVN-70)
+global=0.361	0.361
+local(<e, ctx>)=-0.253	-0.094
+log p(e|m)=0.000	-0.286
+expeditionary[0.044]; sailors[0.043]; Gulf[0.043]; Gulf[0.043]; personnel[0.043]; ships[0.043]; ships[0.043]; ships[0.043]; nearly[0.043]; Marines[0.043]; Marines[0.043]; exercises[0.042]; military[0.042]; military[0.042]; fly[0.042]; seven[0.041]; Force[0.040]; servicemen[0.040]; Amphibious[0.040]; Readiness[0.040]; Tarawa[0.040]; Air[0.040]; support[0.039]; States[0.039]; 
+
+INCORRECT ANNOTATION	1153testa	Pentagon	United States Department of Defense	The Pentagon
+global=0.347	0.346
+local(<e, ctx>)=-0.019	-0.052
+log p(e|m)=-1.845	-0.146
+Defense[0.050]; military[0.049]; military[0.049]; Department[0.047]; Iraq[0.045]; Iraq[0.045]; officials[0.044]; officials[0.044]; said[0.043]; said[0.043]; said[0.043]; said[0.043]; said[0.043]; said[0.043]; eastern[0.042]; planes[0.042]; deploy[0.042]; aircraft[0.042]; aircraft[0.042]; spokesman[0.041]; expeditionary[0.041]; defense[0.040]; defense[0.040]; 
+
+INCORRECT ANNOTATION	1131testa	Granma	Granma (yacht)	Granma (newspaper)
+global=0.337	0.337
+local(<e, ctx>)=-0.122	-0.022
+log p(e|m)=-0.270	-0.924
+Granma[0.046]; Cuba[0.046]; Cuba[0.046]; newspaper[0.045]; published[0.045]; Havana[0.044]; reported[0.043]; official[0.043]; Fidel[0.042]; Cuban[0.042]; Cuban[0.042]; city[0.041]; Saturday[0.041]; Castro[0.040]; Castro[0.040]; Santiago[0.040]; Jose[0.040]; Jose[0.040]; Fulgencio[0.040]; government[0.039]; Batista[0.039]; revolution[0.039]; day[0.038]; died[0.038]; 
+
+INCORRECT ANNOTATION	1131testa	Granma	Granma (yacht)	Granma (newspaper)
+global=0.341	0.335
+local(<e, ctx>)=-0.077	-0.107
+log p(e|m)=-0.270	-0.924
+Granma[0.047]; Cuba[0.046]; newspaper[0.046]; published[0.046]; published[0.046]; reported[0.044]; Fidel[0.043]; Cuban[0.043]; city[0.042]; Saturday[0.042]; Saturday[0.042]; Castro[0.041]; Castro[0.041]; Santiago[0.041]; Fulgencio[0.040]; government[0.040]; Batista[0.040]; revolution[0.039]; interview[0.039]; interview[0.039]; shortly[0.039]; day[0.039]; stories[0.039]; Latina[0.039]; 
+
+INCORRECT ANNOTATION	952testa	European	UEFA	Europe
+global=0.324	0.322
+local(<e, ctx>)=-0.199	-0.371
+log p(e|m)=-3.576	-0.256
+soccer[0.057]; match[0.056]; Soccer[0.055]; Match[0.053]; beat[0.053]; Romania[0.052]; Romania[0.052]; Romania[0.052]; Lithuania[0.052]; Lithuania[0.052]; Lithuania[0.052]; Bucharest[0.050]; Cosmin[0.048]; Friday[0.047]; Attendance[0.046]; Mihai[0.046]; Contra[0.045]; Beat[0.045]; Scorers[0.045]; halftime[0.044]; 
+
+INCORRECT ANNOTATION	952testa	Lithuania	Lithuania national football team	Lithuania national basketball team
+global=0.346	0.326
+local(<e, ctx>)=0.174	0.157
+log p(e|m)=-2.129	-3.540
+Lithuania[0.056]; Lithuania[0.056]; Romania[0.051]; Romania[0.051]; Romania[0.051]; match[0.051]; Soccer[0.050]; European[0.050]; soccer[0.050]; beat[0.049]; Match[0.048]; Scorers[0.046]; Bucharest[0.046]; Cosmin[0.045]; halftime[0.045]; Friday[0.044]; Mihai[0.043]; Beat[0.043]; Attendance[0.042]; Contra[0.041]; Danius[0.040]; 
+
+INCORRECT ANNOTATION	952testa	Lithuania	Lithuania national football team	Lithuania national basketball team
+global=0.346	0.326
+local(<e, ctx>)=0.179	0.161
+log p(e|m)=-2.129	-3.540
+Lithuania[0.056]; Lithuania[0.056]; Romania[0.051]; Romania[0.051]; Romania[0.051]; match[0.051]; Soccer[0.050]; European[0.050]; soccer[0.050]; beat[0.049]; Match[0.048]; Scorers[0.046]; Bucharest[0.046]; Cosmin[0.045]; halftime[0.045]; Friday[0.044]; Mihai[0.043]; Beat[0.043]; Attendance[0.042]; Contra[0.041]; Danius[0.040]; 
+
+INCORRECT ANNOTATION	952testa	Romania	Romania	Romania national football team
+global=0.331	0.329
+local(<e, ctx>)=0.094	0.160
+log p(e|m)=-0.212	-3.058
+Romania[0.053]; Romania[0.053]; match[0.052]; European[0.051]; soccer[0.050]; Lithuania[0.050]; Lithuania[0.050]; Lithuania[0.050]; beat[0.050]; Soccer[0.049]; Match[0.048]; Bucharest[0.047]; Cosmin[0.047]; Mihai[0.047]; Scorers[0.047]; Beat[0.046]; Friday[0.044]; halftime[0.044]; Contra[0.043]; Attendance[0.041]; Danius[0.039]; 
+
+INCORRECT ANNOTATION	1078testa	England	England national football team	England
+global=0.328	0.320
+local(<e, ctx>)=-0.030	-0.160
+log p(e|m)=-2.781	-0.190
+England[0.053]; player[0.049]; players[0.048]; team[0.047]; midfielder[0.045]; Soccer[0.045]; coaching[0.043]; Saturday[0.043]; Hoddle[0.043]; Hoddle[0.043]; Ince[0.042]; Ince[0.042]; Ince[0.042]; Gascoigne[0.042]; Gascoigne[0.042]; Gascoigne[0.042]; time[0.042]; Paul[0.041]; Paul[0.041]; group[0.041]; stadium[0.041]; Inter[0.041]; clash[0.040]; 
+
+INCORRECT ANNOTATION	1141testa	High Court	High Court of Australia	High Court (Hong Kong)
+global=0.331	0.327
+local(<e, ctx>)=-0.031	0.149
+log p(e|m)=-1.444	-2.659
+court[0.049]; hearing[0.045]; likely[0.043]; Kong[0.042]; Kong[0.042]; Kong[0.042]; Kong[0.042]; sentencing[0.042]; said[0.042]; said[0.042]; said[0.042]; guilty[0.042]; Friday[0.041]; Hong[0.041]; Hong[0.041]; Hong[0.041]; Hong[0.041]; admitted[0.041]; admitted[0.041]; Chen[0.041]; Chen[0.041]; Chinese[0.040]; China[0.040]; mainland[0.040]; 
+
+INCORRECT ANNOTATION	1115testa	Romania	Romania	Romania national football team
+global=0.331	0.328
+local(<e, ctx>)=0.104	0.144
+log p(e|m)=-0.212	-3.058
+Romania[0.055]; Romania[0.055]; Qualifier[0.055]; match[0.054]; European[0.053]; soccer[0.052]; Lithuania[0.052]; Lithuania[0.052]; Lithuania[0.052]; beat[0.051]; Soccer[0.051]; Bucharest[0.049]; Cosmin[0.049]; Mihai[0.049]; Scorers[0.048]; Beat[0.048]; Friday[0.046]; halftime[0.046]; Contra[0.045]; Danius[0.041]; 
+
+INCORRECT ANNOTATION	1087testa	European	UEFA	UEFA Champions League
+global=0.326	0.320
+local(<e, ctx>)=-0.202	-0.186
+log p(e|m)=-3.576	-4.423
+soccer[0.055]; qualifier[0.053]; Soccer[0.052]; group[0.051]; championship[0.051]; beat[0.051]; England[0.050]; England[0.050]; Moldova[0.049]; Moldova[0.049]; Qualifier[0.049]; Saturday[0.048]; minute[0.048]; Chisinau[0.044]; Attendance[0.044]; Beat[0.043]; Scorers[0.043]; halftime[0.043]; Bruce[0.042]; Darren[0.042]; Dyer[0.042]; 
+
+INCORRECT ANNOTATION	1162testa	Moslem	Muslim	Islam
+global=0.342	0.341
+local(<e, ctx>)=0.155	0.128
+log p(e|m)=-0.308	-1.214
+continued[0.044]; following[0.043]; mainly[0.043]; said[0.043]; said[0.043]; said[0.043]; said[0.043]; said[0.043]; Bangladesh[0.042]; Bangladesh[0.042]; players[0.042]; expected[0.042]; expected[0.042]; expected[0.042]; despite[0.042]; like[0.042]; overseas[0.041]; engineering[0.041]; Rizvi[0.040]; close[0.040]; Shakil[0.040]; prefer[0.040]; sidelines[0.040]; strong[0.040]; 
+
+INCORRECT ANNOTATION	1162testa	Dhaka	Dhaka	Dhaka District
+global=0.349	0.314
+local(<e, ctx>)=0.111	-0.025
+log p(e|m)=-0.021	-2.273
+Dhaka[0.047]; Dhaka[0.047]; investors[0.044]; investors[0.044]; brokers[0.044]; Exchange[0.043]; stocks[0.042]; market[0.042]; market[0.042]; market[0.042]; Shakil[0.042]; Khurshid[0.041]; Friday[0.041]; Stock[0.041]; Rizvi[0.041]; selling[0.040]; buying[0.040]; said[0.040]; said[0.040]; said[0.040]; small[0.040]; Alam[0.040]; seen[0.039]; overseas[0.039]; 
+
+INCORRECT ANNOTATION	1112testa	The Curragh	Curragh	Curragh Racecourse
+global=0.361	0.356
+local(<e, ctx>)=0.145	0.262
+log p(e|m)=0.000	-0.717
+Stakes[0.044]; Stakes[0.044]; ridden[0.043]; race[0.043]; Tattersalls[0.043]; Tattersalls[0.043]; run[0.043]; lengths[0.043]; lengths[0.043]; Horse[0.042]; furlongs[0.042]; olds[0.042]; Dublin[0.042]; winning[0.042]; Paddy[0.041]; Lad[0.041]; Britain[0.041]; trained[0.041]; Saturday[0.040]; Racing[0.040]; Hannon[0.040]; Breeders[0.039]; Breeders[0.039]; Winner[0.038]; 
+
+INCORRECT ANNOTATION	1063testa	European	UEFA	UEFA Champions League
+global=0.323	0.322
+local(<e, ctx>)=-0.231	-0.184
+log p(e|m)=-3.576	-4.423
+soccer[0.047]; World[0.046]; World[0.046]; qualifier[0.045]; Cup[0.045]; Cup[0.045]; Soccer[0.045]; group[0.044]; beat[0.043]; Qualifier[0.042]; Saturday[0.041]; minute[0.041]; Robinson[0.040]; Wales[0.040]; Wales[0.040]; Cardiff[0.040]; Marino[0.039]; Marino[0.039]; John[0.039]; 2nd[0.039]; Dean[0.039]; San[0.038]; San[0.038]; Andy[0.038]; 
+
+INCORRECT ANNOTATION	1073testa	Welsh	Wales national rugby union team	Welsh people
+global=0.329	0.320
+local(<e, ctx>)=-0.054	-0.263
+log p(e|m)=-4.605	-1.687
+second[0.047]; goal[0.045]; missed[0.045]; winger[0.044]; Springboks[0.044]; Springboks[0.044]; Springboks[0.044]; half[0.044]; half[0.044]; half[0.044]; Sean[0.044]; minute[0.044]; scored[0.043]; hooker[0.043]; Fitzpatrick[0.043]; ahead[0.043]; time[0.043]; Mehrtens[0.043]; Mehrtens[0.043]; Andrew[0.043]; Honiball[0.042]; Honiball[0.042]; outside[0.042]; 
+
+INCORRECT ANNOTATION	1080testa	Red Star	Red Star Belgrade	KK Crvena zvezda
+global=0.342	0.330
+local(<e, ctx>)=-0.150	-0.132
+log p(e|m)=-1.036	-2.465
+Beograd[0.056]; Beograd[0.056]; Belgrade[0.054]; tournament[0.054]; basketball[0.051]; international[0.051]; Dinamo[0.051]; Tournament[0.048]; Saturday[0.048]; place[0.047]; place[0.047]; Italy[0.046]; Yugoslavia[0.046]; Russia[0.046]; Germany[0.045]; Benetton[0.044]; halftime[0.044]; Alba[0.042]; Fifth[0.042]; Results[0.041]; Results[0.041]; 
+
+INCORRECT ANNOTATION	1077testa	Yugoslav	Socialist Federal Republic of Yugoslavia	Yugoslavia
+global=0.334	0.332
+local(<e, ctx>)=0.190	0.172
+log p(e|m)=-0.826	-0.759
+matches[0.046]; Buducnost[0.045]; league[0.045]; won[0.044]; soccer[0.043]; Belgrade[0.043]; played[0.043]; Partizan[0.042]; Partizan[0.042]; Yugoslav[0.042]; Borac[0.041]; Vojvodina[0.041]; Vojvodina[0.041]; League[0.041]; Soccer[0.041]; goals[0.041]; goals[0.041]; Mladost[0.040]; Mladost[0.040]; lost[0.040]; Hajduk[0.040]; Hajduk[0.040]; Zemun[0.039]; points[0.039]; 
+
+INCORRECT ANNOTATION	1077testa	Rudar	FK Rudar Prijedor	NK Rudar Velenje
+global=0.330	0.325
+local(<e, ctx>)=0.199	0.304
+log p(e|m)=-1.884	-1.149
+Zeleznik[0.065]; Obilic[0.063]; Buducnost[0.063]; Radnicki[0.063]; Radnicki[0.063]; Beograd[0.061]; Kikinda[0.060]; Loznica[0.059]; Loznica[0.059]; Mladost[0.058]; Spartak[0.058]; Spartak[0.058]; Standings[0.057]; Sloboda[0.057]; played[0.056]; Sunday[0.054]; Bj[0.047]; 
+
+INCORRECT ANNOTATION	1077testa	Buducnost	KK Budućnost Podgorica	FK Budućnost Podgorica
+global=0.359	0.359
+local(<e, ctx>)=0.242	0.290
+log p(e|m)=-1.100	-0.693
+Buducnost[0.046]; Buducnost[0.046]; Radnicki[0.044]; Rudar[0.044]; won[0.043]; Borac[0.043]; played[0.043]; Beograd[0.042]; Beograd[0.042]; Mladost[0.041]; Mladost[0.041]; Partizan[0.041]; Partizan[0.041]; Spartak[0.041]; Zemun[0.041]; Vojvodina[0.041]; Vojvodina[0.041]; lost[0.040]; Obilic[0.040]; Obilic[0.040]; Loznica[0.040]; Loznica[0.040]; goals[0.040]; goals[0.040]; 
+
+INCORRECT ANNOTATION	1077testa	Hajduk	HNK Hajduk Split	FK Hajduk Kula
+global=0.355	0.347
+local(<e, ctx>)=0.400	0.342
+log p(e|m)=-0.904	-1.820
+Buducnost[0.045]; Buducnost[0.045]; Buducnost[0.045]; soccer[0.043]; matches[0.043]; Radnicki[0.043]; league[0.043]; Rudar[0.043]; Beograd[0.043]; Belgrade[0.042]; Borac[0.041]; Borac[0.041]; won[0.041]; Partizan[0.041]; Partizan[0.041]; Obilic[0.041]; Obilic[0.041]; Hajduk[0.040]; Vojvodina[0.040]; Vojvodina[0.040]; Yugoslav[0.040]; Yugoslav[0.040]; Zemun[0.040]; Zemun[0.040]; 
+
+INCORRECT ANNOTATION	1077testa	Yugoslav	Socialist Federal Republic of Yugoslavia	Yugoslavia
+global=0.333	0.330
+local(<e, ctx>)=0.152	0.131
+log p(e|m)=-0.826	-0.759
+matches[0.046]; Buducnost[0.045]; league[0.045]; won[0.044]; soccer[0.043]; Belgrade[0.043]; played[0.043]; Partizan[0.042]; Partizan[0.042]; Yugoslav[0.042]; Borac[0.041]; Vojvodina[0.041]; Vojvodina[0.041]; League[0.041]; Soccer[0.041]; goals[0.041]; goals[0.041]; Mladost[0.040]; Mladost[0.040]; lost[0.040]; Hajduk[0.040]; Hajduk[0.040]; Zemun[0.039]; points[0.039]; 
+
+INCORRECT ANNOTATION	1077testa	Hajduk	HNK Hajduk Split	FK Hajduk Kula
+global=0.353	0.348
+local(<e, ctx>)=0.316	0.307
+log p(e|m)=-0.904	-1.820
+Buducnost[0.046]; soccer[0.045]; matches[0.045]; league[0.044]; Belgrade[0.043]; Borac[0.043]; won[0.043]; Partizan[0.042]; Partizan[0.042]; Hajduk[0.042]; Vojvodina[0.041]; Vojvodina[0.041]; Yugoslav[0.041]; Yugoslav[0.041]; Zemun[0.041]; Zemun[0.041]; Soccer[0.041]; played[0.040]; League[0.040]; lost[0.040]; Mladost[0.040]; Mladost[0.040]; goals[0.039]; goals[0.039]; 
+
+INCORRECT ANNOTATION	1077testa	Rudar	FK Rudar Prijedor	NK Rudar Velenje
+global=0.331	0.324
+local(<e, ctx>)=0.287	0.356
+log p(e|m)=-1.884	-1.149
+Zeleznik[0.044]; Zeleznik[0.044]; Obilic[0.043]; Obilic[0.043]; Buducnost[0.043]; Buducnost[0.043]; Buducnost[0.043]; Radnicki[0.043]; Radnicki[0.043]; Hajduk[0.042]; Beograd[0.042]; Beograd[0.042]; Borac[0.042]; Vojvodina[0.041]; Kikinda[0.041]; Kikinda[0.041]; Loznica[0.041]; Loznica[0.041]; Zemun[0.040]; Mladost[0.040]; Mladost[0.040]; Spartak[0.039]; Spartak[0.039]; Standings[0.039]; 
+
+INCORRECT ANNOTATION	987testa	Irish	Republic of Ireland national football team	Republic of Ireland
+global=0.321	0.317
+local(<e, ctx>)=0.008	0.072
+log p(e|m)=-4.605	-2.254
+Dublin[0.044]; Dublin[0.044]; team[0.043]; team[0.043]; team[0.043]; match[0.043]; play[0.043]; play[0.043]; Niall[0.043]; international[0.043]; soccer[0.042]; Neill[0.041]; Neill[0.041]; Quinn[0.041]; Quinn[0.041]; Cup[0.041]; McCarthy[0.040]; McCarthy[0.040]; Soccer[0.040]; Breen[0.040]; Breen[0.040]; Saturday[0.040]; qualifying[0.040]; Staunton[0.040]; 
+
+INCORRECT ANNOTATION	999testa	Chechens	Chechnya	Chechen Republic of Ichkeria
+global=0.343	0.338
+local(<e, ctx>)=0.419	0.304
+log p(e|m)=-0.968	-0.635
+Chechnya[0.050]; military[0.047]; Chechen[0.046]; region[0.045]; Russian[0.044]; conflict[0.044]; Russia[0.043]; separatist[0.042]; people[0.042]; said[0.042]; Maskhadov[0.041]; Maskhadov[0.041]; political[0.040]; rebel[0.040]; outside[0.040]; month[0.040]; peace[0.040]; peace[0.040]; statement[0.040]; earlier[0.039]; day[0.039]; tens[0.039]; Khasavyurt[0.039]; leader[0.038]; 
+
+INCORRECT ANNOTATION	964testa	World Series of Golf	WGC-Bridgestone Invitational	World Series of Golf
+global=0.363	0.360
+local(<e, ctx>)=0.058	-0.077
+log p(e|m)=-0.711	0.000
+tournament[0.048]; Golf[0.046]; Open[0.046]; Woods[0.044]; Tour[0.044]; winner[0.042]; World[0.042]; strokes[0.041]; Mickelson[0.041]; week[0.041]; week[0.041]; week[0.041]; winning[0.041]; skipped[0.041]; shot[0.041]; second[0.040]; second[0.040]; place[0.040]; par[0.040]; hole[0.040]; champion[0.040]; champion[0.040]; took[0.040]; Series[0.040]; 
+
+INCORRECT ANNOTATION	964testa	World Series of Golf	WGC-Bridgestone Invitational	World Series of Golf
+global=0.364	0.359
+local(<e, ctx>)=0.073	-0.080
+log p(e|m)=-0.711	0.000
+tournament[0.047]; Golf[0.045]; Classic[0.045]; Open[0.045]; Open[0.045]; Open[0.045]; Woods[0.043]; Tour[0.043]; Tour[0.043]; winner[0.041]; World[0.041]; strokes[0.040]; Mickelson[0.040]; pro[0.040]; week[0.040]; week[0.040]; week[0.040]; winning[0.040]; skipped[0.040]; shot[0.040]; second[0.039]; second[0.039]; place[0.039]; place[0.039]; 
+
+INCORRECT ANNOTATION	1161testa	IRA	Provisional Irish Republican Army	Irish Republican Army
+global=0.336	0.334
+local(<e, ctx>)=-0.172	-0.192
+log p(e|m)=-0.970	-1.053
+Irish[0.048]; Ireland[0.046]; Ireland[0.046]; British[0.046]; British[0.046]; soldier[0.043]; wrote[0.043]; guerilla[0.041]; contemporary[0.041]; political[0.041]; screenplay[0.041]; sectarian[0.041]; Collins[0.040]; Collins[0.040]; Warner[0.040]; released[0.040]; independence[0.040]; independence[0.040]; film[0.040]; film[0.040]; film[0.040]; film[0.040]; Harry[0.040]; Aidan[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.345	0.340
+local(<e, ctx>)=-0.014	-0.027
+log p(e|m)=-1.671	-0.734
+Irish[0.045]; film[0.044]; film[0.044]; film[0.044]; film[0.044]; Ireland[0.043]; Dublin[0.043]; nominated[0.042]; Collins[0.042]; Collins[0.042]; played[0.042]; Quinn[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; actor[0.041]; actor[0.041]; released[0.040]; portrays[0.040]; today[0.040]; British[0.040]; role[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	IRA	Provisional Irish Republican Army	Irish Republican Army
+global=0.333	0.329
+local(<e, ctx>)=-0.172	-0.231
+log p(e|m)=-0.970	-1.053
+Irish[0.047]; Irish[0.047]; Ireland[0.045]; British[0.045]; Army[0.043]; Ira[0.043]; Dublin[0.043]; starring[0.042]; wrote[0.042]; recounts[0.042]; Britain[0.041]; film[0.040]; film[0.040]; film[0.040]; film[0.040]; film[0.040]; politicians[0.040]; screenplay[0.040]; Julia[0.040]; Neil[0.040]; Collins[0.040]; Collins[0.040]; early[0.040]; Liam[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.345	0.339
+local(<e, ctx>)=-0.101	-0.141
+log p(e|m)=-1.671	-0.734
+film[0.045]; film[0.045]; film[0.045]; Ireland[0.045]; Collins[0.043]; Collins[0.043]; story[0.042]; Jordan[0.042]; Jordan[0.042]; Michael[0.042]; comrades[0.042]; today[0.041]; scenes[0.041]; reported[0.040]; ambush[0.040]; said[0.040]; said[0.040]; said[0.040]; wanted[0.040]; sought[0.040]; set[0.040]; Britain[0.040]; historical[0.040]; shooting[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	Irish	Ireland	Republic of Ireland
+global=0.334	0.330
+local(<e, ctx>)=0.197	0.288
+log p(e|m)=-1.457	-2.254
+Ireland[0.053]; Irish[0.051]; Irish[0.051]; Britain[0.045]; British[0.044]; British[0.044]; history[0.044]; contemporary[0.042]; wrote[0.041]; Liam[0.041]; Michael[0.041]; Collins[0.040]; Collins[0.040]; Collins[0.040]; time[0.040]; early[0.039]; fought[0.039]; today[0.039]; Northern[0.038]; life[0.038]; sectarian[0.038]; came[0.038]; depiction[0.038]; release[0.038]; 
+
+INCORRECT ANNOTATION	1161testa	Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.345	0.334
+local(<e, ctx>)=-0.034	-0.159
+log p(e|m)=-1.671	-0.734
+Collins[0.044]; Collins[0.044]; Collins[0.044]; film[0.044]; film[0.044]; film[0.044]; Ireland[0.043]; Dublin[0.043]; plays[0.042]; born[0.042]; nominated[0.042]; played[0.041]; Quinn[0.041]; story[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; actor[0.040]; actor[0.040]; portrays[0.040]; today[0.040]; Boland[0.040]; role[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.345	0.340
+local(<e, ctx>)=-0.019	-0.033
+log p(e|m)=-1.671	-0.734
+Irish[0.045]; film[0.044]; film[0.044]; film[0.044]; film[0.044]; Ireland[0.043]; Ireland[0.043]; nominated[0.042]; Collins[0.042]; Collins[0.042]; Quinn[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; actor[0.041]; actor[0.041]; released[0.041]; portrays[0.040]; wrote[0.040]; today[0.040]; British[0.040]; British[0.040]; 
+
+INCORRECT ANNOTATION	1161testa	Oscar	Academy Awards	Academy Award for Best Actor
+global=0.336	0.316
+local(<e, ctx>)=-0.056	-0.048
+log p(e|m)=-0.265	-4.510
+actor[0.046]; actor[0.046]; film[0.045]; film[0.045]; film[0.045]; film[0.045]; nominated[0.045]; portrayal[0.044]; plays[0.042]; certain[0.041]; scenes[0.041]; played[0.041]; portrays[0.041]; said[0.040]; said[0.040]; said[0.040]; role[0.040]; performance[0.039]; love[0.039]; Quinn[0.039]; choices[0.038]; copied[0.038]; rarely[0.038]; List[0.038]; 
+
+INCORRECT ANNOTATION	1161testa	Michael Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.347	0.337
+local(<e, ctx>)=0.027	-0.087
+log p(e|m)=-1.671	-0.734
+Irish[0.045]; Irish[0.045]; Irish[0.045]; Collins[0.044]; film[0.043]; film[0.043]; film[0.043]; film[0.043]; film[0.043]; Ireland[0.043]; Dublin[0.042]; Michael[0.042]; starring[0.042]; born[0.041]; Jordan[0.040]; Jordan[0.040]; Jordan[0.040]; Neeson[0.040]; Film[0.040]; Army[0.040]; screened[0.040]; early[0.040]; wrote[0.039]; release[0.039]; 
+
+INCORRECT ANNOTATION	1161testa	IRA	Provisional Irish Republican Army	Irish Republican Army
+global=0.333	0.330
+local(<e, ctx>)=-0.190	-0.228
+log p(e|m)=-0.970	-1.053
+Irish[0.052]; Irish[0.052]; Army[0.048]; Ira[0.048]; Dublin[0.047]; starring[0.047]; Britain[0.045]; film[0.045]; film[0.045]; film[0.045]; politicians[0.044]; Julia[0.044]; Neil[0.044]; Collins[0.044]; Collins[0.044]; early[0.044]; Liam[0.044]; fought[0.044]; recounts[0.044]; Jordan[0.044]; independence[0.043]; premiere[0.043]; 
+
+INCORRECT ANNOTATION	1161testa	Ireland	Republic of Ireland	Ireland
+global=0.348	0.342
+local(<e, ctx>)=0.173	0.016
+log p(e|m)=-1.505	-0.566
+Britain[0.049]; north[0.045]; south[0.045]; today[0.044]; lost[0.044]; Michael[0.043]; sought[0.042]; life[0.041]; death[0.041]; events[0.041]; comrades[0.041]; surrounding[0.041]; Jordan[0.041]; formed[0.041]; Collins[0.041]; Collins[0.041]; important[0.041]; said[0.040]; making[0.040]; make[0.040]; killing[0.040]; possible[0.039]; settlement[0.039]; tell[0.039]; 
+
+INCORRECT ANNOTATION	1161testa	Irish	Ireland	Republic of Ireland
+global=0.334	0.329
+local(<e, ctx>)=0.237	0.317
+log p(e|m)=-1.457	-2.254
+Ireland[0.053]; Irish[0.050]; Irish[0.050]; Dublin[0.045]; Britain[0.044]; British[0.044]; British[0.044]; history[0.044]; born[0.041]; wrote[0.040]; Liam[0.040]; Michael[0.040]; Michael[0.040]; Collins[0.040]; Collins[0.040]; time[0.039]; Republican[0.039]; early[0.039]; Italy[0.039]; Neil[0.038]; Army[0.038]; Northern[0.038]; life[0.038]; depiction[0.037]; 
+
+INCORRECT ANNOTATION	1161testa	Collins	Michael Collins (film)	Michael Collins (Irish leader)
+global=0.346	0.335
+local(<e, ctx>)=-0.036	-0.164
+log p(e|m)=-1.671	-0.734
+film[0.044]; film[0.044]; film[0.044]; film[0.044]; Ireland[0.044]; Dublin[0.043]; nominated[0.042]; Collins[0.042]; Collins[0.042]; played[0.042]; Quinn[0.041]; story[0.041]; mysterious[0.041]; Jordan[0.041]; Jordan[0.041]; Jordan[0.041]; actor[0.041]; actor[0.041]; comrades[0.041]; portrays[0.040]; today[0.040]; role[0.040]; plays[0.040]; Oscar[0.040]; 
+
+INCORRECT ANNOTATION	1137testa	Shell	Royal Dutch Shell	Shell Oil Company
+global=0.348	0.335
+local(<e, ctx>)=0.056	0.000
+log p(e|m)=-0.654	-2.364
+companies[0.045]; Petroleum[0.044]; oil[0.044]; oil[0.044]; facilities[0.043]; Mobil[0.043]; production[0.043]; multinational[0.043]; Caltex[0.043]; Caltex[0.043]; plans[0.042]; firms[0.041]; Corp[0.041]; plant[0.041]; plant[0.041]; build[0.041]; build[0.041]; products[0.041]; lubricants[0.040]; range[0.040]; invest[0.040]; invest[0.040]; infrastructure[0.040]; billion[0.039]; 
+
+INCORRECT ANNOTATION	960testa	San Diego	San Diego Padres	San Diego Chargers
+global=0.336	0.323
+local(<e, ctx>)=0.347	0.270
+log p(e|m)=-3.912	-3.817
+team[0.045]; California[0.045]; Houston[0.044]; games[0.043]; League[0.042]; League[0.042]; League[0.042]; League[0.042]; Baltimore[0.042]; Thursday[0.042]; Thursday[0.042]; Cincinnati[0.042]; American[0.041]; City[0.041]; Pittsburgh[0.041]; Colorado[0.041]; played[0.041]; Baseball[0.041]; Baseball[0.041]; Seattle[0.041]; Florida[0.040]; Chicago[0.040]; Atlanta[0.040]; Milwaukee[0.040]; 
+
+INCORRECT ANNOTATION	960testa	New York	New York Yankees	New York Mets
+global=0.329	0.328
+local(<e, ctx>)=0.311	0.292
+log p(e|m)=-5.116	-5.116
+team[0.045]; City[0.044]; games[0.043]; Houston[0.043]; Baltimore[0.043]; Baseball[0.042]; Baseball[0.042]; Thursday[0.042]; Thursday[0.042]; played[0.042]; League[0.042]; League[0.042]; League[0.042]; League[0.042]; American[0.042]; Pittsburgh[0.041]; Chicago[0.041]; Cincinnati[0.041]; Montreal[0.040]; California[0.040]; Atlanta[0.040]; Seattle[0.040]; Milwaukee[0.040]; Detroit[0.039]; 
+
+INCORRECT ANNOTATION	960testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.325	0.322
+local(<e, ctx>)=0.346	0.260
+log p(e|m)=-4.075	-3.863
+team[0.046]; games[0.044]; Houston[0.043]; Baltimore[0.043]; Baseball[0.042]; Baseball[0.042]; Milwaukee[0.042]; Thursday[0.042]; Thursday[0.042]; Cincinnati[0.042]; City[0.042]; California[0.041]; League[0.041]; League[0.041]; League[0.041]; League[0.041]; Pittsburgh[0.041]; played[0.041]; Chicago[0.041]; Minnesota[0.041]; Colorado[0.041]; Florida[0.041]; Atlanta[0.040]; American[0.040]; 
+
+INCORRECT ANNOTATION	960testa	Montreal	Washington Nationals	Montreal Expos
+global=0.332	0.332
+local(<e, ctx>)=0.299	0.284
+log p(e|m)=-4.605	-4.510
+team[0.045]; games[0.044]; Baltimore[0.044]; Baseball[0.042]; Baseball[0.042]; Caps[0.042]; Cincinnati[0.042]; Atlanta[0.042]; Houston[0.042]; played[0.042]; Thursday[0.041]; Thursday[0.041]; Louis[0.041]; Seattle[0.041]; Chicago[0.041]; League[0.041]; League[0.041]; League[0.041]; League[0.041]; City[0.041]; Florida[0.041]; Pittsburgh[0.041]; American[0.040]; Kansas[0.040]; 
+
+INCORRECT ANNOTATION	1107testa	Turkey	Turkey	Turkey national football team
+global=0.332	0.332
+local(<e, ctx>)=0.044	-0.064
+log p(e|m)=-0.209	-3.037
+Turkey[0.050]; Turkey[0.050]; soccer[0.045]; Belgium[0.045]; Belgium[0.045]; Belgium[0.045]; Sergen[0.043]; Soccer[0.043]; qualifier[0.043]; beat[0.042]; seven[0.042]; Yalcin[0.041]; Cup[0.041]; Cup[0.041]; Qualifier[0.040]; World[0.040]; World[0.040]; Saturday[0.040]; Scorers[0.038]; Brussels[0.038]; group[0.038]; Degryse[0.037]; halftime[0.037]; Beat[0.036]; 
+
+INCORRECT ANNOTATION	1107testa	Belgium	Belgium	Belgium national football team
+global=0.336	0.334
+local(<e, ctx>)=0.170	0.072
+log p(e|m)=-0.242	-2.882
+Belgium[0.048]; Belgium[0.048]; soccer[0.048]; qualifier[0.046]; Soccer[0.046]; Cup[0.045]; Cup[0.045]; beat[0.044]; Qualifier[0.043]; seven[0.042]; halftime[0.042]; Degryse[0.042]; Turkey[0.039]; Turkey[0.039]; Turkey[0.039]; Scorers[0.039]; World[0.039]; World[0.039]; Sergen[0.039]; Brussels[0.039]; Saturday[0.038]; Marc[0.038]; group[0.038]; Beat[0.036]; 
+
+INCORRECT ANNOTATION	1062testa	Harlequins	Harlequin F.C.	London Broncos
+global=0.362	0.347
+local(<e, ctx>)=0.358	0.306
+log p(e|m)=0.000	-1.501
+Rugby[0.047]; rugby[0.046]; league[0.046]; Cardiff[0.045]; Saracens[0.045]; Leicester[0.044]; Bristol[0.044]; Bath[0.044]; League[0.044]; Welsh[0.043]; Welsh[0.043]; Welsh[0.043]; Northampton[0.043]; matches[0.043]; Wasps[0.043]; Irish[0.043]; London[0.042]; London[0.042]; Gloucester[0.042]; Stirling[0.042]; Swansea[0.042]; Boroughmuir[0.041]; Llanelli[0.041]; 
+
+INCORRECT ANNOTATION	1062testa	Melrose	Melrose, Scottish Borders	Melrose RFC
+global=0.337	0.334
+local(<e, ctx>)=-0.109	-0.107
+log p(e|m)=-2.096	-3.079
+rugby[0.044]; league[0.044]; London[0.044]; London[0.044]; Saturday[0.043]; League[0.043]; County[0.042]; Stirling[0.042]; premier[0.042]; matches[0.042]; Scottish[0.042]; Scottish[0.042]; West[0.041]; Hawick[0.041]; Welsh[0.041]; Welsh[0.041]; Irish[0.041]; Boroughmuir[0.041]; Bristol[0.041]; Newbridge[0.041]; Forest[0.040]; Bath[0.040]; Heriot[0.040]; Watsonians[0.040]; 
+
+INCORRECT ANNOTATION	953testa	Lada Togliatti	HC Lada Togliatti	FC Lada-Togliatti Togliatti
+global=0.350	0.344
+local(<e, ctx>)=-0.050	-0.058
+log p(e|m)=0.000	-0.293
+championship[0.048]; league[0.045]; league[0.045]; Cup[0.043]; games[0.043]; club[0.042]; club[0.042]; players[0.042]; Moscow[0.041]; Moscow[0.041]; Moscow[0.041]; Moscow[0.041]; Dynamo[0.041]; Dynamo[0.041]; Russian[0.041]; Soccer[0.040]; game[0.040]; game[0.040]; placed[0.040]; Friday[0.040]; Volgograd[0.040]; Volgograd[0.040]; Volgograd[0.040]; ended[0.040]; 
+
+INCORRECT ANNOTATION	953testa	Volgograd	Volgograd	FC Volgograd
+global=0.349	0.346
+local(<e, ctx>)=-0.095	0.028
+log p(e|m)=0.000	-0.693
+Togliatti[0.048]; league[0.044]; league[0.044]; Rotor[0.044]; Rotor[0.044]; Rotor[0.044]; Moscow[0.043]; Moscow[0.043]; Moscow[0.043]; games[0.042]; club[0.042]; club[0.042]; Alania[0.042]; Anatoly[0.042]; Russian[0.041]; Friday[0.040]; September[0.040]; game[0.040]; Dynamo[0.040]; Dynamo[0.040]; Saturday[0.039]; players[0.039]; hand[0.038]; said[0.038]; 
+
+INCORRECT ANNOTATION	1139testa	New York-based	New York City	New York
+global=0.365	0.364
+local(<e, ctx>)=0.112	-0.018
+log p(e|m)=-0.062	-0.017
+group[0.047]; group[0.047]; group[0.047]; based[0.044]; Friday[0.043]; held[0.042]; Saturday[0.042]; sent[0.042]; sent[0.042]; gave[0.042]; Revolution[0.041]; said[0.041]; said[0.041]; said[0.041]; hold[0.040]; eastern[0.040]; Human[0.040]; say[0.040]; say[0.040]; euphemism[0.040]; told[0.040]; Cultural[0.040]; class[0.040]; class[0.040]; 
+
+INCORRECT ANNOTATION	1139testa	Human Rights in China	Human rights in China	Human Rights in China (organization)
+global=0.370	0.360
+local(<e, ctx>)=-0.047	-0.070
+log p(e|m)=0.000	-0.068
+Beijing[0.047]; Chinese[0.046]; Chinese[0.046]; dissident[0.042]; dissident[0.042]; coercive[0.041]; group[0.041]; group[0.041]; group[0.041]; group[0.041]; Friday[0.041]; Donghai[0.041]; said[0.041]; said[0.041]; said[0.041]; said[0.041]; Wang[0.041]; Wang[0.041]; Wang[0.041]; Wang[0.041]; Wang[0.041]; Wang[0.041]; detained[0.040]; reform[0.040]; 
+
+INCORRECT ANNOTATION	1143testa	Baghdad	Baghdad	Iraq
+global=0.358	0.341
+local(<e, ctx>)=0.326	0.294
+log p(e|m)=0.000	-2.564
+Iraq[0.050]; Iraqi[0.044]; Iraqi[0.044]; Iraqi[0.044]; Iraqi[0.044]; Baghdad[0.044]; Baghdad[0.044]; Kurdistan[0.042]; Turkey[0.042]; Arbil[0.042]; Arbil[0.042]; region[0.041]; city[0.041]; fighting[0.041]; fighting[0.041]; northern[0.040]; Iran[0.040]; Kurdish[0.040]; allied[0.040]; casualties[0.040]; tanks[0.039]; War[0.039]; Kurds[0.039]; official[0.039]; 
+
+INCORRECT ANNOTATION	1023testa	Labour Day	Labor Day	Labour Day
+global=0.336	0.331
+local(<e, ctx>)=-0.061	-0.070
+log p(e|m)=-1.328	0.000
+holiday[0.046]; month[0.045]; month[0.045]; Friday[0.044]; economic[0.043]; Monday[0.043]; July[0.043]; weekends[0.043]; Thursday[0.042]; closes[0.042]; August[0.041]; Canadian[0.041]; Canadian[0.041]; Canadian[0.041]; Canadian[0.041]; market[0.041]; market[0.041]; early[0.040]; early[0.040]; index[0.040]; number[0.040]; Toronto[0.040]; prices[0.040]; closed[0.039]; 
+
+INCORRECT ANNOTATION	1048testa	Wigan	Wigan Warriors	Wigan
+global=0.353	0.322
+local(<e, ctx>)=0.290	-0.124
+log p(e|m)=-1.802	-0.302
+league[0.066]; League[0.065]; England[0.060]; Rugby[0.058]; rugby[0.057]; Wigan[0.057]; Wigan[0.057]; played[0.056]; Bradford[0.056]; Bradford[0.056]; Saturday[0.056]; premiership[0.054]; English[0.052]; Bulls[0.052]; semifinal[0.052]; Semifinal[0.051]; Beat[0.047]; Result[0.047]; 
+
+INCORRECT ANNOTATION	965testa	Russia	Russia national football team	Russia
+global=0.331	0.329
+local(<e, ctx>)=0.050	-0.094
+log p(e|m)=-3.540	-0.203
+match[0.046]; match[0.046]; team[0.046]; game[0.044]; game[0.044]; game[0.044]; Soccer[0.044]; soccer[0.044]; national[0.043]; European[0.042]; Fifa[0.041]; Fifa[0.041]; midfielder[0.040]; Brazil[0.040]; Saturday[0.040]; Saturday[0.040]; Madrid[0.039]; Madrid[0.039]; Wednesday[0.039]; lost[0.039]; suspended[0.039]; world[0.039]; absence[0.039]; governing[0.039]; 
+
+INCORRECT ANNOTATION	965testa	Netherlands	Netherlands	Netherlands national football team
+global=0.336	0.325
+local(<e, ctx>)=0.274	0.171
+log p(e|m)=-0.250	-2.659
+team[0.045]; match[0.045]; match[0.045]; soccer[0.044]; national[0.044]; Fifa[0.044]; Fifa[0.044]; game[0.043]; game[0.043]; game[0.043]; Soccer[0.043]; midfielder[0.042]; European[0.042]; Brazil[0.041]; governing[0.040]; Madrid[0.040]; Madrid[0.040]; Saturday[0.039]; Saturday[0.039]; suspended[0.039]; lost[0.039]; Wednesday[0.039]; world[0.039]; tour[0.039]; 
+
+INCORRECT ANNOTATION	1026testa	Gaza	Gaza Strip	Gaza
+global=0.345	0.335
+local(<e, ctx>)=0.296	0.061
+log p(e|m)=-1.374	-0.304
+Israeli[0.049]; Israeli[0.049]; Israeli[0.049]; Israeli[0.049]; Israel[0.048]; Israel[0.048]; Palestinian[0.045]; Palestinians[0.043]; Arab[0.043]; Arab[0.043]; Arab[0.043]; international[0.042]; West[0.042]; West[0.042]; Arabs[0.041]; Arabs[0.041]; government[0.041]; government[0.041]; government[0.041]; government[0.041]; government[0.041]; settlements[0.041]; state[0.040]; 
+
+INCORRECT ANNOTATION	1110testa	Dutch	Netherlands	Netherlands national football team
+global=0.346	0.322
+local(<e, ctx>)=0.262	-0.104
+log p(e|m)=-0.794	-4.711
+Netherlands[0.050]; Netherlands[0.050]; soccer[0.044]; Amsterdam[0.044]; Brazil[0.044]; Brazil[0.044]; Brazil[0.044]; Van[0.043]; Saturday[0.043]; friendly[0.043]; time[0.042]; drew[0.042]; Boer[0.042]; International[0.042]; Soccer[0.041]; half[0.040]; minute[0.040]; Friendly[0.038]; Draw[0.038]; Goncalves[0.037]; Scorers[0.037]; Ronald[0.037]; Giovanni[0.037]; pen[0.036]; 
+
+INCORRECT ANNOTATION	994testa	Surcin	Belgrade Nikola Tesla Airport	Surčin
+global=0.373	0.352
+local(<e, ctx>)=0.173	0.009
+log p(e|m)=-1.575	0.000
+airport[0.046]; airport[0.046]; airport[0.046]; airport[0.046]; airport[0.046]; airport[0.046]; airport[0.046]; Belgrade[0.041]; Belgrade[0.041]; Belgrade[0.041]; Belgrade[0.041]; Belgrade[0.041]; Belgrade[0.041]; flights[0.041]; Batajnica[0.040]; Batajnica[0.040]; Batajnica[0.040]; traffic[0.040]; traffic[0.040]; Beograd[0.039]; Air[0.039]; passengers[0.039]; Aerodrom[0.039]; Branko[0.039]; 
+
+INCORRECT ANNOTATION	994testa	Batajnica	Batajnica Air Base	Batajnica
+global=0.364	0.360
+local(<e, ctx>)=0.319	0.075
+log p(e|m)=-0.273	0.000
+Batajnica[0.045]; Batajnica[0.045]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Beograd[0.043]; Air[0.042]; Branko[0.041]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; air[0.040]; Yugoslav[0.040]; modernization[0.040]; Aerodrom[0.040]; runway[0.040]; runway[0.040]; 
+
+INCORRECT ANNOTATION	994testa	Batajnica	Batajnica Air Base	Batajnica
+global=0.364	0.360
+local(<e, ctx>)=0.319	0.076
+log p(e|m)=-0.273	0.000
+Batajnica[0.045]; Batajnica[0.045]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Belgrade[0.044]; Beograd[0.043]; Air[0.042]; Branko[0.041]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; airport[0.040]; air[0.040]; Yugoslav[0.040]; modernization[0.040]; Aerodrom[0.040]; runway[0.040]; runway[0.040]; 
+
+INCORRECT ANNOTATION	994testa	Batajnica	Batajnica Air Base	Batajnica
+global=0.363	0.360
+local(<e, ctx>)=0.257	0.031
+log p(e|m)=-0.273	0.000
+Batajnica[0.047]; Batajnica[0.047]; Belgrade[0.045]; Belgrade[0.045]; Belgrade[0.045]; Air[0.043]; Branko[0.042]; airport[0.042]; airport[0.042]; airport[0.042]; airport[0.042]; airport[0.042]; air[0.041]; Yugoslav[0.041]; modernization[0.041]; runway[0.041]; continue[0.040]; Ljubomir[0.040]; Tanjug[0.039]; Tanjug[0.039]; Tanjug[0.039]; transport[0.039]; maintenance[0.039]; maintenance[0.039]; 
+
+INCORRECT ANNOTATION	1140testa	New York-based	New York City	New York
+global=0.364	0.363
+local(<e, ctx>)=0.106	-0.020
+log p(e|m)=-0.062	-0.017
+group[0.046]; group[0.046]; group[0.046]; released[0.043]; based[0.043]; month[0.042]; Friday[0.042]; administrative[0.042]; movement[0.042]; education[0.041]; education[0.041]; held[0.041]; Saturday[0.041]; sent[0.041]; health[0.041]; said[0.040]; said[0.040]; said[0.040]; serve[0.040]; Human[0.040]; say[0.040]; Wall[0.040]; euphemism[0.040]; class[0.039]; 
+
+INCORRECT ANNOTATION	1140testa	Human Rights in China	Human rights in China	Human Rights in China (organization)
+global=0.370	0.360
+local(<e, ctx>)=-0.036	-0.056
+log p(e|m)=0.000	-0.068
+China[0.048]; China[0.048]; Beijing[0.047]; Chinese[0.046]; dissident[0.042]; dissident[0.042]; dissident[0.042]; group[0.041]; group[0.041]; group[0.041]; Friday[0.041]; Donghai[0.040]; Donghai[0.040]; said[0.040]; said[0.040]; said[0.040]; Wang[0.040]; Wang[0.040]; Wang[0.040]; Wang[0.040]; Wang[0.040]; Wang[0.040]; Democracy[0.040]; administrative[0.040]; 
+
+INCORRECT ANNOTATION	1054testa	England	England cricket team	England
+global=0.327	0.326
+local(<e, ctx>)=-0.040	0.095
+log p(e|m)=-3.297	-0.190
+England[0.050]; England[0.050]; England[0.050]; international[0.044]; Birmingham[0.044]; Cricket[0.044]; Hollioake[0.043]; second[0.043]; day[0.042]; series[0.042]; Edgbaston[0.042]; Pakistan[0.042]; Pakistan[0.042]; Pakistan[0.042]; Saturday[0.040]; runs[0.040]; beat[0.039]; Ijaz[0.039]; innings[0.038]; Ahmed[0.038]; Scores[0.037]; Runs[0.037]; closed[0.037]; Second[0.036]; 
+
+INCORRECT ANNOTATION	1054testa	Birmingham	Edgbaston Cricket Ground	Birmingham
+global=0.334	0.332
+local(<e, ctx>)=0.211	0.166
+log p(e|m)=-4.510	-0.402
+England[0.049]; England[0.049]; England[0.049]; England[0.049]; second[0.045]; Hollioake[0.044]; Edgbaston[0.044]; day[0.043]; Cricket[0.043]; international[0.041]; Saturday[0.041]; series[0.041]; innings[0.041]; runs[0.041]; closed[0.041]; beat[0.040]; Pakistan[0.039]; Pakistan[0.039]; Pakistan[0.039]; Runs[0.037]; Ijaz[0.037]; Scores[0.037]; Second[0.037]; Knight[0.036]; 
+
+INCORRECT ANNOTATION	1055testa	Andersson	Michael Andersson (footballer)	Michael Andersson (cyclist)
+global=0.349	0.345
+local(<e, ctx>)=-0.196	-0.158
+log p(e|m)=0.000	-0.926
+Andersson[0.047]; Michael[0.046]; time[0.044]; time[0.044]; time[0.044]; Sweden[0.044]; Rolf[0.043]; Erik[0.043]; Telekom[0.042]; Breukink[0.042]; Denmark[0.042]; Denmark[0.042]; Johan[0.041]; Spain[0.041]; Sorensen[0.041]; Technogym[0.040]; Final[0.040]; Lance[0.039]; Netherlands[0.039]; Netherlands[0.039]; Belgium[0.039]; Rabobank[0.039]; Rabobank[0.039]; Rabobank[0.039]; 
+
+INCORRECT ANNOTATION	1055testa	Michael Andersson	Michael Andersson (footballer)	Michael Andersson (cyclist)
+global=0.348	0.347
+local(<e, ctx>)=-0.148	-0.072
+log p(e|m)=0.000	-0.926
+Andersson[0.046]; Landgraaf[0.044]; Tour[0.043]; time[0.043]; time[0.043]; time[0.043]; time[0.043]; Sweden[0.043]; Rolf[0.042]; Erik[0.042]; Erik[0.042]; Olaf[0.041]; Telekom[0.041]; Telekom[0.041]; Jesper[0.041]; Breukink[0.041]; Breukink[0.041]; Denmark[0.041]; Denmark[0.041]; Johan[0.040]; Spain[0.040]; Sorensen[0.040]; Roermond[0.040]; Technogym[0.039]; 
+
+INCORRECT ANNOTATION	1157testa	Great Lakes	African Great Lakes	Great Lakes
+global=0.343	0.328
+local(<e, ctx>)=-0.037	-0.321
+log p(e|m)=-2.477	-0.100
+region[0.048]; major[0.045]; international[0.044]; Burundi[0.043]; Burundi[0.043]; Burundi[0.043]; Burundi[0.043]; Burundi[0.043]; following[0.042]; Tanzanian[0.042]; International[0.041]; Community[0.041]; prize[0.041]; visit[0.041]; military[0.041]; week[0.041]; Catholic[0.040]; said[0.040]; said[0.040]; said[0.040]; met[0.040]; exception[0.040]; held[0.039]; arrived[0.039]; 
+
+INCORRECT ANNOTATION	1149testa	La Presse	La Presse (Canadian newspaper)	La Presse (French newspaper)
+global=0.368	0.359
+local(<e, ctx>)=-0.199	-0.184
+log p(e|m)=0.000	-0.043
+Le[0.048]; France[0.046]; France[0.046]; Press[0.046]; press[0.044]; Digest[0.044]; says[0.043]; million[0.042]; stories[0.041]; stories[0.041]; anniversary[0.041]; amounted[0.040]; welcomes[0.040]; Zine[0.040]; called[0.040]; dinar[0.040]; does[0.040]; Temps[0.040]; Speaker[0.040]; leading[0.040]; Tunisian[0.040]; Tunisian[0.040]; Tunisian[0.040]; arrives[0.039]; 
+
+INCORRECT ANNOTATION	1008testa	Dow Jones	Dow Jones & Company	Dow Jones Industrial Average
+global=0.345	0.344
+local(<e, ctx>)=-0.162	-0.000
+log p(e|m)=0.000	-0.423
+stocks[0.052]; Stocks[0.050]; market[0.049]; market[0.049]; market[0.049]; boosted[0.048]; surge[0.048]; pattern[0.048]; highs[0.048]; corporate[0.047]; term[0.047]; term[0.047]; jumped[0.047]; sharply[0.047]; week[0.047]; buying[0.046]; narrowed[0.046]; Johnson[0.046]; long[0.046]; long[0.046]; decade[0.046]; 
+
+INCORRECT ANNOTATION	1008testa	Dow Jones	Dow Jones & Company	Dow Jones Industrial Average
+global=0.347	0.346
+local(<e, ctx>)=0.036	0.227
+log p(e|m)=0.000	-0.423
+stocks[0.046]; stocks[0.046]; Stock[0.046]; stock[0.046]; index[0.046]; index[0.046]; index[0.046]; index[0.046]; Nasdaq[0.046]; market[0.044]; composite[0.043]; closed[0.043]; closed[0.043]; Exchange[0.042]; week[0.042]; week[0.042]; week[0.042]; week[0.042]; higher[0.041]; lower[0.041]; American[0.040]; economic[0.040]; prices[0.040]; 
+
+INCORRECT ANNOTATION	1101testa	Tom Johnson	Tom Johnson (journalist)	Tom Johnson (boxer)
+global=0.322	0.317
+local(<e, ctx>)=-0.267	-0.131
+log p(e|m)=-1.382	-2.397
+Johnson[0.060]; American[0.056]; earned[0.055]; Guzman[0.055]; Saturday[0.055]; decision[0.054]; title[0.054]; successfully[0.054]; featherweight[0.053]; defended[0.053]; unanimous[0.053]; Ramon[0.052]; points[0.052]; Boxing[0.051]; Dublin[0.050]; Wins[0.049]; Unanimous[0.049]; Venezuela[0.049]; Verdict[0.047]; 
+
+INCORRECT ANNOTATION	970testa	Nice	OGC Nice	Nice
+global=0.347	0.338
+local(<e, ctx>)=0.024	-0.006
+log p(e|m)=-2.137	-0.260
+league[0.048]; league[0.048]; Paris[0.047]; France[0.044]; French[0.044]; club[0.044]; Guingamp[0.043]; Nice[0.043]; Nice[0.043]; Nice[0.043]; Nice[0.043]; Nice[0.043]; season[0.042]; matches[0.042]; played[0.041]; played[0.041]; win[0.040]; Albert[0.039]; defeat[0.038]; international[0.038]; Soccer[0.038]; division[0.037]; Dominique[0.037]; Thursday[0.037]; 
+
+INCORRECT ANNOTATION	959testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.328	0.324
+local(<e, ctx>)=0.356	0.258
+log p(e|m)=-4.075	-3.863
+Seattle[0.050]; Houston[0.045]; Oakland[0.045]; Oakland[0.045]; Baltimore[0.044]; Boston[0.044]; Cleveland[0.044]; Cleveland[0.044]; Milwaukee[0.043]; Milwaukee[0.043]; Philadelphia[0.043]; Cincinnati[0.043]; Cincinnati[0.043]; City[0.043]; City[0.043]; California[0.043]; California[0.043]; League[0.043]; Pittsburgh[0.043]; Chicago[0.042]; Chicago[0.042]; Chicago[0.042]; Chicago[0.042]; 
+
+INCORRECT ANNOTATION	959testa	New York	New York Mets	New York Yankees
+global=0.328	0.328
+local(<e, ctx>)=0.259	0.249
+log p(e|m)=-5.116	-5.116
+Philadelphia[0.047]; Philadelphia[0.047]; Houston[0.046]; Houston[0.046]; Central[0.045]; Pittsburgh[0.044]; Pittsburgh[0.044]; Chicago[0.044]; Chicago[0.044]; Cincinnati[0.044]; Cincinnati[0.044]; Friday[0.043]; Montreal[0.043]; Montreal[0.043]; Atlanta[0.043]; Florida[0.042]; Florida[0.042]; York[0.042]; Colorado[0.042]; Colorado[0.042]; Francisco[0.041]; Francisco[0.041]; Western[0.041]; 
+
+INCORRECT ANNOTATION	959testa	Western Division	American League West	National League West
+global=0.335	0.335
+local(<e, ctx>)=0.117	0.053
+log p(e|m)=-0.860	-1.295
+games[0.043]; games[0.043]; League[0.043]; League[0.043]; League[0.043]; League[0.043]; won[0.043]; Division[0.042]; Division[0.042]; Division[0.042]; Division[0.042]; Boston[0.042]; Boston[0.042]; Texas[0.041]; Texas[0.041]; winning[0.041]; Oakland[0.041]; Oakland[0.041]; standings[0.041]; Toronto[0.041]; Toronto[0.041]; Baltimore[0.040]; Baltimore[0.040]; Houston[0.040]; 
+
+INCORRECT ANNOTATION	959testa	Montreal	Montreal	Montreal Expos
+global=0.323	0.323
+local(<e, ctx>)=0.080	0.058
+log p(e|m)=-0.110	-4.510
+Montreal[0.051]; Philadelphia[0.045]; Philadelphia[0.045]; Cincinnati[0.044]; Cincinnati[0.044]; Atlanta[0.044]; Atlanta[0.044]; Houston[0.044]; Houston[0.044]; Friday[0.043]; Louis[0.043]; Louis[0.043]; Seattle[0.043]; Chicago[0.043]; Chicago[0.043]; League[0.043]; Florida[0.043]; Florida[0.043]; Pittsburgh[0.043]; Pittsburgh[0.043]; Central[0.042]; Colorado[0.041]; Colorado[0.041]; 
+
+INCORRECT ANNOTATION	959testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.327	0.325
+local(<e, ctx>)=0.341	0.271
+log p(e|m)=-4.075	-3.863
+Seattle[0.049]; games[0.045]; games[0.045]; Houston[0.044]; Oakland[0.044]; Oakland[0.044]; Baltimore[0.044]; Baltimore[0.044]; Baseball[0.043]; Boston[0.043]; Boston[0.043]; Cleveland[0.043]; Cleveland[0.043]; Milwaukee[0.043]; Milwaukee[0.043]; Thursday[0.043]; Thursday[0.043]; Philadelphia[0.043]; Cincinnati[0.042]; City[0.042]; City[0.042]; California[0.042]; California[0.042]; 
+
+INCORRECT ANNOTATION	1113testa	Poland	Poland	Poland national football team
+global=0.336	0.320
+local(<e, ctx>)=0.023	0.018
+log p(e|m)=-0.153	-3.324
+players[0.044]; players[0.044]; European[0.044]; match[0.044]; team[0.044]; national[0.044]; England[0.043]; won[0.043]; Euro[0.043]; squad[0.042]; Germany[0.042]; Germany[0.042]; win[0.042]; week[0.041]; friendly[0.041]; Saturday[0.040]; aiming[0.040]; daily[0.040]; championship[0.040]; captain[0.039]; sport[0.039]; experience[0.039]; old[0.039]; summer[0.039]; 
+
+INCORRECT ANNOTATION	1113testa	Germany	Germany	Nazi Germany
+global=0.340	0.312
+local(<e, ctx>)=0.232	0.195
+log p(e|m)=-0.155	-3.772
+national[0.045]; team[0.045]; international[0.044]; Germany[0.044]; England[0.043]; match[0.043]; players[0.043]; players[0.043]; squad[0.042]; Klinsmann[0.042]; Klinsmann[0.042]; Klinsmann[0.042]; Euro[0.041]; German[0.041]; European[0.041]; Poland[0.041]; France[0.041]; France[0.041]; Soccer[0.040]; Juergen[0.040]; week[0.040]; captain[0.039]; won[0.039]; win[0.039]; 
+
+INCORRECT ANNOTATION	1113testa	Germany	Germany	Germany national football team
+global=0.333	0.312
+local(<e, ctx>)=0.125	0.144
+log p(e|m)=-0.155	-3.352
+Germany[0.046]; national[0.046]; team[0.046]; England[0.044]; match[0.044]; players[0.043]; players[0.043]; squad[0.043]; Klinsmann[0.042]; Euro[0.042]; European[0.042]; won[0.042]; Poland[0.042]; France[0.041]; win[0.041]; week[0.041]; captain[0.040]; friendly[0.040]; championship[0.040]; Saturday[0.040]; sport[0.039]; summer[0.038]; aiming[0.038]; Berti[0.037]; 
+
+INCORRECT ANNOTATION	1031testa	New York Cotton Exchange	1 Hanover Square	New York Cotton Exchange
+global=0.365	0.357
+local(<e, ctx>)=-0.036	-0.069
+log p(e|m)=0.000	-0.564
+Exchange[0.048]; trading[0.045]; York[0.044]; London[0.044]; Mercantile[0.043]; markets[0.043]; Wednesday[0.042]; September[0.042]; September[0.042]; day[0.042]; closed[0.041]; closed[0.041]; closed[0.041]; Overseas[0.041]; October[0.041]; cotton[0.041]; December[0.041]; session[0.041]; stocks[0.040]; climbed[0.040]; earlier[0.040]; easing[0.039]; index[0.039]; Tokyo[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Turkey	Turkey	Turkey national football team
+global=0.336	0.329
+local(<e, ctx>)=-0.012	0.008
+log p(e|m)=-0.209	-3.037
+Turkey[0.049]; Turkish[0.044]; Turkish[0.044]; Turkish[0.044]; match[0.044]; team[0.044]; Sergen[0.043]; Soccer[0.042]; second[0.042]; kicked[0.042]; victory[0.041]; Belgium[0.041]; Belgium[0.041]; substitute[0.041]; upset[0.041]; Yalcin[0.041]; Yalcin[0.041]; campaign[0.040]; Cup[0.040]; goalkeeper[0.039]; World[0.039]; threw[0.039]; fans[0.039]; fought[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.334	0.332
+local(<e, ctx>)=0.048	0.211
+log p(e|m)=-0.242	-2.882
+Belgium[0.047]; Belgium[0.047]; France[0.045]; goal[0.044]; goal[0.044]; finals[0.043]; decisive[0.043]; goalkeeper[0.042]; qualifying[0.042]; score[0.042]; second[0.041]; Euro[0.041]; ball[0.041]; ball[0.041]; ball[0.041]; Degryse[0.040]; Bertrand[0.040]; Van[0.040]; half[0.040]; half[0.040]; June[0.040]; minutes[0.039]; minutes[0.039]; minutes[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Russia	Russia	Russia national football team
+global=0.331	0.326
+local(<e, ctx>)=-0.127	-0.078
+log p(e|m)=-0.203	-3.540
+friendlies[0.046]; Italy[0.045]; goal[0.045]; suffered[0.044]; Turkey[0.044]; coach[0.044]; coach[0.044]; victory[0.043]; Sergen[0.043]; Alpay[0.042]; Belgium[0.042]; April[0.042]; expected[0.041]; draws[0.041]; said[0.041]; said[0.041]; Turkish[0.040]; started[0.040]; succeeded[0.040]; Kafkas[0.040]; Hakan[0.040]; Belgian[0.039]; strong[0.038]; Sukur[0.038]; 
+
+INCORRECT ANNOTATION	1104testa	Italy	Italy	Italy national football team
+global=0.338	0.318
+local(<e, ctx>)=0.042	-0.120
+log p(e|m)=-0.206	-2.957
+coach[0.046]; coach[0.046]; goal[0.045]; friendlies[0.045]; victory[0.044]; suffered[0.044]; Belgium[0.042]; strong[0.042]; Turkey[0.042]; draws[0.042]; Sergen[0.042]; expected[0.041]; started[0.041]; April[0.041]; Russia[0.041]; Belgian[0.040]; Paul[0.040]; Alpay[0.040]; said[0.040]; said[0.040]; Hakan[0.039]; succeeded[0.039]; Turkish[0.039]; Wilfried[0.038]; 
+
+INCORRECT ANNOTATION	1104testa	Turkey	Turkey	Turkey national football team
+global=0.327	0.327
+local(<e, ctx>)=-0.185	-0.027
+log p(e|m)=-0.209	-3.037
+qualifying[0.048]; Euro[0.046]; finals[0.044]; seven[0.042]; seven[0.042]; Belgium[0.042]; Belgium[0.042]; defender[0.042]; upset[0.042]; goal[0.042]; goal[0.042]; opened[0.042]; past[0.041]; tipped[0.041]; home[0.041]; home[0.041]; decisive[0.041]; goalkeeper[0.040]; failing[0.040]; Brazilian[0.040]; winners[0.040]; left[0.040]; sent[0.040]; penalty[0.040]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.343	0.321
+local(<e, ctx>)=0.135	-0.091
+log p(e|m)=-0.242	-2.882
+scoring[0.047]; goal[0.045]; Belgian[0.043]; goalkeeper[0.043]; goalkeeper[0.043]; score[0.043]; second[0.042]; Euro[0.042]; ball[0.042]; penalty[0.042]; Degryse[0.042]; opponent[0.041]; half[0.041]; half[0.041]; half[0.041]; June[0.041]; defender[0.041]; minutes[0.040]; minutes[0.040]; minutes[0.040]; minutes[0.040]; minutes[0.040]; seven[0.040]; referee[0.040]; 
+
+INCORRECT ANNOTATION	1104testa	Turkey	Turkey	Turkey national football team
+global=0.338	0.326
+local(<e, ctx>)=0.040	-0.056
+log p(e|m)=-0.209	-3.037
+Turkey[0.050]; Turkish[0.045]; Turkish[0.045]; match[0.045]; team[0.044]; Soccer[0.043]; second[0.043]; kicked[0.042]; victory[0.042]; Belgium[0.041]; Belgium[0.041]; substitute[0.041]; upset[0.041]; campaign[0.041]; Cup[0.041]; World[0.040]; threw[0.040]; fans[0.040]; fought[0.040]; given[0.039]; took[0.039]; break[0.039]; deficit[0.039]; shortly[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.345	0.320
+local(<e, ctx>)=0.237	-0.046
+log p(e|m)=-0.242	-2.882
+Belgium[0.049]; Belgium[0.049]; France[0.046]; goal[0.046]; goal[0.046]; finals[0.045]; decisive[0.044]; qualifying[0.044]; Luc[0.044]; score[0.043]; second[0.043]; Euro[0.043]; ball[0.042]; ball[0.042]; Gilles[0.042]; Degryse[0.042]; Degryse[0.042]; Bertrand[0.042]; Van[0.042]; Marc[0.042]; half[0.041]; June[0.041]; Frederic[0.041]; 
+
+INCORRECT ANNOTATION	1104testa	Turkey	Turkey	Turkey national football team
+global=0.344	0.322
+local(<e, ctx>)=0.286	-0.007
+log p(e|m)=-0.209	-3.037
+Turkey[0.050]; Turkish[0.045]; friendlies[0.045]; Sergen[0.043]; Italy[0.043]; Saffet[0.042]; Hakan[0.042]; Hakan[0.042]; Belgium[0.042]; Alpay[0.042]; Kafkas[0.041]; Yalcin[0.041]; goal[0.041]; victory[0.041]; started[0.041]; coach[0.041]; coach[0.041]; Ercan[0.041]; Tayfun[0.040]; Orhan[0.040]; Recep[0.039]; Unsal[0.039]; Cetin[0.039]; Cetin[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.344	0.321
+local(<e, ctx>)=0.219	-0.027
+log p(e|m)=-0.242	-2.882
+Belgium[0.047]; Belgium[0.047]; France[0.045]; goal[0.044]; finals[0.043]; decisive[0.043]; Belgian[0.042]; qualifying[0.042]; Luc[0.042]; second[0.041]; ball[0.041]; ball[0.041]; Gilles[0.041]; Degryse[0.041]; Degryse[0.041]; coach[0.041]; Bertrand[0.040]; Van[0.040]; Marc[0.040]; half[0.040]; Frederic[0.040]; minutes[0.040]; minutes[0.040]; group[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.346	0.321
+local(<e, ctx>)=0.182	-0.108
+log p(e|m)=-0.242	-2.882
+team[0.054]; Belgium[0.051]; match[0.049]; Soccer[0.048]; victory[0.048]; Cup[0.048]; half[0.043]; minutes[0.043]; upset[0.042]; given[0.042]; World[0.042]; fought[0.042]; marred[0.042]; deficit[0.041]; Brussels[0.041]; order[0.041]; tense[0.041]; fans[0.041]; took[0.041]; break[0.040]; Lauwers[0.040]; kicked[0.040]; Bert[0.039]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.341	0.323
+local(<e, ctx>)=0.091	-0.078
+log p(e|m)=-0.242	-2.882
+team[0.051]; Belgium[0.049]; match[0.046]; Soccer[0.046]; victory[0.045]; Cup[0.045]; second[0.043]; half[0.041]; half[0.041]; half[0.041]; minutes[0.041]; upset[0.040]; given[0.040]; World[0.040]; fought[0.039]; Sergen[0.039]; marred[0.039]; deficit[0.039]; Brussels[0.039]; order[0.039]; tense[0.039]; fans[0.039]; took[0.038]; break[0.038]; 
+
+INCORRECT ANNOTATION	1104testa	Belgium	Belgium	Belgium national football team
+global=0.346	0.325
+local(<e, ctx>)=0.169	-0.069
+log p(e|m)=-0.242	-2.882
+goal[0.047]; victory[0.047]; Belgian[0.045]; friendlies[0.044]; Gilles[0.043]; coach[0.043]; coach[0.043]; Van[0.043]; Van[0.043]; Van[0.043]; Van[0.043]; Italy[0.042]; April[0.042]; Turkey[0.041]; Turkey[0.041]; Sergen[0.041]; Wilfried[0.040]; Bilde[0.039]; started[0.039]; strong[0.039]; Paul[0.039]; suffered[0.038]; Hakan[0.038]; Hakan[0.038]; 
+
+INCORRECT ANNOTATION	997testa	Foreign Ministry	Foreign minister	Ministry of Foreign Affairs (Poland)
+global=0.325	0.315
+local(<e, ctx>)=-0.051	-0.019
+log p(e|m)=-0.355	-3.037
+Foreign[0.049]; Foreign[0.049]; foreign[0.048]; Warsaw[0.044]; diplomatic[0.044]; ambassadorial[0.044]; Polish[0.044]; Poland[0.043]; Poland[0.043]; Poland[0.043]; country[0.043]; ministries[0.043]; trade[0.042]; President[0.042]; saying[0.042]; countries[0.042]; Republic[0.042]; Minister[0.042]; Minister[0.042]; Poles[0.042]; ties[0.042]; politicians[0.042]; visiting[0.041]; 
+
+INCORRECT ANNOTATION	997testa	Federal Republic of Yugoslavia	Serbia and Montenegro	Socialist Federal Republic of Yugoslavia
+global=0.351	0.347
+local(<e, ctx>)=0.254	0.249
+log p(e|m)=-0.010	-0.687
+Yugoslavia[0.045]; Yugoslavia[0.045]; Yugoslavia[0.045]; Yugoslavia[0.045]; Montenegro[0.045]; country[0.044]; Poland[0.044]; Poland[0.044]; Poland[0.044]; Belgrade[0.043]; Belgrade[0.043]; Serbian[0.041]; Yugoslav[0.041]; Warsaw[0.041]; Bosnian[0.040]; foreign[0.039]; Milosevic[0.039]; countries[0.039]; Serbs[0.039]; Poles[0.039]; Polish[0.039]; diplomatic[0.039]; despite[0.038]; trip[0.038]; 
+
+INCORRECT ANNOTATION	997testa	Poles	Poland	Poles
+global=0.346	0.328
+local(<e, ctx>)=0.183	-0.093
+log p(e|m)=-2.273	-0.448
+Poland[0.046]; Poland[0.046]; Poland[0.046]; Polish[0.046]; visas[0.043]; visas[0.043]; country[0.042]; Warsaw[0.042]; Yugoslavia[0.042]; Yugoslavia[0.042]; Yugoslavia[0.042]; Yugoslavia[0.042]; Yugoslavia[0.042]; foreign[0.041]; Republic[0.041]; countries[0.040]; economic[0.040]; Serbs[0.040]; visit[0.039]; visit[0.039]; despite[0.039]; conditions[0.039]; trip[0.039]; trade[0.039]; 
+
+INCORRECT ANNOTATION	971testa	Torino	Turin	Torino F.C.
+global=0.351	0.340
+local(<e, ctx>)=0.240	0.020
+log p(e|m)=-0.772	-0.526
+Turin[0.047]; club[0.044]; car[0.044]; Torino[0.043]; Italian[0.043]; Mondonico[0.043]; Milan[0.042]; Milan[0.042]; Milan[0.042]; Milan[0.042]; Milan[0.042]; dello[0.042]; Emiliano[0.042]; season[0.041]; player[0.041]; loaned[0.040]; Fabio[0.040]; joined[0.040]; Gazzetta[0.040]; international[0.040]; suffered[0.040]; Sport[0.039]; Bergamo[0.039]; Soccer[0.039]; 
+
+INCORRECT ANNOTATION	971testa	Milan	Milan	A.C. Milan
+global=0.348	0.333
+local(<e, ctx>)=0.214	0.037
+log p(e|m)=-0.301	-1.959
+Milan[0.047]; Milan[0.047]; Milan[0.047]; club[0.046]; Italian[0.045]; player[0.044]; Soccer[0.043]; dello[0.042]; Torino[0.042]; international[0.042]; Gazzetta[0.042]; serie[0.041]; Atalanta[0.041]; Atalanta[0.041]; Atalanta[0.041]; loaned[0.040]; Sport[0.040]; believed[0.039]; joined[0.039]; deal[0.039]; deal[0.039]; suffered[0.039]; transferred[0.039]; winger[0.039]; 
+
+INCORRECT ANNOTATION	971testa	Milan	Milan	A.C. Milan
+global=0.351	0.342
+local(<e, ctx>)=0.184	0.085
+log p(e|m)=-0.301	-1.959
+Milan[0.047]; Milan[0.047]; Milan[0.047]; club[0.046]; Italian[0.045]; player[0.044]; Soccer[0.042]; dello[0.042]; Torino[0.042]; international[0.042]; Gazzetta[0.042]; serie[0.041]; Atalanta[0.041]; Atalanta[0.041]; Atalanta[0.041]; loaned[0.040]; Sport[0.040]; following[0.039]; believed[0.039]; joined[0.039]; deal[0.039]; deal[0.039]; car[0.039]; suffered[0.039]; 
+
+INCORRECT ANNOTATION	971testa	Torino	Turin	Torino F.C.
+global=0.351	0.341
+local(<e, ctx>)=0.182	-0.028
+log p(e|m)=-0.772	-0.526
+Torino[0.050]; season[0.048]; Turin[0.048]; car[0.045]; Mondonico[0.044]; Milan[0.043]; Milan[0.043]; Emiliano[0.043]; coach[0.042]; coach[0.042]; player[0.042]; Fabio[0.041]; joined[0.041]; suffered[0.040]; Bergamo[0.040]; following[0.040]; Atalanta[0.040]; Atalanta[0.040]; crash[0.039]; injuries[0.038]; deal[0.038]; deal[0.038]; fatal[0.037]; struggled[0.037]; 
+
+INCORRECT ANNOTATION	971testa	Milan	Milan	A.C. Milan
+global=0.349	0.336
+local(<e, ctx>)=0.261	0.108
+log p(e|m)=-0.301	-1.959
+Milan[0.045]; Milan[0.045]; Milan[0.045]; Milan[0.045]; club[0.045]; Mondonico[0.044]; Italian[0.043]; player[0.043]; Fabio[0.042]; Soccer[0.041]; dello[0.041]; season[0.041]; Torino[0.041]; Torino[0.041]; international[0.041]; Turin[0.041]; Gazzetta[0.040]; serie[0.040]; Atalanta[0.040]; Atalanta[0.040]; Atalanta[0.040]; Atalanta[0.040]; Bergamo[0.040]; loaned[0.039]; 
+
+INCORRECT ANNOTATION	1072testa	CONCACAF	CONCACAF	CONCACAF Champions League
+global=0.341	0.327
+local(<e, ctx>)=0.031	-0.058
+log p(e|m)=0.000	-0.679
+Soccer[0.045]; Cup[0.045]; Cup[0.045]; qualifying[0.044]; Panama[0.044]; Panama[0.044]; Panama[0.044]; Jorge[0.044]; match[0.044]; Luis[0.042]; semifinal[0.042]; World[0.042]; World[0.042]; beat[0.042]; Qualifier[0.042]; Canada[0.041]; Canada[0.041]; Canada[0.041]; Valdes[0.039]; Friday[0.038]; Dely[0.038]; phase[0.038]; halftime[0.037]; Beat[0.037]; 
+
+INCORRECT ANNOTATION	1007testa	Tripoli	Tripoli	Tripoli, Lebanon
+global=0.341	0.332
+local(<e, ctx>)=0.325	0.244
+log p(e|m)=-0.334	-1.826
+Tripoli[0.048]; Tripoli[0.048]; Tripoli[0.048]; Libya[0.046]; Gaddafi[0.045]; Muammar[0.044]; Libyans[0.043]; Sunday[0.042]; flight[0.042]; capital[0.041]; bombing[0.041]; imposed[0.040]; road[0.040]; power[0.040]; United[0.040]; airport[0.040]; flights[0.040]; banners[0.040]; coup[0.039]; coup[0.039]; promise[0.039]; defiance[0.039]; revolution[0.039]; Eltahawy[0.039]; 
+
+INCORRECT ANNOTATION	1103testa	France	France	France national football team
+global=0.331	0.322
+local(<e, ctx>)=0.048	-0.041
+log p(e|m)=-0.163	-3.381
+France[0.066]; Paris[0.060]; soccer[0.060]; international[0.057]; Soccer[0.055]; Djorkaeff[0.055]; Saturday[0.054]; Nicolas[0.053]; beat[0.052]; Mexico[0.052]; Mexico[0.052]; Youri[0.051]; friendly[0.051]; minute[0.051]; halftime[0.049]; Scorers[0.047]; Friendly[0.047]; Beat[0.044]; Attendance[0.044]; 
+
+INCORRECT ANNOTATION	1070testa	Headingley	Headingley Stadium	Headingley
+global=0.353	0.337
+local(<e, ctx>)=0.395	0.213
+log p(e|m)=-0.302	-0.571
+Lancashire[0.047]; Warwickshire[0.047]; Warwickshire[0.047]; Warwickshire[0.047]; Glamorgan[0.047]; Glamorgan[0.047]; Essex[0.046]; Oval[0.046]; Gloucestershire[0.045]; Derbyshire[0.045]; Derbyshire[0.045]; Derbyshire[0.045]; Nottinghamshire[0.045]; wickets[0.045]; Kent[0.045]; Sussex[0.045]; Worcestershire[0.045]; Worcestershire[0.045]; Worcestershire[0.045]; Kettleborough[0.045]; Leeds[0.044]; Yorkshire[0.044]; 
+
+INCORRECT ANNOTATION	1070testa	Tunbridge Wells	Royal Tunbridge Wells	Nevill Ground
+global=0.341	0.331
+local(<e, ctx>)=0.220	0.145
+log p(e|m)=-0.260	-2.273
+Kent[0.046]; Essex[0.044]; Warwickshire[0.043]; Warwickshire[0.043]; Warwickshire[0.043]; Gloucestershire[0.043]; London[0.043]; Sussex[0.043]; Surrey[0.042]; Surrey[0.042]; Surrey[0.042]; Oval[0.042]; Worcestershire[0.042]; Lancashire[0.041]; Hove[0.041]; Nottinghamshire[0.041]; Derbyshire[0.041]; Derbyshire[0.041]; Northamptonshire[0.040]; Bristol[0.040]; runs[0.040]; Yorkshire[0.039]; Headingley[0.039]; Russell[0.039]; 
+
+INCORRECT ANNOTATION	1070testa	Chester-le-Street	Chester-le-Street	Riverside Ground
+global=0.356	0.345
+local(<e, ctx>)=0.330	0.196
+log p(e|m)=-0.030	-1.452
+matches[0.043]; Durham[0.043]; Durham[0.043]; Durham[0.043]; Hampshire[0.042]; Hampshire[0.042]; Hampshire[0.042]; day[0.042]; Derbyshire[0.042]; Derbyshire[0.042]; Derbyshire[0.042]; Warwickshire[0.041]; Warwickshire[0.041]; Championship[0.041]; Oval[0.041]; Cricket[0.041]; Middlesex[0.041]; Middlesex[0.041]; Middlesex[0.041]; Street[0.041]; Worcestershire[0.041]; Worcestershire[0.041]; Worcestershire[0.041]; County[0.040]; 
+
+INCORRECT ANNOTATION	1070testa	Bristol	Bristol	County Cricket Ground, Bristol
+global=0.345	0.315
+local(<e, ctx>)=0.262	-0.062
+log p(e|m)=-0.435	-4.343
+Warwickshire[0.045]; Warwickshire[0.045]; Essex[0.045]; Lancashire[0.045]; Sussex[0.043]; Gloucestershire[0.043]; Nottinghamshire[0.043]; Hove[0.042]; Kent[0.042]; Northamptonshire[0.042]; Leeds[0.042]; Headingley[0.042]; Surrey[0.041]; Surrey[0.041]; runs[0.041]; innings[0.041]; Yorkshire[0.041]; points[0.040]; Hamilton[0.040]; Russell[0.040]; Kettleborough[0.039]; Lewis[0.039]; Tunbridge[0.039]; Wells[0.039]; 
+
+INCORRECT ANNOTATION	1070testa	Hove	Hove	County Cricket Ground, Hove
+global=0.353	0.335
+local(<e, ctx>)=0.264	0.218
+log p(e|m)=-0.041	-2.703
+Sussex[0.044]; Warwickshire[0.043]; Warwickshire[0.043]; Warwickshire[0.043]; Essex[0.043]; Oval[0.042]; Surrey[0.042]; Surrey[0.042]; Surrey[0.042]; Worcestershire[0.042]; Worcestershire[0.042]; Worcestershire[0.042]; Kent[0.042]; Nottinghamshire[0.041]; Lancashire[0.041]; wickets[0.041]; Derbyshire[0.041]; Derbyshire[0.041]; London[0.041]; Headingley[0.041]; Gloucestershire[0.041]; Northamptonshire[0.041]; Kettleborough[0.040]; runs[0.039]; 
+
+INCORRECT ANNOTATION	1015testa	South Carolina	South Carolina	University of South Carolina
+global=0.337	0.316
+local(<e, ctx>)=0.117	0.009
+log p(e|m)=-0.270	-3.037
+team[0.045]; presidential[0.045]; presidential[0.045]; Clinton[0.043]; Clinton[0.043]; campaign[0.043]; campaign[0.043]; campaign[0.043]; candidate[0.042]; week[0.042]; Scott[0.041]; Scott[0.041]; televised[0.041]; Texas[0.041]; head[0.041]; Party[0.041]; Friday[0.040]; Gov[0.040]; Reed[0.040]; Reed[0.040]; campaigns[0.040]; Perot[0.040]; vice[0.040]; vice[0.040]; 
+
+INCORRECT ANNOTATION	1096testa	Seattle	Milwaukee Brewers	Seattle Mariners
+global=0.328	0.325
+local(<e, ctx>)=0.366	0.288
+log p(e|m)=-4.075	-3.863
+team[0.050]; games[0.047]; Houston[0.047]; Oakland[0.047]; Baltimore[0.046]; Baseball[0.046]; Baseball[0.046]; Boston[0.045]; Cleveland[0.045]; Milwaukee[0.045]; game[0.045]; game[0.045]; Philadelphia[0.045]; Cincinnati[0.045]; City[0.045]; California[0.045]; League[0.045]; League[0.045]; League[0.045]; League[0.045]; Pittsburgh[0.044]; played[0.044]; 
+
+INCORRECT ANNOTATION	1082testa	European	UEFA	Europe
+global=0.328	0.321
+local(<e, ctx>)=-0.121	-0.334
+log p(e|m)=-3.576	-0.256
+soccer[0.061]; qualifier[0.060]; Cup[0.059]; Cup[0.059]; Soccer[0.059]; group[0.057]; Portugal[0.057]; Portugal[0.057]; drew[0.055]; Qualifier[0.055]; World[0.055]; World[0.055]; Saturday[0.054]; Armenia[0.053]; Armenia[0.053]; Draw[0.051]; Attendance[0.050]; Yerevan[0.049]; 
+
+INCORRECT ANNOTATION	1082testa	Armenia	Armenia	Armenia national football team
+global=0.336	0.332
+local(<e, ctx>)=0.095	-0.013
+log p(e|m)=-0.431	-2.688
+Armenia[0.065]; qualifier[0.061]; soccer[0.061]; Portugal[0.058]; Portugal[0.058]; European[0.058]; Cup[0.057]; Cup[0.057]; Qualifier[0.057]; Yerevan[0.056]; Soccer[0.056]; drew[0.054]; Saturday[0.053]; group[0.052]; World[0.050]; World[0.050]; Draw[0.049]; Attendance[0.046]; 
+
+INCORRECT ANNOTATION	1127testa	Moslem	Muslim	Islam
+global=0.342	0.342
+local(<e, ctx>)=0.173	0.138
+log p(e|m)=-0.308	-1.214
+Moslem[0.047]; Moslem[0.047]; Bosnia[0.045]; Bosnian[0.044]; Bosnian[0.044]; Serbs[0.043]; Serb[0.043]; Serb[0.043]; Serb[0.043]; Moslems[0.042]; Moslems[0.042]; Moslems[0.042]; order[0.041]; Sarajevo[0.041]; believed[0.040]; territory[0.040]; brought[0.040]; returning[0.040]; received[0.040]; war[0.039]; troops[0.039]; troops[0.039]; troops[0.039]; violent[0.039]; 
+
+INCORRECT ANNOTATION	1127testa	Moslem	Muslim	Islam
+global=0.342	0.342
+local(<e, ctx>)=0.176	0.146
+log p(e|m)=-0.308	-1.214
+Moslem[0.047]; Moslem[0.047]; Moslem[0.047]; Bosnia[0.045]; Bosnia[0.045]; Bosnian[0.043]; Bosnian[0.043]; Serbs[0.043]; Serb[0.043]; Serb[0.043]; Moslems[0.042]; Moslems[0.042]; Sarajevo[0.041]; believed[0.040]; territory[0.040]; returning[0.040]; received[0.039]; war[0.039]; troops[0.039]; violent[0.039]; men[0.038]; men[0.038]; men[0.038]; Tuzla[0.038]; 
+
+INCORRECT ANNOTATION	1127testa	Mahala	Mahala (Breza)	Mahala
+global=0.343	0.338
+local(<e, ctx>)=0.553	0.029
+log p(e|m)=-1.355	0.000
+Bosnia[0.059]; Bosnia[0.059]; Bosnian[0.047]; Mahala[0.046]; Mahala[0.046]; Mahala[0.046]; Mahala[0.046]; Sarajevo[0.045]; village[0.044]; village[0.044]; village[0.044]; village[0.044]; Tuzla[0.043]; Serbs[0.042]; Serb[0.041]; Serb[0.041]; territory[0.039]; Nato[0.038]; Nato[0.038]; Nato[0.038]; Nato[0.038]; republic[0.037]; republic[0.037]; 
+
+INCORRECT ANNOTATION	1127testa	Mahala	Mahala (Breza)	Mahala
+global=0.341	0.337
+local(<e, ctx>)=0.585	0.073
+log p(e|m)=-1.355	0.000
+Bosnia[0.062]; Bosnia[0.062]; Bosnian[0.049]; Bosnian[0.049]; Mahala[0.048]; Mahala[0.048]; Mahala[0.048]; Mahala[0.048]; Mahala[0.048]; Sarajevo[0.048]; village[0.046]; village[0.046]; village[0.046]; village[0.046]; village[0.046]; Tuzla[0.045]; Serbs[0.044]; Serb[0.043]; Serb[0.043]; Serb[0.043]; territory[0.041]; 
+
+INCORRECT ANNOTATION	1127testa	Mahala	Mahala (Breza)	Mahala
+global=0.343	0.338
+local(<e, ctx>)=0.535	0.005
+log p(e|m)=-1.355	0.000
+Bosnia[0.058]; Bosnian[0.045]; Bosnian[0.045]; Mahala[0.044]; Mahala[0.044]; Mahala[0.044]; Mahala[0.044]; Sarajevo[0.044]; village[0.043]; village[0.043]; village[0.043]; village[0.043]; Tuzla[0.042]; Serbs[0.041]; Serb[0.040]; Serb[0.040]; Serb[0.040]; territory[0.038]; Nato[0.037]; Nato[0.037]; Nato[0.037]; Nato[0.037]; Nato[0.037]; Nato[0.037]; 
+
+INCORRECT ANNOTATION	1090testa	World Series of Golf	WGC-Bridgestone Invitational	World Series of Golf
+global=0.363	0.359
+local(<e, ctx>)=0.021	-0.091
+log p(e|m)=-0.711	0.000
+tournament[0.050]; Golf[0.048]; golfers[0.046]; Tour[0.045]; World[0.043]; week[0.042]; skipped[0.042]; shot[0.042]; Stricker[0.042]; second[0.042]; second[0.042]; place[0.042]; Series[0.041]; Appleby[0.040]; tied[0.040]; tied[0.040]; Estes[0.040]; carded[0.040]; list[0.040]; sole[0.039]; lead[0.039]; lead[0.039]; shots[0.039]; basically[0.038]; 
+
+INCORRECT ANNOTATION	1090testa	World Series of Golf	WGC-Bridgestone Invitational	World Series of Golf
+global=0.362	0.358
+local(<e, ctx>)=0.040	-0.090
+log p(e|m)=-0.711	0.000
+tournament[0.049]; Golf[0.047]; golfers[0.045]; Tour[0.045]; World[0.043]; week[0.042]; skipped[0.042]; shot[0.042]; Stricker[0.041]; second[0.041]; second[0.041]; place[0.041]; par[0.041]; hole[0.041]; hole[0.041]; Series[0.041]; Appleby[0.040]; tied[0.040]; tied[0.040]; Estes[0.040]; carded[0.040]; seventh[0.039]; list[0.039]; sole[0.039]; 
+
+INCORRECT ANNOTATION	1091testa	Spain	Spain	Spanish Empire
+global=0.341	0.310
+local(<e, ctx>)=0.131	0.080
+log p(e|m)=-0.189	-4.343
+win[0.045]; champion[0.044]; Fernandez[0.044]; Fernandez[0.044]; Fernandez[0.044]; match[0.044]; Olympic[0.043]; squad[0.043]; Cup[0.043]; Arantxa[0.042]; Fed[0.042]; Conchita[0.042]; withdraw[0.042]; Martinez[0.041]; injury[0.041]; coach[0.040]; Open[0.040]; veteran[0.040]; got[0.039]; minute[0.039]; forced[0.039]; forced[0.039]; Seles[0.039]; Seles[0.039]; 
+
+INCORRECT ANNOTATION	1091testa	United States	United States	United States national rugby union team
+global=0.326	0.311
+local(<e, ctx>)=-0.028	0.145
+log p(e|m)=-0.074	-5.116
+won[0.046]; team[0.044]; matches[0.044]; Spain[0.043]; final[0.043]; final[0.043]; host[0.042]; France[0.042]; Cup[0.042]; Cup[0.042]; Cup[0.042]; win[0.042]; Japan[0.041]; Japan[0.041]; Japan[0.041]; round[0.041]; captain[0.041]; Fernandez[0.041]; opening[0.040]; Americans[0.040]; semifinals[0.040]; semifinals[0.040]; draw[0.040]; lost[0.040]; 
+
+INCORRECT ANNOTATION	1091testa	United States	United States	United States national rugby union team
+global=0.332	0.310
+local(<e, ctx>)=0.068	0.138
+log p(e|m)=-0.074	-5.116
+team[0.044]; team[0.044]; matches[0.043]; international[0.043]; Spain[0.043]; Spain[0.043]; Spain[0.043]; final[0.042]; final[0.042]; champion[0.042]; Germany[0.042]; France[0.042]; hosts[0.042]; Cup[0.041]; Cup[0.041]; Japan[0.041]; Saturday[0.041]; round[0.041]; round[0.041]; competition[0.040]; ties[0.040]; Americans[0.040]; semifinals[0.040]; draw[0.040]; 
+
+INCORRECT ANNOTATION	1091testa	Belgium	Belgium	Belgium national football team
+global=0.344	0.314
+local(<e, ctx>)=0.287	-0.025
+log p(e|m)=-0.242	-2.882
+team[0.048]; team[0.048]; semifinals[0.044]; France[0.043]; matches[0.043]; Cup[0.042]; Cup[0.042]; international[0.042]; Tennis[0.042]; Netherlands[0.041]; Spain[0.041]; Spain[0.041]; Spain[0.041]; Spain[0.041]; final[0.041]; final[0.041]; Germany[0.041]; champion[0.040]; Japan[0.040]; defeat[0.040]; Open[0.040]; Open[0.040]; round[0.039]; round[0.039]; 
+
+INCORRECT ANNOTATION	969testa	IAAF Grand Prix Final	IAAF Grand Prix Final	2002 IAAF Grand Prix Final
+global=0.331	0.323
+local(<e, ctx>)=-0.155	-0.168
+log p(e|m)=-0.282	-1.556
+Milan[0.046]; Milan[0.046]; International[0.045]; Games[0.044]; stadium[0.044]; athletes[0.043]; final[0.043]; hold[0.043]; Sarajevo[0.042]; Sarajevo[0.042]; Friday[0.041]; Athletic[0.041]; silver[0.040]; winner[0.040]; medal[0.040]; Federation[0.040]; women[0.040]; men[0.040]; Amateur[0.040]; jump[0.040]; jump[0.040]; grand[0.040]; long[0.040]; prix[0.039]; 
+
+INCORRECT ANNOTATION	1117testa	Austrians	Austria	Austrian Empire
+global=0.341	0.340
+local(<e, ctx>)=0.083	0.167
+log p(e|m)=-1.088	-1.625
+Napoleon[0.047]; government[0.043]; born[0.043]; born[0.043]; born[0.043]; imposed[0.043]; proclaimed[0.043]; independence[0.043]; Henry[0.042]; gave[0.042]; British[0.041]; liberation[0.041]; granted[0.041]; actor[0.041]; west[0.041]; Emperor[0.041]; war[0.041]; politician[0.041]; freedom[0.040]; Italian[0.040]; seized[0.040]; powers[0.040]; attempted[0.040]; week[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	China	China	Taiwan
+global=0.347	0.328
+local(<e, ctx>)=0.199	0.193
+log p(e|m)=-0.157	-4.343
+Brazil[0.048]; Brazil[0.048]; Portugal[0.046]; Emperor[0.045]; war[0.044]; Peking[0.044]; appearances[0.042]; British[0.042]; government[0.041]; ended[0.041]; foreigners[0.041]; week[0.041]; entered[0.040]; officially[0.040]; independence[0.040]; imposed[0.040]; signing[0.040]; December[0.040]; Napoleon[0.040]; gave[0.040]; leading[0.039]; Italian[0.039]; Viva[0.039]; paid[0.039]; 
+
+INCORRECT ANNOTATION	1117testa	England	England	Kingdom of England
+global=0.340	0.328
+local(<e, ctx>)=0.181	0.289
+log p(e|m)=-0.190	-3.912
+monarchs[0.045]; Queen[0.043]; Charles[0.043]; Charles[0.043]; France[0.043]; France[0.043]; Prince[0.043]; ceded[0.042]; London[0.042]; second[0.042]; history[0.042]; queen[0.042]; English[0.041]; Roman[0.041]; Italy[0.041]; Boleyn[0.041]; Europe[0.041]; major[0.041]; Henry[0.040]; September[0.040]; September[0.040]; army[0.040]; Emperor[0.040]; born[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Brazil	Brazil	Empire of Brazil
+global=0.345	0.323
+local(<e, ctx>)=0.259	0.315
+log p(e|m)=-0.213	-4.605
+Brazil[0.050]; Portugal[0.045]; Pedro[0.044]; ceded[0.043]; Spanish[0.042]; independence[0.042]; Italy[0.042]; France[0.042]; France[0.042]; government[0.041]; ending[0.041]; Napoleon[0.041]; Napoleon[0.041]; defeated[0.041]; week[0.041]; China[0.041]; proclaimed[0.040]; northern[0.040]; west[0.040]; got[0.040]; got[0.040]; seized[0.040]; born[0.040]; entered[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	German	Germany	German Empire
+global=0.333	0.317
+local(<e, ctx>)=0.202	0.232
+log p(e|m)=-1.047	-3.963
+born[0.045]; born[0.045]; born[0.045]; throne[0.044]; father[0.043]; British[0.043]; War[0.043]; King[0.043]; South[0.042]; South[0.042]; Italian[0.041]; Hermann[0.041]; World[0.041]; world[0.041]; world[0.041]; actor[0.041]; people[0.040]; Lawrence[0.040]; physicist[0.040]; Leopold[0.040]; abdication[0.040]; black[0.040]; Alfred[0.040]; gave[0.039]; 
+
+INCORRECT ANNOTATION	1117testa	Freiburg	Fribourg	Freiburg im Breisgau
+global=0.338	0.338
+local(<e, ctx>)=0.101	0.016
+log p(e|m)=-2.254	-0.207
+Breisach[0.049]; France[0.046]; France[0.046]; French[0.046]; French[0.046]; west[0.045]; northern[0.044]; battle[0.044]; got[0.043]; got[0.043]; Baden[0.043]; signed[0.043]; Alsace[0.043]; Napoleon[0.043]; Napoleon[0.043]; Kehl[0.043]; Strasbourg[0.042]; Italy[0.042]; army[0.042]; army[0.042]; gave[0.042]; born[0.041]; Spanish[0.041]; 
+
+INCORRECT ANNOTATION	1117testa	Charles	Charles VIII of France	Charles VI of France
+global=0.336	0.330
+local(<e, ctx>)=0.054	0.009
+log p(e|m)=-1.609	-0.357
+Napoleon[0.047]; Napoleon[0.047]; France[0.044]; France[0.044]; monarchs[0.044]; French[0.044]; French[0.044]; Italy[0.043]; ceded[0.042]; queen[0.042]; Prince[0.042]; Emperor[0.041]; Emperor[0.041]; Roman[0.041]; Charles[0.041]; Strasbourg[0.040]; northern[0.040]; Alsace[0.040]; wife[0.040]; England[0.040]; Orleans[0.039]; Breisach[0.039]; proclaimed[0.039]; signed[0.039]; 
+
+INCORRECT ANNOTATION	1117testa	Russian	Russia	Russian Empire
+global=0.338	0.327
+local(<e, ctx>)=0.243	0.302
+log p(e|m)=-1.053	-3.058
+English[0.046]; Moscow[0.045]; Moscow[0.045]; born[0.043]; Napoleon[0.043]; Napoleon[0.043]; ceded[0.043]; Roman[0.042]; northern[0.041]; Spanish[0.041]; independence[0.041]; War[0.041]; Europe[0.041]; Borodino[0.041]; gave[0.041]; period[0.041]; monarchs[0.041]; Emperor[0.040]; Emperor[0.040]; French[0.040]; French[0.040]; army[0.040]; army[0.040]; Treaty[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Austrians	Austria	Austrian Empire
+global=0.335	0.332
+local(<e, ctx>)=0.139	0.185
+log p(e|m)=-1.088	-1.625
+Napoleon[0.046]; Napoleon[0.046]; monarchs[0.046]; ceded[0.045]; Breisach[0.044]; Roman[0.042]; Europe[0.042]; Prince[0.042]; Italy[0.042]; northern[0.042]; born[0.041]; France[0.041]; France[0.041]; history[0.041]; Henry[0.041]; Queen[0.040]; England[0.040]; queen[0.040]; Emperor[0.040]; French[0.040]; French[0.040]; War[0.040]; historical[0.040]; major[0.039]; 
+
+INCORRECT ANNOTATION	1117testa	Brazil	Brazil	Empire of Brazil
+global=0.344	0.322
+local(<e, ctx>)=0.248	0.307
+log p(e|m)=-0.213	-4.605
+Brazil[0.050]; Portugal[0.045]; Pedro[0.044]; ceded[0.043]; Spanish[0.042]; independence[0.042]; Italy[0.042]; France[0.042]; France[0.042]; government[0.041]; ending[0.041]; Napoleon[0.041]; Napoleon[0.041]; defeated[0.041]; week[0.041]; China[0.040]; ended[0.040]; proclaimed[0.040]; northern[0.040]; west[0.040]; got[0.040]; got[0.040]; seized[0.040]; born[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Transvaal	South African Republic	Transvaal Colony
+global=0.340	0.326
+local(<e, ctx>)=-0.068	-0.078
+log p(e|m)=-0.652	-1.904
+week[0.043]; west[0.043]; born[0.043]; born[0.043]; ended[0.043]; got[0.043]; got[0.043]; ceded[0.043]; independence[0.042]; entered[0.042]; leading[0.042]; government[0.042]; great[0.041]; gave[0.041]; paid[0.041]; Henry[0.041]; granted[0.041]; seized[0.041]; Campbell[0.041]; war[0.041]; Brazil[0.041]; Brazil[0.041]; self[0.041]; army[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Orleans	Orléans	Orleans, Massachusetts
+global=0.348	0.316
+local(<e, ctx>)=0.249	0.003
+log p(e|m)=-1.470	-2.112
+France[0.045]; France[0.045]; Napoleon[0.044]; Napoleon[0.044]; French[0.044]; French[0.044]; Prince[0.043]; historical[0.042]; queen[0.042]; Alsace[0.041]; Queen[0.041]; west[0.041]; ceded[0.041]; Roman[0.041]; monarchs[0.041]; Charles[0.041]; Charles[0.041]; born[0.040]; Breisach[0.040]; wife[0.040]; second[0.040]; Duke[0.040]; Strasbourg[0.040]; northern[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Borodino	Battle of Borodino	Borodino-class battleship
+global=0.340	0.325
+local(<e, ctx>)=-0.136	-0.278
+log p(e|m)=-0.414	-1.448
+war[0.044]; cost[0.044]; battle[0.043]; army[0.043]; army[0.043]; Russian[0.043]; Napoleon[0.043]; Napoleon[0.043]; ceased[0.042]; heavy[0.042]; War[0.042]; gave[0.042]; troops[0.041]; ceded[0.041]; Moscow[0.041]; Moscow[0.041]; granted[0.041]; French[0.040]; French[0.040]; west[0.040]; proclaimed[0.040]; Roman[0.040]; seized[0.040]; December[0.040]; 
+
+INCORRECT ANNOTATION	1117testa	Charles VI	Charles VIII of France	Charles VI of France
+global=0.335	0.330
+local(<e, ctx>)=0.007	-0.029
+log p(e|m)=-1.609	-0.357
+Napoleon[0.047]; Napoleon[0.047]; France[0.044]; France[0.044]; monarchs[0.044]; French[0.043]; French[0.043]; Italy[0.043]; ceded[0.042]; queen[0.042]; Prince[0.042]; Queen[0.041]; Emperor[0.041]; Emperor[0.041]; Roman[0.041]; Charles[0.041]; Strasbourg[0.040]; northern[0.040]; Alsace[0.040]; wife[0.039]; England[0.039]; Orleans[0.039]; Breisach[0.039]; proclaimed[0.039]; 
+
+INCORRECT ANNOTATION	1155testa	Algiers	Algiers	Algeria
+global=0.351	0.343
+local(<e, ctx>)=0.255	0.120
+log p(e|m)=-0.104	-2.749
+Algeria[0.048]; Algerian[0.047]; town[0.044]; town[0.044]; western[0.043]; civilians[0.042]; early[0.042]; Liberte[0.042]; forces[0.041]; estimated[0.041]; Bou[0.041]; Le[0.041]; killed[0.040]; killed[0.040]; killed[0.040]; killed[0.040]; km[0.040]; violence[0.040]; attacks[0.040]; general[0.040]; coastal[0.040]; coastal[0.040]; miles[0.040]; August[0.040]; 
+
+INCORRECT ANNOTATION	1155testa	Le Matin	Le Matin (Senegal)	Le Matin (Switzerland)
+global=0.329	0.320
+local(<e, ctx>)=0.076	-0.094
+log p(e|m)=-1.924	-1.100
+newspaper[0.051]; newspaper[0.051]; newspaper[0.051]; newspapers[0.046]; Liberte[0.044]; Algerian[0.043]; Algerian[0.043]; Algerian[0.043]; Paris[0.043]; Algeria[0.042]; shortly[0.042]; week[0.041]; Newspapers[0.040]; quoted[0.040]; Algiers[0.039]; Algiers[0.039]; statement[0.039]; Saturday[0.038]; Friday[0.038]; ago[0.038]; Bou[0.038]; Haroun[0.037]; women[0.037]; quoting[0.037]; 
+
+INCORRECT ANNOTATION	1027testa	Al-Akhbar	Al Akhbar (Lebanon)	Al Akhbar (Egypt)
+global=0.370	0.364
+local(<e, ctx>)=0.068	0.051
+log p(e|m)=0.000	-1.720
+newspapers[0.044]; newspapers[0.044]; newspapers[0.044]; Cairo[0.043]; Cairo[0.043]; institutions[0.043]; prominent[0.042]; al[0.042]; al[0.042]; al[0.042]; Egypt[0.042]; Egypt[0.042]; said[0.042]; said[0.042]; said[0.042]; Akhbar[0.042]; reported[0.041]; struggle[0.040]; Mubarak[0.040]; Islamic[0.040]; Islamic[0.040]; Hosni[0.040]; militant[0.039]; outside[0.039]; 
+
+INCORRECT ANNOTATION	1134testa	Xiao	Deng Xiaoping	Zhou Enlai
+global=0.346	0.309
+local(<e, ctx>)=0.327	0.238
+log p(e|m)=-0.693	-6.908
+China[0.046]; China[0.046]; China[0.046]; Communist[0.043]; meant[0.043]; meant[0.043]; government[0.043]; Deng[0.042]; Wang[0.041]; Wang[0.041]; Xiao[0.041]; Xiao[0.041]; Xiao[0.041]; Party[0.041]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; national[0.040]; political[0.040]; Human[0.040]; strengthen[0.040]; 
+
+INCORRECT ANNOTATION	1134testa	Xiao	Deng Xiaoping	Zhou Enlai
+global=0.346	0.309
+local(<e, ctx>)=0.298	0.205
+log p(e|m)=-0.693	-6.908
+China[0.047]; China[0.047]; reform[0.043]; Chen[0.042]; ideological[0.042]; Wang[0.042]; Wang[0.042]; Wang[0.042]; Wang[0.042]; Xiao[0.041]; Xiao[0.041]; said[0.041]; said[0.041]; said[0.041]; said[0.041]; security[0.041]; encouraged[0.041]; dissident[0.041]; coercive[0.040]; repression[0.040]; education[0.040]; going[0.040]; making[0.040]; make[0.039]; 
+
+INCORRECT ANNOTATION	1134testa	Xiao	Deng Xiaoping	Zhou Enlai
+global=0.346	0.309
+local(<e, ctx>)=0.332	0.240
+log p(e|m)=-0.693	-6.908
+China[0.046]; China[0.046]; China[0.046]; Communist[0.043]; meant[0.043]; meant[0.043]; government[0.043]; Deng[0.042]; Wang[0.041]; Wang[0.041]; Wang[0.041]; Xiao[0.041]; Xiao[0.041]; Party[0.041]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; national[0.040]; political[0.040]; strengthen[0.040]; Xiaoping[0.040]; repression[0.040]; 
+
+INCORRECT ANNOTATION	1134testa	New York-based	New York City	New York
+global=0.364	0.360
+local(<e, ctx>)=0.079	-0.097
+log p(e|m)=-0.062	-0.017
+Hard[0.046]; group[0.046]; based[0.043]; Friday[0.043]; going[0.042]; appeared[0.042]; national[0.042]; senior[0.042]; transitions[0.042]; nation[0.042]; Saturday[0.041]; showed[0.041]; sent[0.041]; apparently[0.041]; said[0.041]; said[0.041]; said[0.041]; said[0.041]; leadership[0.041]; transition[0.041]; meant[0.040]; dozens[0.040]; executive[0.040]; interview[0.040]; 
+
+INCORRECT ANNOTATION	1134testa	Xiao	Deng Xiaoping	Zhou Enlai
+global=0.345	0.308
+local(<e, ctx>)=0.242	0.162
+log p(e|m)=-0.693	-6.908
+China[0.047]; reform[0.043]; Chen[0.043]; ideological[0.043]; Wang[0.043]; Wang[0.043]; Wang[0.043]; Wang[0.043]; Xiao[0.042]; said[0.042]; said[0.042]; said[0.042]; security[0.042]; encouraged[0.042]; dissident[0.041]; coercive[0.041]; education[0.041]; Hangzhou[0.040]; class[0.040]; month[0.040]; euphemism[0.040]; activist[0.040]; attack[0.039]; released[0.039]; 
+
+INCORRECT ANNOTATION	1134testa	Human Rights in China	Human rights in China	Human Rights in China (organization)
+global=0.371	0.362
+local(<e, ctx>)=-0.021	-0.030
+log p(e|m)=0.000	-0.068
+China[0.047]; China[0.047]; China[0.047]; activists[0.045]; activist[0.043]; executive[0.042]; dissidents[0.042]; director[0.042]; social[0.042]; dissident[0.041]; rights[0.041]; rights[0.041]; authorities[0.041]; political[0.041]; imprisoned[0.040]; leadership[0.040]; Xiao[0.040]; Xiao[0.040]; group[0.040]; dissent[0.040]; national[0.040]; dozens[0.040]; Friday[0.040]; Donghai[0.040]; 
+
+INCORRECT ANNOTATION	1134testa	Xiao	Deng Xiaoping	Zhou Enlai
+global=0.347	0.309
+local(<e, ctx>)=0.359	0.255
+log p(e|m)=-0.693	-6.908
+China[0.046]; China[0.046]; China[0.046]; China[0.046]; meant[0.043]; government[0.043]; Deng[0.042]; reform[0.042]; ideological[0.041]; Wang[0.041]; Wang[0.041]; Wang[0.041]; Xiao[0.041]; Xiao[0.041]; Xiao[0.041]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; said[0.040]; security[0.040]; political[0.040]; dissident[0.040]; 
+
+INCORRECT ANNOTATION	1094testa	United States	United States	United States men's national soccer team
+global=0.346	0.314
+local(<e, ctx>)=0.105	-0.134
+log p(e|m)=-0.074	-4.343
+soccer[0.050]; Soccer[0.048]; international[0.047]; Wynalda[0.045]; beat[0.044]; Friday[0.043]; kick[0.043]; friendly[0.043]; Luis[0.043]; halftime[0.042]; penalty[0.041]; minute[0.041]; Salvador[0.041]; Salvador[0.041]; Salvador[0.041]; Lazo[0.040]; Joe[0.040]; 3rd[0.039]; Eric[0.039]; Los[0.038]; Beat[0.038]; Max[0.038]; Scorers[0.038]; Moore[0.038]; 
+
+INCORRECT ANNOTATION	1094testa	U.S.	United States	United States men's national soccer team
+global=0.346	0.325
+local(<e, ctx>)=0.020	-0.124
+log p(e|m)=-0.140	-4.075
+soccer[0.050]; Soccer[0.049]; international[0.047]; Wynalda[0.045]; beat[0.044]; friendly[0.043]; Luis[0.043]; United[0.042]; States[0.042]; minute[0.041]; Salvador[0.041]; Salvador[0.041]; Salvador[0.041]; Friday[0.040]; Beat[0.040]; penalty[0.040]; kick[0.040]; Joe[0.040]; Angeles[0.039]; Los[0.039]; Eric[0.039]; Moore[0.039]; Lazo[0.038]; Attendance[0.038]; 
+
+INCORRECT ANNOTATION	1094testa	U.S.	United States	United States men's national soccer team
+global=0.353	0.319
+local(<e, ctx>)=0.326	-0.122
+log p(e|m)=-0.140	-4.075
+soccer[0.050]; Soccer[0.049]; international[0.047]; Wynalda[0.045]; beat[0.044]; friendly[0.043]; Luis[0.043]; United[0.042]; States[0.042]; minute[0.041]; Salvador[0.041]; Salvador[0.041]; Salvador[0.041]; Friday[0.040]; Beat[0.040]; penalty[0.040]; kick[0.040]; Joe[0.040]; Angeles[0.039]; Los[0.039]; Eric[0.039]; Moore[0.039]; Lazo[0.038]; Attendance[0.038]; 
+
+INCORRECT ANNOTATION	1051testa	European	UEFA	UEFA Champions League
+global=0.321	0.318
+local(<e, ctx>)=-0.158	-0.153
+log p(e|m)=-3.576	-4.423
+soccer[0.046]; qualifier[0.045]; Cup[0.045]; Cup[0.045]; World[0.045]; World[0.045]; Soccer[0.045]; Ireland[0.044]; Ireland[0.044]; group[0.044]; beat[0.043]; Qualifier[0.042]; Saturday[0.041]; Republic[0.041]; 7th[0.040]; 5th[0.039]; Neill[0.039]; Eschen[0.039]; Liechtenstein[0.039]; Liechtenstein[0.039]; Andy[0.038]; Attendance[0.038]; Ian[0.038]; Keith[0.037]; 
+
+INCORRECT ANNOTATION	1068testa	Stranraer	Stranraer F.C.	Stranraer
+global=0.366	0.346
+local(<e, ctx>)=0.450	-0.049
+log p(e|m)=-1.030	0.000
+Airdrieonians[0.046]; Cowdenbeath[0.044]; Inverness[0.043]; Scottish[0.043]; Scottish[0.043]; Greenock[0.043]; Stenhousemuir[0.042]; Dundee[0.042]; Glasgow[0.042]; Livingston[0.042]; Partick[0.042]; Dumbarton[0.042]; Brechin[0.042]; Fife[0.041]; Thistle[0.041]; Arbroath[0.041]; Johnstone[0.041]; league[0.040]; Alloa[0.040]; Falkirk[0.040]; Forfar[0.040]; Stirling[0.040]; Stirling[0.040]; Clyde[0.040]; 
+
+INCORRECT ANNOTATION	1016testa	Newfoundland	Newfoundland and Labrador	Dominion of Newfoundland
+global=0.345	0.338
+local(<e, ctx>)=0.127	0.113
+log p(e|m)=-1.328	-1.737
+coast[0.054]; Canada[0.053]; ships[0.049]; ship[0.048]; sea[0.046]; ocean[0.045]; ocean[0.045]; struck[0.045]; Titanic[0.045]; Titanic[0.045]; Titanic[0.045]; Titanic[0.045]; unsinkable[0.044]; Friday[0.044]; expedition[0.044]; expedition[0.044]; mission[0.043]; hull[0.043]; hull[0.043]; feet[0.043]; means[0.043]; scrapped[0.043]; 
+
+INCORRECT ANNOTATION	1130testa	Kalashnikov	Mikhail Kalashnikov	AK-47
+global=0.334	0.331
+local(<e, ctx>)=-0.134	-0.078
+log p(e|m)=-1.355	-0.131
+rifles[0.048]; guns[0.046]; gun[0.046]; Russia[0.044]; Moscow[0.044]; Moscow[0.044]; Russian[0.043]; Russian[0.043]; soldiers[0.042]; military[0.041]; attackers[0.041]; assault[0.041]; outside[0.041]; gunmen[0.041]; attack[0.041]; attack[0.041]; guards[0.040]; aimed[0.040]; arms[0.039]; use[0.039]; Interfax[0.039]; frequent[0.039]; servicemen[0.039]; servicemen[0.039]; 
+
+INCORRECT ANNOTATION	1086testa	European	UEFA	UEFA Europa League
+global=0.328	0.322
+local(<e, ctx>)=-0.173	-0.150
+log p(e|m)=-3.576	-4.423
+soccer[0.052]; qualifier[0.050]; Cup[0.050]; Cup[0.050]; Soccer[0.049]; group[0.048]; beat[0.048]; Estonia[0.047]; Estonia[0.047]; Qualifier[0.046]; World[0.046]; World[0.046]; Belarus[0.046]; Belarus[0.046]; Saturday[0.045]; Scorer[0.042]; Attendance[0.042]; Minsk[0.041]; Beat[0.041]; halftime[0.040]; Vladimir[0.040]; Makovsky[0.039]; 
+
+INCORRECT ANNOTATION	947testa	Headingley	Headingley Stadium	Headingley
+global=0.356	0.331
+local(<e, ctx>)=0.405	0.109
+log p(e|m)=-0.302	-0.571
+England[0.046]; England[0.046]; England[0.046]; match[0.043]; match[0.043]; bowling[0.043]; second[0.042]; bowled[0.042]; Road[0.042]; Essex[0.042]; Essex[0.042]; Oval[0.041]; season[0.041]; Leicestershire[0.041]; Somerset[0.041]; Somerset[0.041]; Nottinghamshire[0.041]; day[0.040]; Kent[0.040]; opening[0.040]; Yorkshire[0.040]; Yorkshire[0.040]; Surrey[0.039]; victory[0.039]; 
+
+INCORRECT ANNOTATION	947testa	Australian	Australia national cricket team	Australia
+global=0.336	0.329
+local(<e, ctx>)=-0.009	-0.025
+log p(e|m)=-3.612	-0.491
+England[0.046]; England[0.046]; England[0.046]; match[0.043]; match[0.043]; day[0.043]; second[0.043]; bowler[0.042]; Oval[0.042]; captain[0.041]; seven[0.041]; opening[0.041]; Kent[0.041]; Kent[0.041]; took[0.040]; took[0.040]; took[0.040]; badly[0.040]; Surrey[0.040]; Surrey[0.040]; Warwickshire[0.040]; defeat[0.040]; stumps[0.040]; Thursday[0.040]; 
+
+INCORRECT ANNOTATION	1049testa	Bulgaria	Bulgaria	Bulgaria national football team
+global=0.334	0.314
+local(<e, ctx>)=-0.036	-0.151
+log p(e|m)=-0.317	-2.718
+Bulgaria[0.059]; qualifier[0.055]; European[0.054]; European[0.054]; championship[0.054]; Soccer[0.051]; Qualifier[0.050]; Saturday[0.049]; group[0.048]; halftime[0.048]; Beat[0.047]; Israel[0.044]; Israel[0.044]; Israel[0.044]; Scorers[0.044]; Herzliya[0.043]; Result[0.043]; Attendance[0.043]; Nir[0.042]; Hajaj[0.042]; Haim[0.042]; 
+
+INCORRECT ANNOTATION	1049testa	Israel	Israel	Israel national football team
+global=0.329	0.326
+local(<e, ctx>)=-0.228	0.205
+log p(e|m)=-0.213	-3.576
+Israel[0.065]; Israel[0.065]; Soccer[0.054]; qualifier[0.051]; Herzliya[0.048]; Qualifier[0.047]; Saturday[0.047]; European[0.047]; European[0.047]; Nir[0.046]; championship[0.046]; group[0.046]; Haim[0.046]; Scorers[0.045]; Bulgaria[0.045]; Bulgaria[0.045]; halftime[0.045]; Hajaj[0.044]; Beat[0.042]; Attendance[0.041]; Result[0.040]; 
+
+INCORRECT ANNOTATION	1049testa	Israel	Israel	Israel national football team
+global=0.342	0.320
+local(<e, ctx>)=0.020	-0.089
+log p(e|m)=-0.213	-3.576
+Israel[0.065]; Israel[0.065]; Soccer[0.054]; qualifier[0.051]; Herzliya[0.048]; Qualifier[0.047]; Saturday[0.047]; European[0.047]; European[0.047]; Nir[0.046]; championship[0.046]; group[0.046]; Haim[0.046]; Scorers[0.045]; Bulgaria[0.045]; Bulgaria[0.045]; halftime[0.045]; Hajaj[0.044]; Beat[0.042]; Attendance[0.041]; Result[0.040]; 
+

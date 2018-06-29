@@ -14,7 +14,7 @@ cmd:option('-unit_tests', false, 'Run unit tests or not')
 
 ---------------- CUDA:
 -- cmd:option('-type', 'cudacudnn', 'Type: cuda | float | cudacudnn')
-cmd:option('-type', 'float', 'Type: cuda | float | cudacudnn')
+cmd:option('-type', 'cudacudnn', 'Type: cuda | float | cudacudnn')
 
 ---------------- train data:
 cmd:option('-store_train_data', 'RAM', 'Where to read the training data from: RAM (tensors) | DISK (text, parsed all the time)')
